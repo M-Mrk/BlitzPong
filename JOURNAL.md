@@ -21,3 +21,19 @@ Here an example setup with 1 row (Brilliant sketch, I know):
 
 Next up will be the target schematics!  
 
+## 10/25/2025 - Did the first iteration of the target schematic  
+
+I researched alot of different components especially the RGB LEDs. 
+![image.png](https://blueprint.hackclub.com/user-attachments/blobs/proxy/eyJfcmFpbHMiOnsiZGF0YSI6NTMxNCwicHVyIjoiYmxvYl9pZCJ9fQ==--cffd82e782a4bba7976c09e53b5220302162bde8/image.png)
+
+My first thought was to just use basic RGB LEDs, but they did not have a huge price difference to addressable ones, so now I am using SK6812B's. They are pretty straight forward, just give them power in parallel and then daisy chain the data bus.
+![image.png](https://blueprint.hackclub.com/user-attachments/blobs/proxy/eyJfcmFpbHMiOnsiZGF0YSI6NTMxNSwicHVyIjoiYmxvYl9pZCJ9fQ==--19f04d466b8b72681696956fbaed32c7bb6795d7/image.png)
+
+I also switched to an attiny 3216, for more flash and more debugging and cool LED effects.
+
+And lastly I did the piezo sensor stuff. Resistor to limit current and two schottky diodes to limit the piezos output to 5V so the attiny doesnt give up.
+![image.png](https://blueprint.hackclub.com/user-attachments/blobs/proxy/eyJfcmFpbHMiOnsiZGF0YSI6NTMxNiwicHVyIjoiYmxvYl9pZCJ9fQ==--de079cafeb81e768cbb0a6bbb85ccbc1554faf68/image.png)
+
+I have missed out on the pogo pin UDPI connector, which will be up next, so I can actually program the targets.
+  
+

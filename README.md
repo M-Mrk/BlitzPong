@@ -19,6 +19,6 @@ The targets are connected via magnetic 6 pin pogo connectors. (+5V, GND, SDA, SC
 
 They detect the balls vibrations via 20mm piezo sensors.
 
-They use an attiny1616.
+They use an attiny3216.
 
 They have 16 [SK6812](https://www.lcsc.com/product-detail/C5380881.html?s_z=n_SK6812) addressable LEDs in a ring. This means around 800mA per target, which is 4A for 5 targets. This is in range of our 6A maximum with 3A per +5V pin.

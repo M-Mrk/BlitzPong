@@ -1,4 +1,4 @@
-26847347599466018
+26850870377089457
 Audio_Module
 Reverb_BTDR-1H
 Digital Reverberation Unit, http://www.belton.co.kr/inc/downfile.php?seq=17&file=pdf (footprint from http://www.uk-electronic.de/PDF/BTDR-1.pdf)
@@ -106813,9 +106813,23 @@ SOT TO_SOT_SMD
 3
 2
 custom_footprints
+SOT23
+<b>SMALL OUTLINE TRANSISTOR</b><p>reflow soldering
+
+0
+3
+3
+custom_footprints
 XL-5050RGBC-SK6812B
 
 
 0
 6
 6
+updi_pogo
+P2,54_MH3_pogo_updi
+
+
+0
+3
+3

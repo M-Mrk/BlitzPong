@@ -424,10 +424,10 @@
 		)
 	)
 	(junction
-		(at 91.44 81.28)
+		(at 95.25 81.28)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "b60d2dc2-ccdb-4fd7-b452-1673b37eba2d")
+		(uuid "6ee92fbb-29b8-4010-8468-6779e13fc73c")
 	)
 	(junction
 		(at 95.25 69.85)
@@ -487,16 +487,6 @@
 	)
 	(wire
 		(pts
-			(xy 91.44 81.28) (xy 95.25 81.28)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "5073c78d-9064-4d22-8519-23c861d24ba0")
-	)
-	(wire
-		(pts
 			(xy 95.25 69.85) (xy 95.25 71.12)
 		)
 		(stroke
@@ -507,7 +497,7 @@
 	)
 	(wire
 		(pts
-			(xy 81.28 81.28) (xy 91.44 81.28)
+			(xy 81.28 81.28) (xy 95.25 81.28)
 		)
 		(stroke
 			(width 0)
@@ -517,7 +507,7 @@
 	)
 	(wire
 		(pts
-			(xy 91.44 81.28) (xy 91.44 88.9)
+			(xy 95.25 81.28) (xy 95.25 88.9)
 		)
 		(stroke
 			(width 0)
@@ -547,7 +537,7 @@
 	)
 	(hierarchical_label "GND"
 		(shape input)
-		(at 91.44 88.9 270)
+		(at 95.25 88.9 270)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -674,7 +664,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_1206_3216Metric"
 			(at 87.63 71.628 90)
 			(effects
 				(font
@@ -812,7 +802,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Connector_Wire:SolderWire-0.1sqmm_1x02_P3.6mm_D0.4mm_OD1mm"
 			(at 76.2 81.28 0)
 			(effects
 				(font

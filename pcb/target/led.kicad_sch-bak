@@ -491,7 +491,7 @@
 	)
 	(wire
 		(pts
-			(xy 165.1 60.96) (xy 170.18 60.96)
+			(xy 165.1 60.96) (xy 168.91 60.96)
 		)
 		(stroke
 			(width 0)
@@ -501,7 +501,7 @@
 	)
 	(wire
 		(pts
-			(xy 165.1 55.88) (xy 170.18 55.88)
+			(xy 165.1 55.88) (xy 168.91 55.88)
 		)
 		(stroke
 			(width 0)
@@ -641,7 +641,7 @@
 	)
 	(wire
 		(pts
-			(xy 140.97 58.42) (xy 170.18 58.42)
+			(xy 140.97 58.42) (xy 168.91 58.42)
 		)
 		(stroke
 			(width 0)
@@ -835,7 +835,7 @@
 	)
 	(symbol
 		(lib_id "Connector:Conn_01x03_Pin")
-		(at 175.26 58.42 0)
+		(at 173.99 58.42 0)
 		(mirror y)
 		(unit 1)
 		(exclude_from_sim no)
@@ -844,7 +844,7 @@
 		(dnp no)
 		(uuid "e05527af-f6fc-4f3f-92da-e503ea6d1c54")
 		(property "Reference" "J9"
-			(at 174.625 50.8 0)
+			(at 173.355 50.8 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -852,7 +852,7 @@
 			)
 		)
 		(property "Value" "Conn_01x03_Pin"
-			(at 174.625 53.34 0)
+			(at 173.355 53.34 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -860,7 +860,7 @@
 			)
 		)
 		(property "Footprint" "Connector_Wire:SolderWire-0.25sqmm_1x03_P4.2mm_D0.65mm_OD1.7mm"
-			(at 175.26 58.42 0)
+			(at 173.99 58.42 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -869,7 +869,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 175.26 58.42 0)
+			(at 173.99 58.42 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -878,7 +878,7 @@
 			)
 		)
 		(property "Description" "Generic connector, single row, 01x03, script generated"
-			(at 175.26 58.42 0)
+			(at 173.99 58.42 0)
 			(effects
 				(font
 					(size 1.27 1.27)

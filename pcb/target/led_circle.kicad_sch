@@ -5,36 +5,32 @@
 	(uuid "85f07774-142d-4359-a167-c5b8c2b11643")
 	(paper "A4")
 	(lib_symbols
-		(symbol "Device:C"
-			(pin_numbers
-				(hide yes)
-			)
+		(symbol "Connector:Conn_01x03_Pin"
 			(pin_names
-				(offset 0.254)
+				(offset 1.016)
+				(hide yes)
 			)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
-			(property "Reference" "C"
-				(at 0.635 2.54 0)
+			(property "Reference" "J"
+				(at 0 5.08 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(justify left)
 				)
 			)
-			(property "Value" "C"
-				(at 0.635 -2.54 0)
+			(property "Value" "Conn_01x03_Pin"
+				(at 0 -5.08 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(justify left)
 				)
 			)
 			(property "Footprint" ""
-				(at 0.9652 -3.81 0)
+				(at 0 0 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -51,7 +47,7 @@
 					(hide yes)
 				)
 			)
-			(property "Description" "Unpolarized capacitor"
+			(property "Description" "Generic connector, single row, 01x03, script generated"
 				(at 0 0 0)
 				(effects
 					(font
@@ -60,7 +56,15 @@
 					(hide yes)
 				)
 			)
-			(property "ki_keywords" "cap capacitor"
+			(property "ki_locked" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "connector"
 				(at 0 0 0)
 				(effects
 					(font
@@ -69,7 +73,7 @@
 					(hide yes)
 				)
 			)
-			(property "ki_fp_filters" "C_*"
+			(property "ki_fp_filters" "Connector*:*_1x??_*"
 				(at 0 0 0)
 				(effects
 					(font
@@ -78,13 +82,46 @@
 					(hide yes)
 				)
 			)
-			(symbol "C_0_1"
+			(symbol "Conn_01x03_Pin_1_1"
+				(rectangle
+					(start 0.8636 2.667)
+					(end 0 2.413)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(rectangle
+					(start 0.8636 0.127)
+					(end 0 -0.127)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(rectangle
+					(start 0.8636 -2.413)
+					(end 0 -2.667)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
 				(polyline
 					(pts
-						(xy -2.032 0.762) (xy 2.032 0.762)
+						(xy 1.27 2.54) (xy 0.8636 2.54)
 					)
 					(stroke
-						(width 0.508)
+						(width 0.1524)
 						(type default)
 					)
 					(fill
@@ -93,22 +130,32 @@
 				)
 				(polyline
 					(pts
-						(xy -2.032 -0.762) (xy 2.032 -0.762)
+						(xy 1.27 0) (xy 0.8636 0)
 					)
 					(stroke
-						(width 0.508)
+						(width 0.1524)
 						(type default)
 					)
 					(fill
 						(type none)
 					)
 				)
-			)
-			(symbol "C_1_1"
+				(polyline
+					(pts
+						(xy 1.27 -2.54) (xy 0.8636 -2.54)
+					)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
 				(pin passive line
-					(at 0 3.81 270)
-					(length 2.794)
-					(name "~"
+					(at 5.08 2.54 180)
+					(length 3.81)
+					(name "Pin_1"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -124,9 +171,9 @@
 					)
 				)
 				(pin passive line
-					(at 0 -3.81 90)
-					(length 2.794)
-					(name "~"
+					(at 5.08 0 180)
+					(length 3.81)
+					(name "Pin_2"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -141,247 +188,10 @@
 						)
 					)
 				)
-			)
-			(embedded_fonts no)
-		)
-		(symbol "custom_symbols:XL-5050RGBC-SK6812B"
-			(pin_names
-				(offset 0.254)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(property "Reference" "D"
-				(at 5.08 5.715 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify right bottom)
-				)
-			)
-			(property "Value" "XL-5050RGBC-SK6812B"
-				(at 1.27 -5.715 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left top)
-				)
-			)
-			(property "Footprint" "LED_SMD:LED_SK6812_PLCC4_5.0x5.0mm_P3.2mm"
-				(at 1.27 -7.62 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left top)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" "https://cdn-shop.adafruit.com/product-files/1138/SK6812+LED+datasheet+.pdf"
-				(at 2.54 -9.525 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left top)
-					(hide yes)
-				)
-			)
-			(property "Description" "RGB LED with integrated controller"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_keywords" "RGB LED NeoPixel addressable"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_fp_filters" "LED*SK6812*PLCC*5.0x5.0mm*P3.2mm*"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "XL-5050RGBC-SK6812B_0_0"
-				(text "RGB"
-					(at 2.286 -4.191 0)
-					(effects
-						(font
-							(size 0.762 0.762)
-						)
-					)
-				)
-			)
-			(symbol "XL-5050RGBC-SK6812B_0_1"
-				(polyline
-					(pts
-						(xy 1.27 -2.54) (xy 1.778 -2.54)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 1.27 -3.556) (xy 1.778 -3.556)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 2.286 -1.524) (xy 1.27 -2.54) (xy 1.27 -2.032)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 2.286 -2.54) (xy 1.27 -3.556) (xy 1.27 -3.048)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 3.683 -1.016) (xy 3.683 -3.556) (xy 3.683 -4.064)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 4.699 -1.524) (xy 2.667 -1.524) (xy 3.683 -3.556) (xy 4.699 -1.524)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 4.699 -3.556) (xy 2.667 -3.556)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(rectangle
-					(start 5.08 5.08)
-					(end -5.08 -5.08)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type background)
-					)
-				)
-			)
-			(symbol "XL-5050RGBC-SK6812B_1_1"
-				(pin input line
-					(at -7.62 0 0)
-					(length 2.54)
-					(name "DIN"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "6"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin power_in line
-					(at 0 7.62 270)
-					(length 2.54)
-					(name "VDD"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin power_in line
-					(at 0 -7.62 90)
-					(length 2.54)
-					(name "VSS"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "4"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin output line
-					(at 7.62 0 180)
-					(length 2.54)
-					(name "DOUT"
+				(pin passive line
+					(at 5.08 -2.54 180)
+					(length 3.81)
+					(name "Pin_3"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -400,939 +210,113 @@
 			(embedded_fonts no)
 		)
 	)
-	(junction
-		(at 173.99 81.28)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "0ace0660-e13f-40c9-b1ef-ca19ea8b36ad")
-	)
-	(junction
-		(at 194.31 96.52)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "0d7838e6-811b-48f9-b607-208a48d00f29")
-	)
-	(junction
-		(at 153.67 52.07)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "0e0a19a1-3336-4d1e-91b8-27641777a954")
-	)
-	(junction
-		(at 104.14 52.07)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "155cb99b-4108-4d1d-bf89-cc262732c8e2")
-	)
-	(junction
-		(at 124.46 52.07)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "168f2d3f-44c4-4374-bee0-f9ea980688cf")
-	)
-	(junction
-		(at 124.46 81.28)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "28e14921-02fe-44e0-b02d-0d5ed74e37da")
-	)
-	(junction
-		(at 83.82 81.28)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "2f87a64b-87e7-42f7-9ed4-bc21aa0bb955")
-	)
-	(junction
-		(at 52.07 36.83)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "2fee0c79-5a8b-47d5-830f-f09b26a0304d")
-	)
-	(junction
-		(at 142.24 52.07)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "3675e43f-b546-4c30-96b8-5e0fb77c9ee3")
-	)
-	(junction
-		(at 104.14 36.83)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "37d064cf-0598-4986-aa82-3cc1b19bcb99")
-	)
-	(junction
-		(at 142.24 81.28)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "38a680aa-9f4d-49df-bab0-8d03b89449e7")
-	)
-	(junction
-		(at 214.63 96.52)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "3def4eff-e2b2-4385-a067-429c44931beb")
-	)
-	(junction
-		(at 173.99 52.07)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "50ca284c-14da-4355-adb0-e05f4cdcca21")
-	)
-	(junction
-		(at 63.5 81.28)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "5303d67c-4f5a-4e3b-92f0-e44e51e35560")
-	)
-	(junction
-		(at 63.5 96.52)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "53223f19-3680-4f84-9d41-46339f54fa2c")
-	)
-	(junction
-		(at 83.82 52.07)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "54ad43c6-5748-478e-a03a-19f838ef4ed8")
-	)
-	(junction
-		(at 142.24 36.83)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "56be7e5b-df80-44b5-9905-59e5d34e97a6")
-	)
-	(junction
-		(at 104.14 96.52)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "5cfaf536-9f40-41a6-afa6-846d8f06bcd0")
-	)
-	(junction
-		(at 194.31 52.07)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "60a615d3-de11-45a2-9022-d657dfbe47d4")
-	)
-	(junction
-		(at 142.24 96.52)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "610c5f03-3a22-4483-8888-fe6adac4b2a2")
-	)
-	(junction
-		(at 124.46 36.83)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "63930899-891d-49bf-a7e4-3378ccbba23c")
-	)
-	(junction
-		(at 153.67 36.83)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "697c231c-14ae-4238-a48c-bc72cac44956")
-	)
-	(junction
-		(at 63.5 52.07)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "6f7efd24-b573-4071-9343-4fb527f89266")
-	)
-	(junction
-		(at 83.82 96.52)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "8850732e-0fc1-4a19-8252-2400be4f3dc8")
-	)
-	(junction
-		(at 83.82 36.83)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "8f6c0897-6ac8-4212-abe1-3f3c572e2ef4")
-	)
-	(junction
-		(at 153.67 81.28)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "9c7bd757-8fe6-4da9-a634-f6cfefb262f5")
-	)
-	(junction
-		(at 194.31 36.83)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "a5657825-489c-426b-bba5-65cb282d7ccc")
-	)
-	(junction
-		(at 52.07 52.07)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "bfa8df83-4270-4568-8936-a25438c0e229")
-	)
-	(junction
-		(at 153.67 96.52)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "c09878b6-d813-4d4d-9ff8-635b26a8ad52")
-	)
-	(junction
-		(at 104.14 81.28)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "ca47be8b-2874-4341-b3c7-8e8c418d2f39")
-	)
-	(junction
-		(at 124.46 96.52)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "cd4424b6-040f-4157-97f6-23fd37481949")
-	)
-	(junction
-		(at 173.99 36.83)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "e008e632-f969-44f6-bf8b-45a53ad1b212")
-	)
-	(junction
-		(at 173.99 96.52)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "ef7f0ac4-0e03-4a30-a080-4cc424fef5e9")
-	)
-	(junction
-		(at 63.5 36.83)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "f457dcd6-b1d7-46ff-9a0a-ba0b6d6039de")
-	)
-	(junction
-		(at 214.63 81.28)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "ff56d9e7-8732-4598-8994-3fc825aae13a")
-	)
-	(junction
-		(at 194.31 81.28)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "ffaef255-948a-4fe7-9f28-67ec37907f89")
-	)
 	(no_connect
-		(at 222.25 88.9)
-		(uuid "75c220d9-1344-4278-99c8-dd4c673b6a4c")
+		(at 33.02 74.93)
+		(uuid "8c22ae9e-cb32-4ce6-8a75-f86de5195637")
 	)
 	(wire
 		(pts
-			(xy 124.46 36.83) (xy 142.24 36.83)
+			(xy 30.48 85.09) (xy 30.48 77.47)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "0eb85c28-1d0f-4db6-a115-b987d9dd0bba")
+		(uuid "38eb61be-8083-47f5-921f-d32edc67394c")
 	)
 	(wire
 		(pts
-			(xy 83.82 52.07) (xy 104.14 52.07)
+			(xy 38.1 48.26) (xy 30.48 48.26)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "10f94e98-0c1d-490b-8681-55c78202d04e")
+		(uuid "43abf19d-d510-4088-8bbc-9077c9c94b8a")
 	)
 	(wire
 		(pts
-			(xy 173.99 36.83) (xy 194.31 36.83)
+			(xy 38.1 45.72) (xy 27.94 45.72)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "143773a2-236b-4a28-9fd5-49c7b065ec0c")
+		(uuid "68e43e40-8b73-4366-a4e1-00fb964f1fac")
 	)
 	(wire
 		(pts
-			(xy 111.76 44.45) (xy 116.84 44.45)
+			(xy 30.48 48.26) (xy 30.48 50.8)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "1acb2cb3-96e9-4878-8a95-24b2f2ac9202")
+		(uuid "9e86bdc2-ef14-4380-9762-9ddec9a690e3")
 	)
 	(wire
 		(pts
-			(xy 52.07 52.07) (xy 63.5 52.07)
+			(xy 30.48 66.04) (xy 30.48 72.39)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "1c57d921-8b87-45b0-a6aa-756178a9488c")
+		(uuid "a6a73428-cc3f-4336-9c00-e357fcda51c9")
 	)
 	(wire
 		(pts
-			(xy 214.63 81.28) (xy 219.71 81.28)
+			(xy 38.1 43.18) (xy 30.48 43.18)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "1f49f4bd-edc2-421c-a5ed-9d2e9bac0b01")
+		(uuid "b39aeb1b-2297-48fd-b7c0-9cf21fb9508c")
 	)
 	(wire
 		(pts
-			(xy 91.44 88.9) (xy 96.52 88.9)
+			(xy 30.48 72.39) (xy 38.1 72.39)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "22ef543e-c306-480f-83c8-a37d126d966b")
+		(uuid "d108b091-0777-40fb-a7e7-6c0c759f171b")
 	)
 	(wire
 		(pts
-			(xy 26.67 44.45) (xy 55.88 44.45)
+			(xy 30.48 43.18) (xy 30.48 38.1)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "24772f89-f15c-4886-9760-e7f4f0235b81")
+		(uuid "d7467d51-f5b4-457f-b944-1930f9af4a4a")
 	)
 	(wire
 		(pts
-			(xy 52.07 36.83) (xy 52.07 40.64)
+			(xy 33.02 74.93) (xy 38.1 74.93)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "24b89f5c-dbd3-445b-8e96-db748c5ebb8d")
+		(uuid "edee4373-a202-4ea2-b7d4-c3cb067796ef")
 	)
 	(wire
 		(pts
-			(xy 52.07 81.28) (xy 52.07 85.09)
+			(xy 30.48 77.47) (xy 38.1 77.47)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "24d56a53-1248-4e1b-9792-cb96cae7d917")
-	)
-	(wire
-		(pts
-			(xy 52.07 92.71) (xy 52.07 96.52)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "27343583-281e-4bdd-8729-3bd54be9084c")
-	)
-	(wire
-		(pts
-			(xy 194.31 52.07) (xy 214.63 52.07)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "278216ff-83aa-4ca9-bb77-b33dbb4cd99a")
-	)
-	(wire
-		(pts
-			(xy 52.07 81.28) (xy 63.5 81.28)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "2c883c21-4714-4753-b32a-557172e63243")
-	)
-	(wire
-		(pts
-			(xy 142.24 36.83) (xy 142.24 40.64)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "31b52c14-1c46-4b69-8ac2-96f1e7e10c45")
-	)
-	(wire
-		(pts
-			(xy 40.64 69.85) (xy 40.64 88.9)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "348bb0fa-3dcf-435c-9ee0-8ddc58215221")
-	)
-	(wire
-		(pts
-			(xy 52.07 48.26) (xy 52.07 52.07)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "45ab7614-44a5-4077-b1a8-8d326c476381")
-	)
-	(wire
-		(pts
-			(xy 201.93 44.45) (xy 207.01 44.45)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "48322797-41df-4036-a30b-48ecdadcfc88")
-	)
-	(wire
-		(pts
-			(xy 104.14 52.07) (xy 124.46 52.07)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "49e09074-a5cf-4ad5-bb31-b569a2fedb09")
-	)
-	(wire
-		(pts
-			(xy 63.5 96.52) (xy 83.82 96.52)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "567b1062-0b00-43dc-bc86-0adbca0e3ef5")
-	)
-	(wire
-		(pts
-			(xy 153.67 52.07) (xy 173.99 52.07)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "5815fe3b-ac08-41f4-a97f-32c032c13580")
-	)
-	(wire
-		(pts
-			(xy 173.99 52.07) (xy 194.31 52.07)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "591a027e-9e44-47d4-bd43-d513dc01668b")
-	)
-	(wire
-		(pts
-			(xy 124.46 96.52) (xy 142.24 96.52)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "5fad53fd-285e-4699-9f80-27bef0a6b357")
-	)
-	(wire
-		(pts
-			(xy 71.12 44.45) (xy 76.2 44.45)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "6753ccb0-df36-4992-8542-7d06b1410d98")
-	)
-	(wire
-		(pts
-			(xy 63.5 36.83) (xy 83.82 36.83)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "6feb3207-6a19-4bd0-9fb8-80ca13f4f2c2")
-	)
-	(wire
-		(pts
-			(xy 83.82 81.28) (xy 104.14 81.28)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "6fecfd86-031b-4f80-b016-10b432482f85")
-	)
-	(wire
-		(pts
-			(xy 153.67 81.28) (xy 173.99 81.28)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "71afecbf-3d21-41ea-a1ef-5ad6be1a2a88")
-	)
-	(wire
-		(pts
-			(xy 91.44 44.45) (xy 96.52 44.45)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "71e7281d-a72a-4dbe-9232-8ad971283090")
-	)
-	(wire
-		(pts
-			(xy 124.46 81.28) (xy 142.24 81.28)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "7273d643-d349-470d-8e9b-e1662c9fb111")
-	)
-	(wire
-		(pts
-			(xy 142.24 96.52) (xy 153.67 96.52)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "73879acf-5c64-4171-8572-4632591a826a")
-	)
-	(wire
-		(pts
-			(xy 104.14 96.52) (xy 124.46 96.52)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "75bc47c5-6c9e-4293-9abb-fc7be07a9847")
-	)
-	(wire
-		(pts
-			(xy 142.24 92.71) (xy 142.24 96.52)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "7b2b91f2-6e38-47eb-87f6-a00bb67dbedc")
-	)
-	(wire
-		(pts
-			(xy 142.24 36.83) (xy 153.67 36.83)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "7c2ca85e-ec45-479a-aef8-4fd71617b1ad")
-	)
-	(wire
-		(pts
-			(xy 83.82 36.83) (xy 104.14 36.83)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "812912c7-8881-4f84-90b2-9362ef70ef10")
-	)
-	(wire
-		(pts
-			(xy 194.31 81.28) (xy 214.63 81.28)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "85672750-e766-41a2-b661-4e6418f1123d")
-	)
-	(wire
-		(pts
-			(xy 222.25 44.45) (xy 223.52 44.45)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "85af599e-bf4f-47c1-8aa7-2c34bccffb2e")
-	)
-	(wire
-		(pts
-			(xy 83.82 96.52) (xy 104.14 96.52)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "88e266e2-81d2-438d-b53d-08ed0f91d6f8")
-	)
-	(wire
-		(pts
-			(xy 142.24 52.07) (xy 153.67 52.07)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "89638e84-d30c-43ff-a108-21be2e4b5752")
-	)
-	(wire
-		(pts
-			(xy 104.14 81.28) (xy 124.46 81.28)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "8e889e17-a238-493a-a78f-7e900abaa444")
-	)
-	(wire
-		(pts
-			(xy 124.46 52.07) (xy 142.24 52.07)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "8f7ea3fd-6381-4d00-8fe5-ccac67c34d8b")
-	)
-	(wire
-		(pts
-			(xy 71.12 88.9) (xy 76.2 88.9)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "8f9031b2-9575-4780-aa3b-efc19ae12efd")
-	)
-	(wire
-		(pts
-			(xy 132.08 44.45) (xy 146.05 44.45)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "92cac213-6eb8-4f4c-8178-047bce334877")
-	)
-	(wire
-		(pts
-			(xy 219.71 96.52) (xy 219.71 97.79)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "92d52d82-63d4-40ec-8d84-603a1e6016fc")
-	)
-	(wire
-		(pts
-			(xy 173.99 81.28) (xy 194.31 81.28)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "9591bc3b-4108-4f1c-8ddd-39dc910abdfa")
-	)
-	(wire
-		(pts
-			(xy 214.63 96.52) (xy 219.71 96.52)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "95d01697-9149-4118-ac11-baa359ece318")
-	)
-	(wire
-		(pts
-			(xy 223.52 69.85) (xy 40.64 69.85)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "971f08a3-d749-41a9-97e2-1bfcf3896d2e")
-	)
-	(wire
-		(pts
-			(xy 22.86 52.07) (xy 52.07 52.07)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "9a675499-7ebb-451d-aab7-982c5d9df8c6")
-	)
-	(wire
-		(pts
-			(xy 40.64 88.9) (xy 55.88 88.9)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "9b026f60-4538-4df7-8b12-c3ca8dd3469b")
-	)
-	(wire
-		(pts
-			(xy 104.14 36.83) (xy 124.46 36.83)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "9c52fba0-c220-4bac-90a4-007e7890717b")
-	)
-	(wire
-		(pts
-			(xy 173.99 96.52) (xy 194.31 96.52)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "9c7e9f58-2566-4759-a2e3-07167af40ba7")
-	)
-	(wire
-		(pts
-			(xy 132.08 88.9) (xy 146.05 88.9)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "9fca1e71-36c3-401d-86f1-d5c8785b1532")
-	)
-	(wire
-		(pts
-			(xy 153.67 36.83) (xy 173.99 36.83)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "a2215313-d53a-4f5d-b90e-66f65dc21516")
-	)
-	(wire
-		(pts
-			(xy 111.76 88.9) (xy 116.84 88.9)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "a5a51daf-598d-4739-a541-954bdaf323f8")
-	)
-	(wire
-		(pts
-			(xy 181.61 88.9) (xy 186.69 88.9)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "a99e03b0-7d88-46f6-a460-64a8471a55e2")
-	)
-	(wire
-		(pts
-			(xy 63.5 81.28) (xy 83.82 81.28)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "b209f4fd-acd6-433f-99d8-68737f6afd40")
-	)
-	(wire
-		(pts
-			(xy 52.07 36.83) (xy 63.5 36.83)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "b2887121-f1e1-4da1-8d39-9dd8664dcf20")
-	)
-	(wire
-		(pts
-			(xy 52.07 96.52) (xy 63.5 96.52)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "b623248a-07ad-47af-8dd7-00e7ee9c9c78")
-	)
-	(wire
-		(pts
-			(xy 142.24 81.28) (xy 142.24 85.09)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "bbb8872c-b60a-43b1-8b54-ed226915d808")
-	)
-	(wire
-		(pts
-			(xy 22.86 36.83) (xy 52.07 36.83)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "d0731dac-dc43-4692-95d0-a19bf2bfe8c9")
-	)
-	(wire
-		(pts
-			(xy 161.29 44.45) (xy 166.37 44.45)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "d432b092-afb1-4822-956b-b5f90e8f4882")
-	)
-	(wire
-		(pts
-			(xy 63.5 52.07) (xy 83.82 52.07)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "d6a00aa2-61b1-4820-8889-e602da058d42")
-	)
-	(wire
-		(pts
-			(xy 201.93 88.9) (xy 207.01 88.9)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "daa9735e-80a0-485d-8767-15d8722f66ae")
-	)
-	(wire
-		(pts
-			(xy 194.31 96.52) (xy 214.63 96.52)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "dbd884a9-ccb5-44b4-bd1a-0cd4ece23a7a")
-	)
-	(wire
-		(pts
-			(xy 142.24 81.28) (xy 153.67 81.28)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "dbfdc245-aeb6-49a2-9f49-5f6bb6437565")
-	)
-	(wire
-		(pts
-			(xy 223.52 44.45) (xy 223.52 69.85)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "dc532438-b326-462c-8f20-822f632bc191")
-	)
-	(wire
-		(pts
-			(xy 194.31 36.83) (xy 214.63 36.83)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "eb4d65cf-459e-447e-a5d8-4f54f50b3e18")
-	)
-	(wire
-		(pts
-			(xy 219.71 78.74) (xy 219.71 81.28)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "ebc8cb0b-ee3b-4060-96ff-8b26e1bd19ab")
-	)
-	(wire
-		(pts
-			(xy 181.61 44.45) (xy 186.69 44.45)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "ef6f090d-de81-4f3a-97f6-9eb40252a4de")
-	)
-	(wire
-		(pts
-			(xy 161.29 88.9) (xy 166.37 88.9)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "f4247539-0eca-4239-ae36-8812f216421e")
-	)
-	(wire
-		(pts
-			(xy 153.67 96.52) (xy 173.99 96.52)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "f5e93c16-16e0-4ee4-ac6b-3bec7b220412")
-	)
-	(wire
-		(pts
-			(xy 142.24 48.26) (xy 142.24 52.07)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "f6577d02-47c6-486a-97f8-14932d836b03")
-	)
-	(wire
-		(pts
-			(xy 22.86 52.07) (xy 22.86 54.61)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "f7c21522-bf29-4127-96cb-79b85bbd809a")
+		(uuid "f9b7b039-ffd9-4906-8ea7-89354529ff4b")
 	)
 	(hierarchical_label "VCC"
 		(shape input)
-		(at 219.71 78.74 90)
+		(at 30.48 66.04 90)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1343,7 +327,7 @@
 	)
 	(hierarchical_label "GND"
 		(shape input)
-		(at 219.71 97.79 270)
+		(at 30.48 85.09 270)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1354,7 +338,7 @@
 	)
 	(hierarchical_label "LED DATA IN"
 		(shape input)
-		(at 26.67 44.45 180)
+		(at 27.94 45.72 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1365,7 +349,7 @@
 	)
 	(hierarchical_label "VCC"
 		(shape input)
-		(at 22.86 36.83 90)
+		(at 30.48 38.1 90)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1376,7 +360,7 @@
 	)
 	(hierarchical_label "GND"
 		(shape input)
-		(at 22.86 54.61 270)
+		(at 30.48 50.8 270)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1386,34 +370,34 @@
 		(uuid "ed6150f1-4d20-486f-adbd-6c48a969f03a")
 	)
 	(symbol
-		(lib_id "Device:C")
-		(at 52.07 44.45 180)
+		(lib_id "Connector:Conn_01x03_Pin")
+		(at 43.18 74.93 0)
+		(mirror y)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "0a5dab51-6427-4401-8a2d-b51d796e5db1")
-		(property "Reference" "C1"
-			(at 49.276 45.72 0)
+		(fields_autoplaced yes)
+		(uuid "0a1140f6-1031-41c6-ae61-cff098e4b4ef")
+		(property "Reference" "J4"
+			(at 42.545 67.31 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
 			)
 		)
-		(property "Value" "100nC"
-			(at 49.276 43.18 0)
+		(property "Value" "Conn_01x03_Pin"
+			(at 42.545 69.85 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_1206_3216Metric"
-			(at 51.1048 40.64 0)
+		(property "Footprint" "Connector_Wire:SolderWire-0.75sqmm_1x03_P4.8mm_D1.25mm_OD2.3mm"
+			(at 43.18 74.93 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1422,7 +406,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 52.07 44.45 0)
+			(at 43.18 74.93 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1430,59 +414,62 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Unpolarized capacitor"
-			(at 52.07 44.45 0)
+		(property "Description" "Generic connector, single row, 01x03, script generated"
+			(at 43.18 74.93 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(hide yes)
 			)
+		)
+		(pin "3"
+			(uuid "6865f904-ab2f-4d55-8218-1467b8627900")
 		)
 		(pin "2"
-			(uuid "30bed508-2d02-40ad-b77e-e722662295ee")
+			(uuid "ac679645-6ad8-48a4-a1d3-1da11d0e803b")
 		)
 		(pin "1"
-			(uuid "f41c5fcd-15b7-443a-8921-4f1f99e5a9ef")
+			(uuid "2c2eed4b-e8c7-4081-9391-4f1a6d3b07b2")
 		)
 		(instances
-			(project ""
+			(project "target"
 				(path "/1c02f793-f381-44cb-838a-dbb787484d0c/e61b723f-f359-4114-beb0-b4d2930b2aa9"
-					(reference "C1")
+					(reference "J4")
 					(unit 1)
 				)
 			)
 		)
 	)
 	(symbol
-		(lib_id "Device:C")
-		(at 142.24 88.9 180)
+		(lib_id "Connector:Conn_01x03_Pin")
+		(at 43.18 45.72 0)
+		(mirror y)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "14a65e45-3330-41fa-9b2a-2d365bb8383e")
-		(property "Reference" "C4"
-			(at 139.446 90.17 0)
+		(fields_autoplaced yes)
+		(uuid "c5bd0b0d-2de6-41b5-abb6-543199d38400")
+		(property "Reference" "J3"
+			(at 42.545 38.1 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
 			)
 		)
-		(property "Value" "100nC"
-			(at 139.446 87.63 0)
+		(property "Value" "Conn_01x03_Pin"
+			(at 42.545 40.64 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_1206_3216Metric"
-			(at 141.2748 85.09 0)
+		(property "Footprint" "Connector_Wire:SolderWire-0.75sqmm_1x03_P4.8mm_D1.25mm_OD2.3mm"
+			(at 43.18 45.72 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1491,7 +478,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 142.24 88.9 0)
+			(at 43.18 45.72 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1499,1364 +486,365 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Unpolarized capacitor"
-			(at 142.24 88.9 0)
+		(property "Description" "Generic connector, single row, 01x03, script generated"
+			(at 43.18 45.72 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(hide yes)
 			)
+		)
+		(pin "3"
+			(uuid "e749fd63-075a-4962-886b-4a0ee867e6d6")
 		)
 		(pin "2"
-			(uuid "685c4d7c-c65d-4324-bcfb-f675879406bc")
+			(uuid "8f0c1c40-4af8-42e6-89ce-a8d768934efe")
 		)
 		(pin "1"
-			(uuid "4ebbc99f-acb7-473a-a609-a7c40860b7c1")
+			(uuid "d801951a-c9c1-40c4-99e5-90876ebe06bf")
 		)
 		(instances
 			(project "target"
 				(path "/1c02f793-f381-44cb-838a-dbb787484d0c/e61b723f-f359-4114-beb0-b4d2930b2aa9"
-					(reference "C4")
+					(reference "J3")
 					(unit 1)
 				)
 			)
 		)
 	)
-	(symbol
-		(lib_id "custom_symbols:XL-5050RGBC-SK6812B")
-		(at 63.5 88.9 0)
-		(unit 1)
+	(sheet
+		(at 149.86 24.13)
+		(size 29.21 12.7)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "1b386479-6143-4c8e-ab67-7508dc2a61ad")
-		(property "Reference" "D9"
-			(at 66.802 85.344 0)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "560cd6ce-e08c-4984-ad6c-35893396417e")
+		(property "Sheetname" "led_cap1"
+			(at 149.86 23.4184 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left bottom)
 			)
 		)
-		(property "Value" "XL-5050RGBC-SK6812B"
-			(at 82.55 85.0198 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "custom_footprints:XL-5050RGBC-SK6812B"
-			(at 64.77 96.52 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://cdn-shop.adafruit.com/product-files/1138/SK6812+LED+datasheet+.pdf"
-			(at 66.04 98.425 0)
+		(property "Sheetfile" "led_cap.kicad_sch"
+			(at 149.86 37.4146 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left top)
-				(hide yes)
 			)
-		)
-		(property "Description" "RGB LED with integrated controller"
-			(at 63.5 88.9 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "6"
-			(uuid "280a7075-d866-4349-bdf4-d69fafa7a878")
-		)
-		(pin "3"
-			(uuid "36552fbb-e729-447f-9bd3-50874c47da5d")
-		)
-		(pin "4"
-			(uuid "8553255a-3c7a-4431-8802-fac8cb65d0fb")
-		)
-		(pin "1"
-			(uuid "5f40ed3a-8d1e-477c-ace3-4bf5095eb6e5")
 		)
 		(instances
 			(project "target"
 				(path "/1c02f793-f381-44cb-838a-dbb787484d0c/e61b723f-f359-4114-beb0-b4d2930b2aa9"
-					(reference "D9")
-					(unit 1)
+					(page "7")
 				)
 			)
 		)
 	)
-	(symbol
-		(lib_id "custom_symbols:XL-5050RGBC-SK6812B")
-		(at 83.82 44.45 0)
-		(unit 1)
+	(sheet
+		(at 187.96 24.13)
+		(size 27.94 12.7)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "1e7e66f1-b201-4b76-8631-ab5e8937f5dd")
-		(property "Reference" "D2"
-			(at 87.122 40.894 0)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "57687f76-c606-4b93-8b3a-c2df1794cc42")
+		(property "Sheetname" "led1"
+			(at 187.96 23.4184 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left bottom)
 			)
 		)
-		(property "Value" "XL-5050RGBC-SK6812B"
-			(at 102.87 40.5698 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "custom_footprints:XL-5050RGBC-SK6812B"
-			(at 85.09 52.07 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://cdn-shop.adafruit.com/product-files/1138/SK6812+LED+datasheet+.pdf"
-			(at 86.36 53.975 0)
+		(property "Sheetfile" "led.kicad_sch"
+			(at 187.96 37.4146 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left top)
-				(hide yes)
 			)
-		)
-		(property "Description" "RGB LED with integrated controller"
-			(at 83.82 44.45 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "6"
-			(uuid "6e12fdea-0ed9-40f3-9b42-5d37f7410e80")
-		)
-		(pin "3"
-			(uuid "eb449494-5234-45c9-a534-6121665b4fd2")
-		)
-		(pin "4"
-			(uuid "16fa9f1b-0a6e-4c64-9946-a87ef2b71208")
-		)
-		(pin "1"
-			(uuid "21e9525a-cda1-4f28-afb6-8751d1f47944")
 		)
 		(instances
 			(project "target"
 				(path "/1c02f793-f381-44cb-838a-dbb787484d0c/e61b723f-f359-4114-beb0-b4d2930b2aa9"
-					(reference "D2")
-					(unit 1)
+					(page "6")
 				)
 			)
 		)
 	)
-	(symbol
-		(lib_id "custom_symbols:XL-5050RGBC-SK6812B")
-		(at 83.82 88.9 0)
-		(unit 1)
+	(sheet
+		(at 187.96 45.72)
+		(size 27.94 12.7)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "1f8b2052-af3f-456e-9459-d36250976f24")
-		(property "Reference" "D10"
-			(at 87.122 85.344 0)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "59431009-1e31-4aed-9634-5b986cfe3fa7")
+		(property "Sheetname" "led3"
+			(at 187.96 45.0084 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left bottom)
 			)
 		)
-		(property "Value" "XL-5050RGBC-SK6812B"
-			(at 102.87 85.0198 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "custom_footprints:XL-5050RGBC-SK6812B"
-			(at 85.09 96.52 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://cdn-shop.adafruit.com/product-files/1138/SK6812+LED+datasheet+.pdf"
-			(at 86.36 98.425 0)
+		(property "Sheetfile" "led.kicad_sch"
+			(at 187.96 59.0046 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left top)
-				(hide yes)
 			)
-		)
-		(property "Description" "RGB LED with integrated controller"
-			(at 83.82 88.9 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "6"
-			(uuid "c03193ec-752b-4a24-b9d0-8db6a1fbea94")
-		)
-		(pin "3"
-			(uuid "babf5550-25dd-43ec-80de-744bc93bfbc2")
-		)
-		(pin "4"
-			(uuid "c0c2ff0f-3272-4a7b-9f59-2335d15b2ec7")
-		)
-		(pin "1"
-			(uuid "ff17541c-fd26-47fe-a745-9f5811558d2c")
 		)
 		(instances
 			(project "target"
 				(path "/1c02f793-f381-44cb-838a-dbb787484d0c/e61b723f-f359-4114-beb0-b4d2930b2aa9"
-					(reference "D10")
-					(unit 1)
+					(page "9")
 				)
 			)
 		)
 	)
-	(symbol
-		(lib_id "custom_symbols:XL-5050RGBC-SK6812B")
-		(at 153.67 88.9 0)
-		(unit 1)
+	(sheet
+		(at 149.86 45.72)
+		(size 29.21 12.7)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "2740658c-44a6-49bb-8c87-127b76acc359")
-		(property "Reference" "D13"
-			(at 156.972 85.344 0)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "7ee20812-a607-4ad1-aaf8-e280757b7924")
+		(property "Sheetname" "led_cap3"
+			(at 149.86 45.0084 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left bottom)
 			)
 		)
-		(property "Value" "XL-5050RGBC-SK6812B"
-			(at 172.72 85.0198 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "custom_footprints:XL-5050RGBC-SK6812B"
-			(at 154.94 96.52 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://cdn-shop.adafruit.com/product-files/1138/SK6812+LED+datasheet+.pdf"
-			(at 156.21 98.425 0)
+		(property "Sheetfile" "led_cap.kicad_sch"
+			(at 149.86 59.0046 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left top)
-				(hide yes)
 			)
-		)
-		(property "Description" "RGB LED with integrated controller"
-			(at 153.67 88.9 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "6"
-			(uuid "f7888c1e-ef08-4504-8914-ac8612fb2069")
-		)
-		(pin "3"
-			(uuid "27845e45-7880-4780-a085-006c89093170")
-		)
-		(pin "4"
-			(uuid "2ef4ea68-f462-4462-affe-9eb82cd87d08")
-		)
-		(pin "1"
-			(uuid "e2c15754-5b0d-44a3-95d6-e78be707c901")
 		)
 		(instances
 			(project "target"
 				(path "/1c02f793-f381-44cb-838a-dbb787484d0c/e61b723f-f359-4114-beb0-b4d2930b2aa9"
-					(reference "D13")
-					(unit 1)
+					(page "11")
 				)
 			)
 		)
 	)
-	(symbol
-		(lib_id "custom_symbols:XL-5050RGBC-SK6812B")
-		(at 173.99 88.9 0)
-		(unit 1)
+	(sheet
+		(at 74.93 45.72)
+		(size 29.21 12.7)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "2aa7dd56-5e44-42c3-aeca-57995037897c")
-		(property "Reference" "D14"
-			(at 177.292 85.344 0)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "8611289c-07e1-4e14-a4ca-43f16a4333a9")
+		(property "Sheetname" "led_cap2"
+			(at 74.93 45.0084 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left bottom)
 			)
 		)
-		(property "Value" "XL-5050RGBC-SK6812B"
-			(at 193.04 85.0198 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "custom_footprints:XL-5050RGBC-SK6812B"
-			(at 175.26 96.52 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://cdn-shop.adafruit.com/product-files/1138/SK6812+LED+datasheet+.pdf"
-			(at 176.53 98.425 0)
+		(property "Sheetfile" "led_cap.kicad_sch"
+			(at 74.93 59.0046 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left top)
-				(hide yes)
 			)
-		)
-		(property "Description" "RGB LED with integrated controller"
-			(at 173.99 88.9 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "6"
-			(uuid "75cea209-5993-4541-9d71-84f056df7015")
-		)
-		(pin "3"
-			(uuid "1f9e8d3a-4421-4f59-80cd-7d861dce9fb9")
-		)
-		(pin "4"
-			(uuid "1ea082b2-ea39-4350-b2bf-b97bd21e7185")
-		)
-		(pin "1"
-			(uuid "860a5296-ae7f-4a93-aaea-90043cf330da")
 		)
 		(instances
 			(project "target"
 				(path "/1c02f793-f381-44cb-838a-dbb787484d0c/e61b723f-f359-4114-beb0-b4d2930b2aa9"
-					(reference "D14")
-					(unit 1)
+					(page "10")
 				)
 			)
 		)
 	)
-	(symbol
-		(lib_id "custom_symbols:XL-5050RGBC-SK6812B")
-		(at 124.46 88.9 0)
-		(unit 1)
+	(sheet
+		(at 113.03 45.72)
+		(size 27.94 12.7)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "31c80fcd-5434-4bd1-8595-e1d4e701d8fd")
-		(property "Reference" "D12"
-			(at 127.762 85.344 0)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "909bdbb4-b84d-4035-be27-26a2c2c664d8")
+		(property "Sheetname" "led2"
+			(at 113.03 45.0084 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left bottom)
 			)
 		)
-		(property "Value" "XL-5050RGBC-SK6812B"
-			(at 143.51 85.0198 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "custom_footprints:XL-5050RGBC-SK6812B"
-			(at 125.73 96.52 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://cdn-shop.adafruit.com/product-files/1138/SK6812+LED+datasheet+.pdf"
-			(at 127 98.425 0)
+		(property "Sheetfile" "led.kicad_sch"
+			(at 113.03 59.0046 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left top)
-				(hide yes)
 			)
-		)
-		(property "Description" "RGB LED with integrated controller"
-			(at 124.46 88.9 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "6"
-			(uuid "0302490f-5fda-4a1b-9aaa-0895b0c7c9ad")
-		)
-		(pin "3"
-			(uuid "661ff28b-89d7-4b3c-b43a-1955a2f6f2a5")
-		)
-		(pin "4"
-			(uuid "b4342511-c765-490c-9dd3-09f9d28f79af")
-		)
-		(pin "1"
-			(uuid "cbab363d-27df-4a1c-9985-9c373fe0b38c")
 		)
 		(instances
 			(project "target"
 				(path "/1c02f793-f381-44cb-838a-dbb787484d0c/e61b723f-f359-4114-beb0-b4d2930b2aa9"
-					(reference "D12")
-					(unit 1)
+					(page "8")
 				)
 			)
 		)
 	)
-	(symbol
-		(lib_id "Device:C")
-		(at 52.07 88.9 180)
-		(unit 1)
+	(sheet
+		(at 74.93 24.13)
+		(size 29.21 12.7)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "39d57dc6-f691-47e9-9b6f-91b51350a0ab")
-		(property "Reference" "C3"
-			(at 49.276 90.17 0)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "af1bc488-b5d1-4660-bf00-f1665ec5cb4a")
+		(property "Sheetname" "led_cap"
+			(at 74.93 23.4184 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
+				(justify left bottom)
 			)
 		)
-		(property "Value" "100nC"
-			(at 49.276 87.63 0)
+		(property "Sheetfile" "led_cap.kicad_sch"
+			(at 74.93 37.4146 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
+				(justify left top)
 			)
-		)
-		(property "Footprint" "Capacitor_SMD:C_1206_3216Metric"
-			(at 51.1048 85.09 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 52.07 88.9 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Unpolarized capacitor"
-			(at 52.07 88.9 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "14271a40-0e61-4469-be21-a88ae2868de6")
-		)
-		(pin "1"
-			(uuid "82e9cd1b-b79a-4df1-a0fb-bdddc7648d7f")
 		)
 		(instances
 			(project "target"
 				(path "/1c02f793-f381-44cb-838a-dbb787484d0c/e61b723f-f359-4114-beb0-b4d2930b2aa9"
-					(reference "C3")
-					(unit 1)
+					(page "4")
 				)
 			)
 		)
 	)
-	(symbol
-		(lib_id "custom_symbols:XL-5050RGBC-SK6812B")
-		(at 104.14 44.45 0)
-		(unit 1)
+	(sheet
+		(at 113.03 24.13)
+		(size 27.94 12.7)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "39e47196-bbe7-4ff1-95c3-fa1dbfe25dc8")
-		(property "Reference" "D3"
-			(at 107.442 40.894 0)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "f47d6d41-3ee7-4ca5-8055-90d1df9d67d0")
+		(property "Sheetname" "led"
+			(at 113.03 23.4184 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left bottom)
 			)
 		)
-		(property "Value" "XL-5050RGBC-SK6812B"
-			(at 123.19 40.5698 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "custom_footprints:XL-5050RGBC-SK6812B"
-			(at 105.41 52.07 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://cdn-shop.adafruit.com/product-files/1138/SK6812+LED+datasheet+.pdf"
-			(at 106.68 53.975 0)
+		(property "Sheetfile" "led.kicad_sch"
+			(at 113.03 37.4146 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left top)
-				(hide yes)
 			)
-		)
-		(property "Description" "RGB LED with integrated controller"
-			(at 104.14 44.45 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "6"
-			(uuid "8ea20111-d48e-4b44-b092-8a5d97987a81")
-		)
-		(pin "3"
-			(uuid "df028e26-74e9-4ccc-bcdd-371d0cf8cabe")
-		)
-		(pin "4"
-			(uuid "d0d1eca5-a595-465d-9b80-c074c5dc6d72")
-		)
-		(pin "1"
-			(uuid "aeabdbaf-55e7-4c15-bc06-8feee3a5fce8")
 		)
 		(instances
 			(project "target"
 				(path "/1c02f793-f381-44cb-838a-dbb787484d0c/e61b723f-f359-4114-beb0-b4d2930b2aa9"
-					(reference "D3")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "custom_symbols:XL-5050RGBC-SK6812B")
-		(at 153.67 44.45 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "47859c2e-8d09-41c6-ad82-6dd87c4bad70")
-		(property "Reference" "D5"
-			(at 156.972 40.894 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "XL-5050RGBC-SK6812B"
-			(at 172.72 40.5698 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "custom_footprints:XL-5050RGBC-SK6812B"
-			(at 154.94 52.07 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://cdn-shop.adafruit.com/product-files/1138/SK6812+LED+datasheet+.pdf"
-			(at 156.21 53.975 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Description" "RGB LED with integrated controller"
-			(at 153.67 44.45 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "6"
-			(uuid "d4bd6642-d7c5-4f16-a364-e640493f0e63")
-		)
-		(pin "3"
-			(uuid "b1ff5d63-35a6-455e-a358-05afabb73272")
-		)
-		(pin "4"
-			(uuid "b0990750-821a-4770-9fb9-b10c07c0fee9")
-		)
-		(pin "1"
-			(uuid "c43a371e-43b0-4ef1-a8fa-63c4112b5f93")
-		)
-		(instances
-			(project "target"
-				(path "/1c02f793-f381-44cb-838a-dbb787484d0c/e61b723f-f359-4114-beb0-b4d2930b2aa9"
-					(reference "D5")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "custom_symbols:XL-5050RGBC-SK6812B")
-		(at 194.31 88.9 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "4efb8bd4-eb30-4cc3-96f8-94397bd80713")
-		(property "Reference" "D15"
-			(at 197.612 85.344 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "XL-5050RGBC-SK6812B"
-			(at 213.36 85.0198 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "custom_footprints:XL-5050RGBC-SK6812B"
-			(at 195.58 96.52 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://cdn-shop.adafruit.com/product-files/1138/SK6812+LED+datasheet+.pdf"
-			(at 196.85 98.425 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Description" "RGB LED with integrated controller"
-			(at 194.31 88.9 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "6"
-			(uuid "998bb885-f321-4aca-ac36-8f00d2a37b58")
-		)
-		(pin "3"
-			(uuid "0734727c-16de-408b-9efd-d938490597eb")
-		)
-		(pin "4"
-			(uuid "881af429-312d-4a9d-9e63-543acdb24e66")
-		)
-		(pin "1"
-			(uuid "1376b685-879b-48e4-a568-95105cb807e3")
-		)
-		(instances
-			(project "target"
-				(path "/1c02f793-f381-44cb-838a-dbb787484d0c/e61b723f-f359-4114-beb0-b4d2930b2aa9"
-					(reference "D15")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "custom_symbols:XL-5050RGBC-SK6812B")
-		(at 124.46 44.45 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "80442cbc-49e3-4565-80f0-e43f547e1b92")
-		(property "Reference" "D4"
-			(at 127.762 40.894 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "XL-5050RGBC-SK6812B"
-			(at 143.51 40.5698 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "custom_footprints:XL-5050RGBC-SK6812B"
-			(at 125.73 52.07 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://cdn-shop.adafruit.com/product-files/1138/SK6812+LED+datasheet+.pdf"
-			(at 127 53.975 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Description" "RGB LED with integrated controller"
-			(at 124.46 44.45 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "6"
-			(uuid "f963412d-4109-4206-9fbf-84aacd4e09c0")
-		)
-		(pin "3"
-			(uuid "4955ff55-92da-4b6d-b91d-747e339a782a")
-		)
-		(pin "4"
-			(uuid "1fec0621-5458-4cab-8609-c4efa41c5f88")
-		)
-		(pin "1"
-			(uuid "139ad4fe-2f8f-4b96-9a97-fac549ec4cb7")
-		)
-		(instances
-			(project "target"
-				(path "/1c02f793-f381-44cb-838a-dbb787484d0c/e61b723f-f359-4114-beb0-b4d2930b2aa9"
-					(reference "D4")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "custom_symbols:XL-5050RGBC-SK6812B")
-		(at 63.5 44.45 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "8a4ba0bf-be25-421f-a1b8-6ab921fc6c37")
-		(property "Reference" "D1"
-			(at 66.802 40.894 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "XL-5050RGBC-SK6812B"
-			(at 82.55 40.5698 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "custom_footprints:XL-5050RGBC-SK6812B"
-			(at 64.77 52.07 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://cdn-shop.adafruit.com/product-files/1138/SK6812+LED+datasheet+.pdf"
-			(at 66.04 53.975 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Description" "RGB LED with integrated controller"
-			(at 63.5 44.45 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "6"
-			(uuid "c8941ce2-f06b-4612-a373-43b666ba0644")
-		)
-		(pin "3"
-			(uuid "74b4c77c-3924-4f6e-b278-20b433a172ff")
-		)
-		(pin "4"
-			(uuid "cf76cdfe-c770-4682-80a0-33614157311b")
-		)
-		(pin "1"
-			(uuid "b9b0b213-98c3-4c60-9b99-073af4e6b293")
-		)
-		(instances
-			(project "target"
-				(path "/1c02f793-f381-44cb-838a-dbb787484d0c/e61b723f-f359-4114-beb0-b4d2930b2aa9"
-					(reference "D1")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "custom_symbols:XL-5050RGBC-SK6812B")
-		(at 173.99 44.45 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "9f9ecd60-6b33-482c-b687-3965f49a485c")
-		(property "Reference" "D6"
-			(at 177.292 40.894 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "XL-5050RGBC-SK6812B"
-			(at 193.04 40.5698 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "custom_footprints:XL-5050RGBC-SK6812B"
-			(at 175.26 52.07 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://cdn-shop.adafruit.com/product-files/1138/SK6812+LED+datasheet+.pdf"
-			(at 176.53 53.975 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Description" "RGB LED with integrated controller"
-			(at 173.99 44.45 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "6"
-			(uuid "11712599-6634-40de-8a0b-ea5c3d2a735d")
-		)
-		(pin "3"
-			(uuid "87e19a36-6319-4f35-b5e1-f987ada4dcdb")
-		)
-		(pin "4"
-			(uuid "799c5d41-aec4-461f-ab9b-8788e6f53046")
-		)
-		(pin "1"
-			(uuid "835a85f7-ad78-447a-8b32-7a48549e675b")
-		)
-		(instances
-			(project "target"
-				(path "/1c02f793-f381-44cb-838a-dbb787484d0c/e61b723f-f359-4114-beb0-b4d2930b2aa9"
-					(reference "D6")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "custom_symbols:XL-5050RGBC-SK6812B")
-		(at 214.63 88.9 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "a9b9ddeb-0437-48ad-bf1c-bece9e360b80")
-		(property "Reference" "D19"
-			(at 217.932 85.344 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "XL-5050RGBC-SK6812B"
-			(at 233.68 85.0198 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "custom_footprints:XL-5050RGBC-SK6812B"
-			(at 215.9 96.52 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://cdn-shop.adafruit.com/product-files/1138/SK6812+LED+datasheet+.pdf"
-			(at 217.17 98.425 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Description" "RGB LED with integrated controller"
-			(at 214.63 88.9 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "6"
-			(uuid "ec884bfa-1e3a-4bb1-9d74-7514021401f7")
-		)
-		(pin "3"
-			(uuid "6d3b3089-fcf3-470d-ab83-4f5c6e90de1f")
-		)
-		(pin "4"
-			(uuid "ed678d6a-5288-42ca-973b-9dc8c4dc2e4f")
-		)
-		(pin "1"
-			(uuid "3d736434-9494-490f-8001-eb12686cfb01")
-		)
-		(instances
-			(project "target"
-				(path "/1c02f793-f381-44cb-838a-dbb787484d0c/e61b723f-f359-4114-beb0-b4d2930b2aa9"
-					(reference "D19")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "custom_symbols:XL-5050RGBC-SK6812B")
-		(at 104.14 88.9 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "b51be2e2-6047-4e6f-ae8d-eac4d81dd3b6")
-		(property "Reference" "D11"
-			(at 107.442 85.344 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "XL-5050RGBC-SK6812B"
-			(at 123.19 85.0198 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "custom_footprints:XL-5050RGBC-SK6812B"
-			(at 105.41 96.52 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://cdn-shop.adafruit.com/product-files/1138/SK6812+LED+datasheet+.pdf"
-			(at 106.68 98.425 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Description" "RGB LED with integrated controller"
-			(at 104.14 88.9 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "6"
-			(uuid "29495f4d-dcd4-49c7-83d2-de25b2214753")
-		)
-		(pin "3"
-			(uuid "dd6472a3-1b0a-4a2b-8ba5-ba4098d01ac5")
-		)
-		(pin "4"
-			(uuid "beee7539-bb24-46dd-a7ff-f5bbab6da495")
-		)
-		(pin "1"
-			(uuid "66939dfc-a807-4089-8ba6-9a969940b3a9")
-		)
-		(instances
-			(project "target"
-				(path "/1c02f793-f381-44cb-838a-dbb787484d0c/e61b723f-f359-4114-beb0-b4d2930b2aa9"
-					(reference "D11")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "custom_symbols:XL-5050RGBC-SK6812B")
-		(at 194.31 44.45 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "d100e5cc-1312-4675-9f0a-57b9bdd280eb")
-		(property "Reference" "D7"
-			(at 197.612 40.894 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "XL-5050RGBC-SK6812B"
-			(at 213.36 40.5698 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "custom_footprints:XL-5050RGBC-SK6812B"
-			(at 195.58 52.07 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://cdn-shop.adafruit.com/product-files/1138/SK6812+LED+datasheet+.pdf"
-			(at 196.85 53.975 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Description" "RGB LED with integrated controller"
-			(at 194.31 44.45 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "6"
-			(uuid "572eeebb-5e23-4443-9e99-af3bcaadd788")
-		)
-		(pin "3"
-			(uuid "08b218d6-1327-4c7a-acf7-8b836caaeda5")
-		)
-		(pin "4"
-			(uuid "71a4591e-ac72-453b-a9ad-e08331cebf21")
-		)
-		(pin "1"
-			(uuid "83d52cdc-dcd5-447e-8777-3cf8581636fa")
-		)
-		(instances
-			(project "target"
-				(path "/1c02f793-f381-44cb-838a-dbb787484d0c/e61b723f-f359-4114-beb0-b4d2930b2aa9"
-					(reference "D7")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "custom_symbols:XL-5050RGBC-SK6812B")
-		(at 214.63 44.45 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "f1dc635f-b793-4415-a0d9-63a80e5e1b38")
-		(property "Reference" "D8"
-			(at 217.932 40.894 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "XL-5050RGBC-SK6812B"
-			(at 233.68 40.5698 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "custom_footprints:XL-5050RGBC-SK6812B"
-			(at 215.9 52.07 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://cdn-shop.adafruit.com/product-files/1138/SK6812+LED+datasheet+.pdf"
-			(at 217.17 53.975 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Description" "RGB LED with integrated controller"
-			(at 214.63 44.45 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "6"
-			(uuid "ee07cf39-b355-47a0-ba16-d7aed1d30dd7")
-		)
-		(pin "3"
-			(uuid "154113e5-a8c7-4db6-a08b-bc07f4df5f09")
-		)
-		(pin "4"
-			(uuid "11f039e1-7e4f-49e6-9fd8-a362ab78a249")
-		)
-		(pin "1"
-			(uuid "ed3eea3b-bd53-4252-87ec-aa25b503a69c")
-		)
-		(instances
-			(project "target"
-				(path "/1c02f793-f381-44cb-838a-dbb787484d0c/e61b723f-f359-4114-beb0-b4d2930b2aa9"
-					(reference "D8")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:C")
-		(at 142.24 44.45 180)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "f4d8409c-cdec-4fba-be27-79ce8792cbf6")
-		(property "Reference" "C2"
-			(at 139.446 45.72 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "100nC"
-			(at 139.446 43.18 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Capacitor_SMD:C_1206_3216Metric"
-			(at 141.2748 40.64 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 142.24 44.45 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Unpolarized capacitor"
-			(at 142.24 44.45 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "718afee3-f4e8-417f-8f17-1c49b7b03283")
-		)
-		(pin "1"
-			(uuid "d1625f0c-23cd-4cac-9747-e6d4de476a50")
-		)
-		(instances
-			(project "target"
-				(path "/1c02f793-f381-44cb-838a-dbb787484d0c/e61b723f-f359-4114-beb0-b4d2930b2aa9"
-					(reference "C2")
-					(unit 1)
+					(page "5")
 				)
 			)
 		)

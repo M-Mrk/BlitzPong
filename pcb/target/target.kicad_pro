@@ -629,6 +629,38 @@
     [
       "fa4a9502-947a-474b-a67c-c6d6a6dcf435",
       "Piezo sensor"
+    ],
+    [
+      "af1bc488-b5d1-4660-bf00-f1665ec5cb4a",
+      "led_cap"
+    ],
+    [
+      "f47d6d41-3ee7-4ca5-8055-90d1df9d67d0",
+      "led"
+    ],
+    [
+      "57687f76-c606-4b93-8b3a-c2df1794cc42",
+      "led1"
+    ],
+    [
+      "560cd6ce-e08c-4984-ad6c-35893396417e",
+      "led_cap1"
+    ],
+    [
+      "909bdbb4-b84d-4035-be27-26a2c2c664d8",
+      "led2"
+    ],
+    [
+      "59431009-1e31-4aed-9634-5b986cfe3fa7",
+      "led3"
+    ],
+    [
+      "8611289c-07e1-4e14-a4ca-43f16a4333a9",
+      "led_cap2"
+    ],
+    [
+      "7ee20812-a607-4ad1-aaf8-e280757b7924",
+      "led_cap3"
     ]
   ],
   "text_variables": {}

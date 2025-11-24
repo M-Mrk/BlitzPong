@@ -859,7 +859,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Connector_Wire:SolderWire-0.25sqmm_1x03_P4.2mm_D0.65mm_OD1.7mm"
+		(property "Footprint" "custom_footprints:01x03 SMD 2x3mm pad"
 			(at 175.26 58.42 0)
 			(effects
 				(font
@@ -942,7 +942,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Connector_Wire:SolderWire-0.25sqmm_1x03_P4.2mm_D0.65mm_OD1.7mm"
+		(property "Footprint" "custom_footprints:01x03 SMD 2x3mm pad"
 			(at 74.93 58.42 0)
 			(effects
 				(font

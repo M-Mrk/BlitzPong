@@ -430,6 +430,12 @@
 		)
 	)
 	(junction
+		(at 91.44 62.23)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "3bae3c07-42e8-467a-b519-7fa8643d2212")
+	)
+	(junction
 		(at 104.14 81.28)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -453,7 +459,17 @@
 	)
 	(wire
 		(pts
-			(xy 104.14 62.23) (xy 104.14 68.58)
+			(xy 91.44 60.96) (xy 91.44 62.23)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3ec58690-ad97-42a5-a050-2c363dc63b55")
+	)
+	(wire
+		(pts
+			(xy 104.14 60.96) (xy 104.14 68.58)
 		)
 		(stroke
 			(width 0)
@@ -473,7 +489,7 @@
 	)
 	(wire
 		(pts
-			(xy 86.36 62.23) (xy 96.52 62.23)
+			(xy 86.36 62.23) (xy 91.44 62.23)
 		)
 		(stroke
 			(width 0)
@@ -490,6 +506,16 @@
 			(type default)
 		)
 		(uuid "56e2a7d7-b26c-4ed2-8b61-e44315fd5423")
+	)
+	(wire
+		(pts
+			(xy 91.44 62.23) (xy 96.52 62.23)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "90835cb8-aa6e-4789-864c-cd0894694f53")
 	)
 	(wire
 		(pts
@@ -543,7 +569,7 @@
 	)
 	(hierarchical_label "LV"
 		(shape input)
-		(at 91.44 62.23 90)
+		(at 91.44 60.96 90)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -554,14 +580,14 @@
 	)
 	(hierarchical_label "HV"
 		(shape input)
-		(at 104.14 62.23 90)
+		(at 104.14 60.96 90)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
 			(justify left)
 		)
-		(uuid "09f54e51-690d-4d49-88fb-c699590cbc99")
+		(uuid "09f54e51-690d-4d49-88fb-c699590cbc9a")
 	)
 	(hierarchical_label "LC"
 		(shape bidirectional)
@@ -583,7 +609,7 @@
 			)
 			(justify left)
 		)
-		(uuid "a8f90144-6bca-4ae6-82ee-2148608d6a93")
+		(uuid "a8f90144-6bca-4ae6-82ee-2148608d6a94")
 	)
 	(symbol
 		(lib_id "Transistor_FET:BSS138")
@@ -595,7 +621,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "3d4a58b2-3d23-4bf2-aed4-0c16700292f2")
-		(property "Reference" "Q"
+		(property "Reference" "Q?"
 			(at 96.52 85.09 90)
 			(effects
 				(font
@@ -652,6 +678,10 @@
 		)
 		(instances
 			(project "controller"
+				(path "/c599d8cf-7937-49be-b4ed-eac09167ead4/688f6757-198f-4f2c-ba04-8707221b0c5d/4aebe67b-79fa-4b22-b72a-a1db0ca6fc19"
+					(reference "Q?")
+					(unit 1)
+				)
 				(path "/c599d8cf-7937-49be-b4ed-eac09167ead4/688f6757-198f-4f2c-ba04-8707221b0c5d/7f988a32-c57f-4597-b4af-167af38a415b"
 					(reference "Q2")
 					(unit 1)
@@ -743,7 +773,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "aafbfd5f-ba89-43a4-a644-c63656ad7ee4")
-		(property "Reference" "R"
+		(property "Reference" "R?"
 			(at 106.68 71.1199 0)
 			(effects
 				(font
@@ -796,6 +826,10 @@
 		)
 		(instances
 			(project "controller"
+				(path "/c599d8cf-7937-49be-b4ed-eac09167ead4/688f6757-198f-4f2c-ba04-8707221b0c5d/4aebe67b-79fa-4b22-b72a-a1db0ca6fc19"
+					(reference "R?")
+					(unit 1)
+				)
 				(path "/c599d8cf-7937-49be-b4ed-eac09167ead4/688f6757-198f-4f2c-ba04-8707221b0c5d/7f988a32-c57f-4597-b4af-167af38a415b"
 					(reference "R4")
 					(unit 1)

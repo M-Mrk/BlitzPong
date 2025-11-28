@@ -856,16 +856,6 @@
 			(embedded_fonts no)
 		)
 	)
-	(text "Target interface"
-		(exclude_from_sim no)
-		(at 248.158 15.24 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-		)
-		(uuid "54dcf0ae-b3b2-49e3-954b-de94626917dd")
-	)
 	(no_connect
 		(at 107.95 119.38)
 		(uuid "0bdc0659-8e3a-4910-9ace-ac46b30545d9")
@@ -1393,7 +1383,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "XIAO-ESP32-S3-SMD"
+		(property "Value" "XIAO-ESP32-C6-SMD"
 			(at 110.0933 121.92 0)
 			(effects
 				(font

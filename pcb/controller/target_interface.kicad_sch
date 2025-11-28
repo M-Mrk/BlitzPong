@@ -523,6 +523,16 @@
 			(embedded_fonts no)
 		)
 	)
+	(text "Resistor Values not final!"
+		(exclude_from_sim no)
+		(at 52.324 68.072 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "e017746d-4fd7-44e2-8209-2923f4139ad7")
+	)
 	(junction
 		(at 120.65 34.29)
 		(diameter 0)
@@ -854,7 +864,7 @@
 			)
 			(justify right)
 		)
-		(uuid "acf54d6e-e643-4925-abb6-9e4261a36548")
+		(uuid "acf54d6e-e643-4925-abb6-9e4261a36549")
 	)
 	(hierarchical_label "5V"
 		(shape input)
@@ -876,7 +886,7 @@
 			)
 			(justify left)
 		)
-		(uuid "ad016df9-f12a-474b-aaa4-517a559e9869")
+		(uuid "ad016df9-f12a-474b-aaa4-517a559e986a")
 	)
 	(hierarchical_label "5V"
 		(shape input)

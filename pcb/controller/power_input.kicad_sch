@@ -2137,7 +2137,7 @@
 	)
 	(hierarchical_label "+5V"
 		(shape output)
-		(at 250.19 77.47 0)
+		(at 254 64.77 0)
 		(effects
 			(font
 				(size 1.27 1.27)

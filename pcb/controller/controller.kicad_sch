@@ -1004,16 +1004,6 @@
 	)
 	(wire
 		(pts
-			(xy 39.37 43.18) (xy 39.37 45.72)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "3a060e18-b358-4378-8995-83badc2dcdcf")
-	)
-	(wire
-		(pts
 			(xy 71.12 127) (xy 71.12 110.49)
 		)
 		(stroke
@@ -1124,16 +1114,6 @@
 	)
 	(wire
 		(pts
-			(xy 39.37 67.31) (xy 39.37 71.12)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "93612dce-856d-4b19-ab99-2a6c4640bb55")
-	)
-	(wire
-		(pts
 			(xy 59.69 86.36) (xy 83.82 86.36)
 		)
 		(stroke
@@ -1201,6 +1181,16 @@
 			(type default)
 		)
 		(uuid "c1bb0cda-b9da-40f1-9790-5ae77b0df46c")
+	)
+	(wire
+		(pts
+			(xy 41.91 48.26) (xy 41.91 50.8)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "def10756-806e-43d3-8ff9-69b5b02186aa")
 	)
 	(wire
 		(pts
@@ -1634,72 +1624,6 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 39.37 71.12 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "410b1ecc-c821-423a-86f6-cd5136d87aa4")
-		(property "Reference" "#PWR02"
-			(at 39.37 77.47 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GND"
-			(at 39.37 76.2 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 39.37 71.12 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 39.37 71.12 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 39.37 71.12 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "0f3c060e-07c9-40d2-8fe9-b93f543dcdcd")
-		)
-		(instances
-			(project ""
-				(path "/c599d8cf-7937-49be-b4ed-eac09167ead4"
-					(reference "#PWR02")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:GND")
 		(at 140.97 90.17 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -1766,7 +1690,7 @@
 	)
 	(symbol
 		(lib_id "power:+5V")
-		(at 39.37 43.18 0)
+		(at 41.91 48.26 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -1775,7 +1699,7 @@
 		(fields_autoplaced yes)
 		(uuid "7089d5a7-1ab4-4c7d-a7ef-4e8109288c52")
 		(property "Reference" "#PWR01"
-			(at 39.37 46.99 0)
+			(at 41.91 52.07 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1784,7 +1708,7 @@
 			)
 		)
 		(property "Value" "+5V"
-			(at 39.37 38.1 0)
+			(at 41.91 43.18 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1792,7 +1716,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 39.37 43.18 0)
+			(at 41.91 48.26 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1801,7 +1725,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 39.37 43.18 0)
+			(at 41.91 48.26 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1810,7 +1734,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+5V\""
-			(at 39.37 43.18 0)
+			(at 41.91 48.26 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2029,8 +1953,8 @@
 		)
 	)
 	(sheet
-		(at 25.4 45.72)
-		(size 26.67 21.59)
+		(at 27.94 50.8)
+		(size 27.94 5.08)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
@@ -2045,7 +1969,7 @@
 		)
 		(uuid "3be86d44-1d4e-4754-862e-026f65f72643")
 		(property "Sheetname" "Power Input"
-			(at 25.4 45.0084 0)
+			(at 27.94 50.0884 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2054,7 +1978,7 @@
 			)
 		)
 		(property "Sheetfile" "power_input.kicad_sch"
-			(at 25.4 67.8946 0)
+			(at 27.94 56.4646 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2062,18 +1986,8 @@
 				(justify left top)
 			)
 		)
-		(pin "GND" output
-			(at 39.37 67.31 270)
-			(uuid "393ed69c-5160-441e-8878-f8016aa7f45d")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
 		(pin "+5V" output
-			(at 39.37 45.72 90)
+			(at 41.91 50.8 90)
 			(uuid "02f963c4-71d6-4907-b094-0d6a68198546")
 			(effects
 				(font

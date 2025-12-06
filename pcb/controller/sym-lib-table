@@ -4,4 +4,5 @@
   (lib (name "custom")(type "KiCad")(uri "${KIPRJMOD}/custom_symbols.kicad_sym")(options "")(descr ""))
   (lib (name "PEC12R-4120F-S0012")(type "KiCad")(uri "${KIPRJMOD}/custom_libs/PEC12R-4120F-S0012.kicad_sym")(options "")(descr ""))
   (lib (name "TPS54531DDAR")(type "KiCad")(uri "${KIPRJMOD}/custom_libs/TPS54531DDAR.kicad_sym")(options "")(descr ""))
+  (lib (name "TPS25942ARVCR")(type "KiCad")(uri "${KIPRJMOD}/custom_libs/TPS25942ARVCR.kicad_sym")(options "")(descr ""))
 )

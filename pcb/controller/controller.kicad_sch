@@ -1996,6 +1996,16 @@
 				(justify right)
 			)
 		)
+		(pin "Imon" output
+			(at 55.88 53.34 0)
+			(uuid "38ee4201-4401-45de-a564-1f5b61a6ec28")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
 		(instances
 			(project "controller"
 				(path "/c599d8cf-7937-49be-b4ed-eac09167ead4"

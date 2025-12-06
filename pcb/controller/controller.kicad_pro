@@ -637,6 +637,18 @@
     [
       "7f988a32-c57f-4597-b4af-167af38a415b",
       "Level Shifter1"
+    ],
+    [
+      "59477a32-6337-4bcc-9b7a-10a0c7f8e12c",
+      "Buck"
+    ],
+    [
+      "b1281477-35b4-403e-afd8-667b9ce52c5b",
+      "USB-C PD"
+    ],
+    [
+      "187e6130-fc9a-4c39-a7a1-6fc1bcf8f3fc",
+      "eFuse"
     ]
   ],
   "text_variables": {}

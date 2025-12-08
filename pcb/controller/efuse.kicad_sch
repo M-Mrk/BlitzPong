@@ -1411,6 +1411,14 @@
 		(color 0 0 0 0)
 		(uuid "f8831cb7-cdce-411a-b9cc-6ad1584654c3")
 	)
+	(no_connect
+		(at 116.84 101.6)
+		(uuid "1b41231b-c6e2-408e-af5f-4e87ab181f80")
+	)
+	(no_connect
+		(at 76.2 101.6)
+		(uuid "f4e78f6f-f229-49a6-9a24-7db88c2b7af2")
+	)
 	(wire
 		(pts
 			(xy 119.38 78.74) (xy 119.38 96.52)
@@ -1493,7 +1501,7 @@
 	)
 	(wire
 		(pts
-			(xy 130.81 55.88) (xy 130.81 91.44)
+			(xy 130.81 67.31) (xy 130.81 91.44)
 		)
 		(stroke
 			(width 0)
@@ -1503,7 +1511,7 @@
 	)
 	(wire
 		(pts
-			(xy 120.65 109.22) (xy 121.92 109.22)
+			(xy 120.65 109.22) (xy 123.19 109.22)
 		)
 		(stroke
 			(width 0)
@@ -1513,7 +1521,7 @@
 	)
 	(wire
 		(pts
-			(xy 92.71 55.88) (xy 69.85 55.88)
+			(xy 88.9 67.31) (xy 69.85 67.31)
 		)
 		(stroke
 			(width 0)
@@ -1533,7 +1541,7 @@
 	)
 	(wire
 		(pts
-			(xy 100.33 55.88) (xy 130.81 55.88)
+			(xy 96.52 67.31) (xy 130.81 67.31)
 		)
 		(stroke
 			(width 0)
@@ -1803,7 +1811,7 @@
 	)
 	(wire
 		(pts
-			(xy 69.85 55.88) (xy 69.85 78.74)
+			(xy 69.85 67.31) (xy 69.85 78.74)
 		)
 		(stroke
 			(width 0)
@@ -1874,7 +1882,7 @@
 	)
 	(hierarchical_label "Imon"
 		(shape output)
-		(at 121.92 109.22 0)
+		(at 123.19 109.22 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1978,7 +1986,7 @@
 				)
 			)
 		)
-		(property "Value" "1,5k"
+		(property "Value" "1.5k"
 			(at 85.09 74.93 90)
 			(effects
 				(font
@@ -1986,7 +1994,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_1206_3216Metric"
 			(at 85.09 80.518 90)
 			(effects
 				(font
@@ -2047,7 +2055,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "6,49k"
+		(property "Value" "6.49k"
 			(at 55.88 104.1399 0)
 			(effects
 				(font
@@ -2056,7 +2064,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_1206_3216Metric"
 			(at 51.562 102.87 90)
 			(effects
 				(font
@@ -2116,7 +2124,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "42,2k"
+		(property "Value" "42.2k"
 			(at 133.35 111.7599 0)
 			(effects
 				(font
@@ -2125,7 +2133,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_1206_3216Metric"
 			(at 129.032 110.49 90)
 			(effects
 				(font
@@ -2169,7 +2177,7 @@
 	)
 	(symbol
 		(lib_id "Jumper:SolderJumper_2_Open")
-		(at 96.52 55.88 0)
+		(at 92.71 67.31 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom no)
@@ -2178,7 +2186,7 @@
 		(fields_autoplaced yes)
 		(uuid "4337577b-ac82-4c0a-b148-d5e44bd114cb")
 		(property "Reference" "JP2"
-			(at 96.52 49.53 0)
+			(at 92.71 60.96 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2186,7 +2194,7 @@
 			)
 		)
 		(property "Value" "SolderJumper_2_Open"
-			(at 96.52 52.07 0)
+			(at 92.71 63.5 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2194,7 +2202,7 @@
 			)
 		)
 		(property "Footprint" "Jumper:SolderJumper-2_P1.3mm_Open_Pad1.0x1.5mm"
-			(at 96.52 55.88 0)
+			(at 92.71 67.31 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2203,7 +2211,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 96.52 55.88 0)
+			(at 92.71 67.31 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2212,7 +2220,7 @@
 			)
 		)
 		(property "Description" "Solder Jumper, 2-pole, open"
-			(at 96.52 55.88 0)
+			(at 92.71 67.31 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2334,7 +2342,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_1206_3216Metric"
 			(at 71.882 120.65 90)
 			(effects
 				(font
@@ -2546,7 +2554,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_1206_3216Metric"
 			(at 123.952 95.25 90)
 			(effects
 				(font
@@ -2616,7 +2624,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_1206_3216Metric"
 			(at 68.8848 116.84 0)
 			(effects
 				(font
@@ -2686,7 +2694,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_1206_3216Metric"
 			(at 51.562 95.25 90)
 			(effects
 				(font
@@ -2746,7 +2754,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "8,66k"
+		(property "Value" "8.66k"
 			(at 123.19 115.5699 0)
 			(effects
 				(font
@@ -2755,7 +2763,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_1206_3216Metric"
 			(at 118.872 114.3 90)
 			(effects
 				(font
@@ -2816,7 +2824,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "26,7k"
+		(property "Value" "26.7k"
 			(at 55.88 111.7599 0)
 			(effects
 				(font
@@ -2825,7 +2833,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_1206_3216Metric"
 			(at 51.562 110.49 90)
 			(effects
 				(font

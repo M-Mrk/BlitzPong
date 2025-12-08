@@ -2494,7 +2494,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_1206_3216Metric"
 			(at 69.5452 95.25 0)
 			(effects
 				(font
@@ -2642,7 +2642,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_1206_3216Metric"
 			(at 88.9 102.362 90)
 			(effects
 				(font
@@ -2795,7 +2795,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_1206_3216Metric"
 			(at 37.592 146.05 90)
 			(effects
 				(font
@@ -2974,7 +2974,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+		(property "Footprint" "Resistor_SMD:R_1206_3216Metric"
 			(at 113.792 119.38 90)
 			(effects
 				(font
@@ -3112,7 +3112,7 @@
 				)
 			)
 		)
-		(property "Value" "USB_C_Receptacle_USB2.0_16P"
+		(property "Value" "G-Switch GT-USB-7010ASV"
 			(at 46.99 99.06 0)
 			(effects
 				(font
@@ -3120,7 +3120,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Connector_USB:USB_C_Receptacle_G-Switch_GT-USB-7010ASV"
 			(at 50.8 119.38 0)
 			(effects
 				(font
@@ -3241,7 +3241,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_1206_3216Metric"
 			(at 93.6752 95.25 0)
 			(effects
 				(font
@@ -3317,7 +3317,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_1206_3216Metric"
 			(at 115.062 104.14 90)
 			(effects
 				(font

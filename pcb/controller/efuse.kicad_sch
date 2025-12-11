@@ -1340,6 +1340,12 @@
 		(uuid "0f45daff-c824-42b9-82aa-fa2f5f0a279f")
 	)
 	(junction
+		(at 125.73 91.44)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "214537a9-b486-42c6-a98e-2ab82ae76690")
+	)
+	(junction
 		(at 120.65 109.22)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -1374,12 +1380,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "87edbcdf-0327-4cd5-a348-90f7fecaad91")
-	)
-	(junction
-		(at 125.73 91.44)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "8ea72719-4a77-4baa-beb7-2b06349ac38f")
 	)
 	(junction
 		(at 53.34 91.44)
@@ -1441,7 +1441,7 @@
 	)
 	(wire
 		(pts
-			(xy 130.81 91.44) (xy 181.61 91.44)
+			(xy 130.81 91.44) (xy 135.89 91.44)
 		)
 		(stroke
 			(width 0)
@@ -1791,16 +1791,6 @@
 	)
 	(wire
 		(pts
-			(xy 125.73 91.44) (xy 130.81 91.44)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "d08518b4-bbfa-4a89-a130-13a1dfe6a113")
-	)
-	(wire
-		(pts
 			(xy 69.85 109.22) (xy 69.85 106.68)
 		)
 		(stroke
@@ -1869,6 +1859,16 @@
 		)
 		(uuid "fba096bc-0b60-46b9-93c7-5d952bd656b1")
 	)
+	(wire
+		(pts
+			(xy 125.73 91.44) (xy 130.81 91.44)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fcd13e38-4359-4a6b-b1d5-50f081631b00")
+	)
 	(hierarchical_label "VIN"
 		(shape input)
 		(at 41.91 91.44 180)
@@ -1893,7 +1893,7 @@
 	)
 	(hierarchical_label "VOUT"
 		(shape output)
-		(at 181.61 91.44 0)
+		(at 135.89 91.44 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1986,7 +1986,7 @@
 				)
 			)
 		)
-		(property "Value" "1.5k"
+		(property "Value" "150"
 			(at 85.09 74.93 90)
 			(effects
 				(font
@@ -1994,7 +1994,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_1206_3216Metric"
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 85.09 80.518 90)
 			(effects
 				(font
@@ -2014,6 +2014,15 @@
 		)
 		(property "Description" "Resistor"
 			(at 85.09 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C2907103"
+			(at 85.09 78.74 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2064,7 +2073,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_1206_3216Metric"
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
 			(at 51.562 102.87 90)
 			(effects
 				(font
@@ -2083,6 +2092,15 @@
 			)
 		)
 		(property "Description" "Resistor"
+			(at 53.34 102.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C2933484"
 			(at 53.34 102.87 0)
 			(effects
 				(font
@@ -2133,7 +2151,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_1206_3216Metric"
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
 			(at 129.032 110.49 90)
 			(effects
 				(font
@@ -2152,6 +2170,15 @@
 			)
 		)
 		(property "Description" "Resistor"
+			(at 130.81 110.49 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C5119971"
 			(at 130.81 110.49 0)
 			(effects
 				(font
@@ -2228,6 +2255,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC" ""
+			(at 92.71 67.31 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "7dfe4611-b475-463b-bdfa-97201c19d8d0")
 		)
@@ -2244,6 +2280,85 @@
 			(project ""
 				(path "/e471e2a9-02de-49c5-9120-81539e86aefa/187e6130-fc9a-4c39-a7a1-6fc1bcf8f3fc"
 					(reference "JP2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 125.73 95.25 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "52f9a86a-a786-4f31-803a-c80d004dcc53")
+		(property "Reference" "R18"
+			(at 128.27 93.9799 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "120k"
+			(at 128.27 96.5199 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
+			(at 123.952 95.25 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 125.73 95.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 125.73 95.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C17436"
+			(at 125.73 95.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "585cae89-8704-4f8b-95ed-c8417dc3bed7")
+		)
+		(pin "2"
+			(uuid "e7e9b897-6944-4f7a-b470-1f8c2db68218")
+		)
+		(instances
+			(project "controller"
+				(path "/c599d8cf-7937-49be-b4ed-eac09167ead4/3be86d44-1d4e-4754-862e-026f65f72643/187e6130-fc9a-4c39-a7a1-6fc1bcf8f3fc"
+					(reference "R18")
 					(unit 1)
 				)
 			)
@@ -2342,7 +2457,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_1206_3216Metric"
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
 			(at 71.882 120.65 90)
 			(effects
 				(font
@@ -2361,6 +2476,15 @@
 			)
 		)
 		(property "Description" "Resistor"
+			(at 73.66 120.65 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C2907240"
 			(at 73.66 120.65 0)
 			(effects
 				(font
@@ -2451,152 +2575,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:LED")
-		(at 100.33 78.74 180)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "74705818-cbe7-41ab-9849-ec5fa69483b4")
-		(property "Reference" "D3"
-			(at 101.9175 71.12 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "PWR_FLT"
-			(at 101.9175 73.66 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 100.33 78.74 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 100.33 78.74 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Light emitting diode"
-			(at 100.33 78.74 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Pins" "1=K 2=A"
-			(at 100.33 78.74 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "90a66b16-fe80-4671-9b9e-b23c5d0264a5")
-		)
-		(pin "1"
-			(uuid "75c5d14a-ccd4-4b38-b9ea-06a4032468d2")
-		)
-		(instances
-			(project ""
-				(path "/c599d8cf-7937-49be-b4ed-eac09167ead4/3be86d44-1d4e-4754-862e-026f65f72643/187e6130-fc9a-4c39-a7a1-6fc1bcf8f3fc"
-					(reference "D3")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R")
-		(at 125.73 95.25 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "96eb5692-3cf5-4e92-8583-3060597533a7")
-		(property "Reference" "R18"
-			(at 128.27 93.9799 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "120k"
-			(at 128.27 96.5199 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_1206_3216Metric"
-			(at 123.952 95.25 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 125.73 95.25 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Resistor"
-			(at 125.73 95.25 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "c1547917-527b-4a7a-8602-e646127f7e4f")
-		)
-		(pin "2"
-			(uuid "d8232f1a-941f-4664-9d1d-cb371deee1de")
-		)
-		(instances
-			(project "controller"
-				(path "/c599d8cf-7937-49be-b4ed-eac09167ead4/3be86d44-1d4e-4754-862e-026f65f72643/187e6130-fc9a-4c39-a7a1-6fc1bcf8f3fc"
-					(reference "R18")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Device:C")
 		(at 69.85 113.03 0)
 		(mirror y)
@@ -2624,7 +2602,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_1206_3216Metric"
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
 			(at 68.8848 116.84 0)
 			(effects
 				(font
@@ -2643,6 +2621,15 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
+			(at 69.85 113.03 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C1729"
 			(at 69.85 113.03 0)
 			(effects
 				(font
@@ -2694,7 +2681,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_1206_3216Metric"
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
 			(at 51.562 95.25 90)
 			(effects
 				(font
@@ -2713,6 +2700,15 @@
 			)
 		)
 		(property "Description" "Resistor"
+			(at 53.34 95.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C17436"
 			(at 53.34 95.25 0)
 			(effects
 				(font
@@ -2763,7 +2759,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_1206_3216Metric"
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
 			(at 118.872 114.3 90)
 			(effects
 				(font
@@ -2782,6 +2778,15 @@
 			)
 		)
 		(property "Description" "Resistor"
+			(at 120.65 114.3 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C2933506"
 			(at 120.65 114.3 0)
 			(effects
 				(font
@@ -2833,7 +2838,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_1206_3216Metric"
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
 			(at 51.562 110.49 90)
 			(effects
 				(font
@@ -2852,6 +2857,15 @@
 			)
 		)
 		(property "Description" "Resistor"
+			(at 53.34 110.49 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C2999467"
 			(at 53.34 110.49 0)
 			(effects
 				(font
@@ -2901,7 +2915,7 @@
 				)
 			)
 		)
-		(property "Footprint" "TPS25942ARVCR:IC_TPS25942ARVCR"
+		(property "Footprint" "external_footprints.petty:IC_TPS25942ARVCR"
 			(at 96.52 104.14 0)
 			(effects
 				(font
@@ -3069,6 +3083,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC" ""
+			(at 96.52 104.14 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "a2112806-dea2-459a-a7a7-200629e6de21")
 		)
@@ -3142,6 +3165,92 @@
 			(project "power_input"
 				(path "/e471e2a9-02de-49c5-9120-81539e86aefa/187e6130-fc9a-4c39-a7a1-6fc1bcf8f3fc"
 					(reference "U4")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:LED")
+		(at 100.33 78.74 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "c638d67e-5f1b-4cb4-ba38-98242a3f20f5")
+		(property "Reference" "D3"
+			(at 101.9175 71.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "PWR_FLT"
+			(at 101.9175 73.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "LED_SMD:LED_0603_1608Metric"
+			(at 100.33 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 100.33 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Light emitting diode"
+			(at 100.33 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
+			(at 100.33 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C51933292"
+			(at 100.33 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "719bc33b-7894-4d20-9cea-69a50deabb5d")
+		)
+		(pin "1"
+			(uuid "dd274f19-3c18-4137-ac4f-a74e34ed69de")
+		)
+		(instances
+			(project "controller"
+				(path "/c599d8cf-7937-49be-b4ed-eac09167ead4/3be86d44-1d4e-4754-862e-026f65f72643/187e6130-fc9a-4c39-a7a1-6fc1bcf8f3fc"
+					(reference "D3")
 					(unit 1)
 				)
 			)

@@ -1760,7 +1760,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_1206_3216Metric"
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
 			(at 221.742 124.46 90)
 			(effects
 				(font
@@ -1779,6 +1779,15 @@
 			)
 		)
 		(property "Description" "Resistor"
+			(at 223.52 124.46 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C2930163"
 			(at 223.52 124.46 0)
 			(effects
 				(font
@@ -1834,7 +1843,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "external_footprints.petty:IND-SMD_L7.0-W6.6"
 			(at 193.04 93.98 0)
 			(effects
 				(font
@@ -1843,7 +1852,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/C5307631.pdf"
 			(at 193.04 93.98 0)
 			(effects
 				(font
@@ -1854,6 +1863,15 @@
 		)
 		(property "Description" "Inductor"
 			(at 193.04 93.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C5307631"
+			(at 193.04 93.98 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2054,7 +2072,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_1206_3216Metric"
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
 			(at 221.742 100.33 90)
 			(effects
 				(font
@@ -2073,6 +2091,15 @@
 			)
 		)
 		(property "Description" "Resistor"
+			(at 223.52 100.33 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C2077153"
 			(at 223.52 100.33 0)
 			(effects
 				(font
@@ -2130,7 +2157,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_1206_3216Metric"
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
 			(at 94.9452 91.44 0)
 			(effects
 				(font
@@ -2149,6 +2176,15 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
+			(at 93.98 87.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C83170"
 			(at 93.98 87.63 0)
 			(effects
 				(font
@@ -2350,7 +2386,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_1206_3216Metric"
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
 			(at 176.2252 116.84 0)
 			(effects
 				(font
@@ -2369,6 +2405,15 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
+			(at 175.26 113.03 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C2169931"
 			(at 175.26 113.03 0)
 			(effects
 				(font
@@ -2488,7 +2533,7 @@
 				)
 			)
 		)
-		(property "Value" "0.1u"
+		(property "Value" "100n"
 			(at 158.75 83.82 90)
 			(effects
 				(font
@@ -2516,6 +2561,15 @@
 		)
 		(property "Description" "Unpolarized capacitor"
 			(at 158.75 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C93194"
+			(at 158.75 88.9 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2572,7 +2626,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_1206_3216Metric"
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
 			(at 110.7948 100.33 0)
 			(effects
 				(font
@@ -2591,6 +2645,15 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
+			(at 111.76 104.14 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C83170"
 			(at 111.76 104.14 0)
 			(effects
 				(font
@@ -2648,7 +2711,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_1206_3216Metric"
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
 			(at 202.8952 101.6 0)
 			(effects
 				(font
@@ -2667,6 +2730,15 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
+			(at 201.93 97.79 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C16780"
 			(at 201.93 97.79 0)
 			(effects
 				(font
@@ -2722,7 +2794,7 @@
 				)
 			)
 		)
-		(property "Footprint" "TPS54531DDAR:CONV_TPS54531DDAR"
+		(property "Footprint" "external_footprints.petty:CONV_TPS54531DDAR"
 			(at 137.16 96.52 0)
 			(effects
 				(font
@@ -2732,7 +2804,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.lcsc.com/datasheet/C50605.pdf"
 			(at 137.16 96.52 0)
 			(effects
 				(font
@@ -2870,6 +2942,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC" "C50605"
+			(at 137.16 96.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "c0588863-85a3-40ad-83ad-a4f3d1f6714c")
 		)
@@ -2940,7 +3021,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_1206_3216Metric"
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
 			(at 213.0552 101.6 0)
 			(effects
 				(font
@@ -2959,6 +3040,15 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
+			(at 212.09 97.79 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C16780"
 			(at 212.09 97.79 0)
 			(effects
 				(font
@@ -3035,6 +3125,15 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
+			(at 71.12 87.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C51205"
 			(at 71.12 87.63 0)
 			(effects
 				(font
@@ -3164,7 +3263,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_1206_3216Metric"
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
 			(at 104.902 96.52 90)
 			(effects
 				(font
@@ -3183,6 +3282,15 @@
 			)
 		)
 		(property "Description" "Resistor"
+			(at 106.68 96.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C2933305"
 			(at 106.68 96.52 0)
 			(effects
 				(font
@@ -3240,7 +3348,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_1206_3216Metric"
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
 			(at 166.0652 106.68 0)
 			(effects
 				(font
@@ -3259,6 +3367,15 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
+			(at 165.1 102.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C36576"
 			(at 165.1 102.87 0)
 			(effects
 				(font
@@ -3415,6 +3532,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC" "C51205"
+			(at 82.55 87.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "d46780c8-d818-47db-85ff-7171d61feb36")
 		)
@@ -3464,7 +3590,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_1206_3216Metric"
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
 			(at 221.742 111.76 90)
 			(effects
 				(font
@@ -3483,6 +3609,15 @@
 			)
 		)
 		(property "Description" "Resistor"
+			(at 223.52 111.76 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C2933282"
 			(at 223.52 111.76 0)
 			(effects
 				(font
@@ -3540,7 +3675,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_1206_3216Metric"
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
 			(at 163.322 113.03 90)
 			(effects
 				(font
@@ -3559,6 +3694,15 @@
 			)
 		)
 		(property "Description" "Resistor"
+			(at 165.1 113.03 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C2999586"
 			(at 165.1 113.03 0)
 			(effects
 				(font
@@ -3616,7 +3760,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Diode_SMD:D_SMA"
 			(at 184.15 99.06 0)
 			(effects
 				(font
@@ -3636,6 +3780,15 @@
 		)
 		(property "Description" "Schottky diode"
 			(at 184.15 99.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C20609300"
+			(at 184.15 99.06 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3692,7 +3845,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_1206_3216Metric"
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
 			(at 104.902 87.63 90)
 			(effects
 				(font
@@ -3711,6 +3864,15 @@
 			)
 		)
 		(property "Description" "Resistor"
+			(at 106.68 87.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C48533721"
 			(at 106.68 87.63 0)
 			(effects
 				(font

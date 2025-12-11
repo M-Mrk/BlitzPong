@@ -620,22 +620,28 @@
 		)
 	)
 	(junction
-		(at 63.5 102.87)
+		(at 63.5 120.65)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "45b96e84-e807-4537-9ca1-01da1089ae62")
+		(uuid "106323c7-93be-4fe5-be9b-39ee5a50feb7")
 	)
 	(junction
-		(at 63.5 113.03)
+		(at 63.5 130.81)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "79cc3d6b-07b1-42f9-a1d0-e53a7330bd20")
+		(uuid "92f171d2-ff2d-4ea3-b18d-c5e329bc9e91")
 	)
 	(junction
-		(at 63.5 118.11)
+		(at 63.5 101.6)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "c8c4038b-2a49-43f6-92c5-3de257285d15")
+		(uuid "c2a5c179-9e31-4646-8bc3-e3cb79ca9f03")
+	)
+	(junction
+		(at 63.5 135.89)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "d1789414-6377-4adb-b225-45a60c7ad75d")
 	)
 	(junction
 		(at 63.5 90.17)
@@ -645,7 +651,7 @@
 	)
 	(wire
 		(pts
-			(xy 86.36 110.49) (xy 91.44 110.49)
+			(xy 86.36 128.27) (xy 91.44 128.27)
 		)
 		(stroke
 			(width 0)
@@ -655,7 +661,7 @@
 	)
 	(wire
 		(pts
-			(xy 63.5 113.03) (xy 63.5 102.87)
+			(xy 63.5 90.17) (xy 63.5 101.6)
 		)
 		(stroke
 			(width 0)
@@ -665,7 +671,27 @@
 	)
 	(wire
 		(pts
-			(xy 63.5 113.03) (xy 91.44 113.03)
+			(xy 63.5 101.6) (xy 63.5 120.65)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "32703a38-d1b3-4f34-a83b-3f531f6c9f1f")
+	)
+	(wire
+		(pts
+			(xy 63.5 130.81) (xy 63.5 120.65)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3bf914fd-7e8f-4e66-a605-7abdeb4c354f")
+	)
+	(wire
+		(pts
+			(xy 63.5 130.81) (xy 91.44 130.81)
 		)
 		(stroke
 			(width 0)
@@ -675,13 +701,13 @@
 	)
 	(wire
 		(pts
-			(xy 63.5 102.87) (xy 63.5 90.17)
+			(xy 96.52 101.6) (xy 114.3 101.6)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "51ba9a80-c96f-4cda-bb4e-e1734c0c3737")
+		(uuid "5cf6b171-3e27-4288-bb60-4d11a9430c96")
 	)
 	(wire
 		(pts
@@ -695,7 +721,17 @@
 	)
 	(wire
 		(pts
-			(xy 86.36 107.95) (xy 91.44 107.95)
+			(xy 63.5 101.6) (xy 86.36 101.6)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6edde4d1-fda2-4ead-a8a4-eae02d61393b")
+	)
+	(wire
+		(pts
+			(xy 86.36 125.73) (xy 91.44 125.73)
 		)
 		(stroke
 			(width 0)
@@ -715,7 +751,7 @@
 	)
 	(wire
 		(pts
-			(xy 121.92 102.87) (xy 124.46 102.87)
+			(xy 121.92 120.65) (xy 124.46 120.65)
 		)
 		(stroke
 			(width 0)
@@ -725,13 +761,23 @@
 	)
 	(wire
 		(pts
-			(xy 63.5 118.11) (xy 63.5 113.03)
+			(xy 96.52 90.17) (xy 114.3 90.17)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "b4ba8f00-fdc9-48c5-a22a-e14bbdb19391")
+		(uuid "b11b0c98-b8c6-4b70-b0a3-f0beb76e8cfa")
+	)
+	(wire
+		(pts
+			(xy 63.5 135.89) (xy 63.5 130.81)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b939b6ac-5f9c-4bf6-815c-6e88115f1d87")
 	)
 	(wire
 		(pts
@@ -745,7 +791,7 @@
 	)
 	(wire
 		(pts
-			(xy 63.5 102.87) (xy 91.44 102.87)
+			(xy 63.5 120.65) (xy 91.44 120.65)
 		)
 		(stroke
 			(width 0)
@@ -765,7 +811,7 @@
 	)
 	(wire
 		(pts
-			(xy 63.5 121.92) (xy 63.5 118.11)
+			(xy 63.5 139.7) (xy 63.5 135.89)
 		)
 		(stroke
 			(width 0)
@@ -775,7 +821,7 @@
 	)
 	(wire
 		(pts
-			(xy 63.5 118.11) (xy 91.44 118.11)
+			(xy 63.5 135.89) (xy 91.44 135.89)
 		)
 		(stroke
 			(width 0)
@@ -783,15 +829,16 @@
 		)
 		(uuid "deb4034c-fa6b-42ca-8ab0-c404a9659d2f")
 	)
-	(wire
-		(pts
-			(xy 96.52 90.17) (xy 114.3 90.17)
+	(hierarchical_label "SW3"
+		(shape output)
+		(at 114.3 101.6 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
 		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "f169cddf-8ab8-47fa-8be0-cf9b6f4bb6a4")
+		(uuid "558fb341-289b-40f2-86bb-f93a0c8be3fc")
 	)
 	(hierarchical_label "SW1"
 		(shape output)
@@ -804,20 +851,9 @@
 		)
 		(uuid "9de187fa-0450-4e59-948a-8f3564d5eaa9")
 	)
-	(hierarchical_label "SW2"
+	(hierarchical_label "SW4"
 		(shape output)
-		(at 114.3 90.17 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "b2b6bfca-8b13-4298-9cce-50c0bc20f0fb")
-	)
-	(hierarchical_label "SW3"
-		(shape output)
-		(at 124.46 102.87 0)
+		(at 124.46 120.65 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -828,7 +864,7 @@
 	)
 	(hierarchical_label "RE_B"
 		(shape output)
-		(at 86.36 110.49 180)
+		(at 86.36 128.27 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -839,7 +875,7 @@
 	)
 	(hierarchical_label "RE_A"
 		(shape output)
-		(at 86.36 107.95 180)
+		(at 86.36 125.73 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -848,9 +884,20 @@
 		)
 		(uuid "b2b6bfca-8b13-4298-9cce-50c0bc20f0fe")
 	)
+	(hierarchical_label "SW2"
+		(shape output)
+		(at 114.3 90.17 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "bfb42ba8-b33c-4b09-8eee-7ffa5cbcbe05")
+	)
 	(symbol
 		(lib_id "PEC12R-4120F-S0012:PEC12R-4120F-S0012")
-		(at 106.68 107.95 0)
+		(at 106.68 125.73 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -859,7 +906,7 @@
 		(fields_autoplaced yes)
 		(uuid "2e541f48-0d20-496b-814d-737eabe10c13")
 		(property "Reference" "S1"
-			(at 106.68 92.71 0)
+			(at 106.68 110.49 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -867,15 +914,15 @@
 			)
 		)
 		(property "Value" "PEC12R-4120F-S0012"
-			(at 106.68 95.25 0)
+			(at 106.68 113.03 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Footprint" "PEC12R-4120F-S0012:XDCR_PEC12R-4120F-S0012"
-			(at 106.68 107.95 0)
+		(property "Footprint" "external_footprints.petty:XDCR_PEC12R-4120F-S0012"
+			(at 106.68 125.73 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -885,7 +932,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.lcsc.com/datasheet/C143801.pdf"
-			(at 106.68 107.95 0)
+			(at 106.68 125.73 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -894,7 +941,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 106.68 107.95 0)
+			(at 106.68 125.73 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -903,7 +950,7 @@
 			)
 		)
 		(property "MF" "Bourns Inc."
-			(at 106.68 107.95 0)
+			(at 106.68 125.73 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -913,7 +960,7 @@
 			)
 		)
 		(property "MAXIMUM_PACKAGE_HEIGHT" "20.5mm"
-			(at 106.68 107.95 0)
+			(at 106.68 125.73 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -923,7 +970,7 @@
 			)
 		)
 		(property "Package" "None"
-			(at 106.68 107.95 0)
+			(at 106.68 125.73 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -933,7 +980,7 @@
 			)
 		)
 		(property "Price" "None"
-			(at 106.68 107.95 0)
+			(at 106.68 125.73 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -943,7 +990,7 @@
 			)
 		)
 		(property "Check_prices" "https://www.snapeda.com/parts/PEC12R-4120F-S0012/Bourns/view-part/?ref=eda"
-			(at 106.68 107.95 0)
+			(at 106.68 125.73 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -953,7 +1000,7 @@
 			)
 		)
 		(property "STANDARD" "Manufacturer recommendations"
-			(at 106.68 107.95 0)
+			(at 106.68 125.73 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -963,7 +1010,7 @@
 			)
 		)
 		(property "PARTREV" "07/21"
-			(at 106.68 107.95 0)
+			(at 106.68 125.73 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -973,7 +1020,7 @@
 			)
 		)
 		(property "SnapEDA_Link" "https://www.snapeda.com/parts/PEC12R-4120F-S0012/Bourns/view-part/?ref=snap"
-			(at 106.68 107.95 0)
+			(at 106.68 125.73 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -983,7 +1030,7 @@
 			)
 		)
 		(property "MP" "PEC12R-4120F-S0012"
-			(at 106.68 107.95 0)
+			(at 106.68 125.73 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -993,7 +1040,7 @@
 			)
 		)
 		(property "Description_1" "Mechanical Encoder Rotary Incremental Flat 0.007N.m Straight Quadrature Digital Square Wave 12PPR Through Hole PC Pin"
-			(at 106.68 107.95 0)
+			(at 106.68 125.73 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1003,7 +1050,7 @@
 			)
 		)
 		(property "Availability" "In Stock"
-			(at 106.68 107.95 0)
+			(at 106.68 125.73 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1013,12 +1060,21 @@
 			)
 		)
 		(property "MANUFACTURER" "Bourns"
-			(at 106.68 107.95 0)
+			(at 106.68 125.73 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C143801"
+			(at 106.68 125.73 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
 				(hide yes)
 			)
 		)
@@ -1054,7 +1110,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 63.5 121.92 0)
+		(at 63.5 139.7 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -1063,7 +1119,7 @@
 		(fields_autoplaced yes)
 		(uuid "42183c04-228d-4b72-be74-57cf5ba8d2d1")
 		(property "Reference" "#PWR013"
-			(at 63.5 128.27 0)
+			(at 63.5 146.05 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1072,7 +1128,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 63.5 127 0)
+			(at 63.5 144.78 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1080,7 +1136,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 63.5 121.92 0)
+			(at 63.5 139.7 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1089,7 +1145,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 63.5 121.92 0)
+			(at 63.5 139.7 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1098,7 +1154,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 63.5 121.92 0)
+			(at 63.5 139.7 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1163,6 +1219,15 @@
 			)
 		)
 		(property "Description" "Push button switch, generic, two pins"
+			(at 91.44 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C36498965"
 			(at 91.44 78.74 0)
 			(effects
 				(font
@@ -1239,6 +1304,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC" "C36498965"
+			(at 91.44 90.17 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "54e0a5e5-ea21-4a59-a3c0-89b1db2de89a")
 		)
@@ -1249,6 +1323,83 @@
 			(project "controller"
 				(path "/c599d8cf-7937-49be-b4ed-eac09167ead4/4b69996c-053f-4d78-af06-905aa0140461"
 					(reference "SW2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Switch:SW_Push")
+		(at 91.44 101.6 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "794752f3-ed7c-4d1e-a829-758b92384f32")
+		(property "Reference" "SW3"
+			(at 91.44 93.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "B3F-4055"
+			(at 91.44 96.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "external_footprints.petty:SW_B3F-4055"
+			(at 91.44 96.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 91.44 96.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Push button switch, generic, two pins"
+			(at 91.44 101.6 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C36498965"
+			(at 91.44 101.6 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "253d5378-97e5-4301-bec2-42a4cc375afb")
+		)
+		(pin "2"
+			(uuid "69ceb5e5-deed-4faa-9799-2b8255975a68")
+		)
+		(instances
+			(project "controller"
+				(path "/c599d8cf-7937-49be-b4ed-eac09167ead4/4b69996c-053f-4d78-af06-905aa0140461"
+					(reference "SW3")
 					(unit 1)
 				)
 			)

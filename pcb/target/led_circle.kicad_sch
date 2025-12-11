@@ -423,6 +423,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC" ""
+			(at 43.18 74.93 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "3"
 			(uuid "6865f904-ab2f-4d55-8218-1467b8627900")
 		)
@@ -495,6 +504,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC" ""
+			(at 43.18 45.72 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "3"
 			(uuid "e749fd63-075a-4962-886b-4a0ee867e6d6")
 		)
@@ -514,7 +532,7 @@
 		)
 	)
 	(sheet
-		(at 149.86 24.13)
+		(at 151.13 24.13)
 		(size 29.21 12.7)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -528,9 +546,9 @@
 		(fill
 			(color 0 0 0 0.0000)
 		)
-		(uuid "560cd6ce-e08c-4984-ad6c-35893396417e")
+		(uuid "2577de81-7bff-4af3-a196-645474f5bc39")
 		(property "Sheetname" "led_cap1"
-			(at 149.86 23.4184 0)
+			(at 151.13 23.4184 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -539,7 +557,7 @@
 			)
 		)
 		(property "Sheetfile" "led_cap.kicad_sch"
-			(at 149.86 37.4146 0)
+			(at 151.13 37.4146 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -556,7 +574,7 @@
 		)
 	)
 	(sheet
-		(at 187.96 24.13)
+		(at 189.23 45.72)
 		(size 27.94 12.7)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -570,51 +588,9 @@
 		(fill
 			(color 0 0 0 0.0000)
 		)
-		(uuid "57687f76-c606-4b93-8b3a-c2df1794cc42")
-		(property "Sheetname" "led1"
-			(at 187.96 23.4184 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left bottom)
-			)
-		)
-		(property "Sheetfile" "led.kicad_sch"
-			(at 187.96 37.4146 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-			)
-		)
-		(instances
-			(project "target"
-				(path "/1c02f793-f381-44cb-838a-dbb787484d0c/e61b723f-f359-4114-beb0-b4d2930b2aa9"
-					(page "6")
-				)
-			)
-		)
-	)
-	(sheet
-		(at 187.96 45.72)
-		(size 27.94 12.7)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(stroke
-			(width 0.1524)
-			(type solid)
-		)
-		(fill
-			(color 0 0 0 0.0000)
-		)
-		(uuid "59431009-1e31-4aed-9634-5b986cfe3fa7")
+		(uuid "34d9b2fa-eed6-45bc-971e-9a5c863f1de0")
 		(property "Sheetname" "led3"
-			(at 187.96 45.0084 0)
+			(at 189.23 45.0084 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -623,7 +599,7 @@
 			)
 		)
 		(property "Sheetfile" "led.kicad_sch"
-			(at 187.96 59.0046 0)
+			(at 189.23 59.0046 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -634,49 +610,7 @@
 		(instances
 			(project "target"
 				(path "/1c02f793-f381-44cb-838a-dbb787484d0c/e61b723f-f359-4114-beb0-b4d2930b2aa9"
-					(page "9")
-				)
-			)
-		)
-	)
-	(sheet
-		(at 149.86 45.72)
-		(size 29.21 12.7)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(stroke
-			(width 0.1524)
-			(type solid)
-		)
-		(fill
-			(color 0 0 0 0.0000)
-		)
-		(uuid "7ee20812-a607-4ad1-aaf8-e280757b7924")
-		(property "Sheetname" "led_cap3"
-			(at 149.86 45.0084 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left bottom)
-			)
-		)
-		(property "Sheetfile" "led_cap.kicad_sch"
-			(at 149.86 59.0046 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-			)
-		)
-		(instances
-			(project "target"
-				(path "/1c02f793-f381-44cb-838a-dbb787484d0c/e61b723f-f359-4114-beb0-b4d2930b2aa9"
-					(page "11")
+					(page "10")
 				)
 			)
 		)
@@ -696,7 +630,7 @@
 		(fill
 			(color 0 0 0 0.0000)
 		)
-		(uuid "8611289c-07e1-4e14-a4ca-43f16a4333a9")
+		(uuid "5dfd95b7-fa55-40ea-ba4a-f8cc81696003")
 		(property "Sheetname" "led_cap2"
 			(at 74.93 45.0084 0)
 			(effects
@@ -718,13 +652,13 @@
 		(instances
 			(project "target"
 				(path "/1c02f793-f381-44cb-838a-dbb787484d0c/e61b723f-f359-4114-beb0-b4d2930b2aa9"
-					(page "10")
+					(page "9")
 				)
 			)
 		)
 	)
 	(sheet
-		(at 113.03 45.72)
+		(at 189.23 24.13)
 		(size 27.94 12.7)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -738,9 +672,9 @@
 		(fill
 			(color 0 0 0 0.0000)
 		)
-		(uuid "909bdbb4-b84d-4035-be27-26a2c2c664d8")
-		(property "Sheetname" "led2"
-			(at 113.03 45.0084 0)
+		(uuid "611ab34e-dc39-47a6-a008-28f4f9825563")
+		(property "Sheetname" "led1"
+			(at 189.23 23.4184 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -749,7 +683,7 @@
 			)
 		)
 		(property "Sheetfile" "led.kicad_sch"
-			(at 113.03 59.0046 0)
+			(at 189.23 37.4146 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -760,7 +694,49 @@
 		(instances
 			(project "target"
 				(path "/1c02f793-f381-44cb-838a-dbb787484d0c/e61b723f-f359-4114-beb0-b4d2930b2aa9"
-					(page "8")
+					(page "6")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 151.13 45.72)
+		(size 29.21 12.7)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "78dabe0b-e431-4181-9be1-9ea04483a27d")
+		(property "Sheetname" "led_cap3"
+			(at 151.13 45.0084 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "led_cap.kicad_sch"
+			(at 151.13 59.0046 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "target"
+				(path "/1c02f793-f381-44cb-838a-dbb787484d0c/e61b723f-f359-4114-beb0-b4d2930b2aa9"
+					(page "11")
 				)
 			)
 		)
@@ -845,6 +821,48 @@
 			(project "target"
 				(path "/1c02f793-f381-44cb-838a-dbb787484d0c/e61b723f-f359-4114-beb0-b4d2930b2aa9"
 					(page "5")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 113.03 45.72)
+		(size 27.94 12.7)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "fcf601a2-49b1-4c8c-9ec7-cdc985204443")
+		(property "Sheetname" "led2"
+			(at 113.03 45.0084 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "led.kicad_sch"
+			(at 113.03 59.0046 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "target"
+				(path "/1c02f793-f381-44cb-838a-dbb787484d0c/e61b723f-f359-4114-beb0-b4d2930b2aa9"
+					(page "8")
 				)
 			)
 		)

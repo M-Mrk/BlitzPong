@@ -581,12 +581,96 @@
           "label": "Datasheet",
           "name": "Datasheet",
           "show": true
+        },
+        {
+          "group_by": false,
+          "label": "Description_1",
+          "name": "Description_1",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "DigiKey_Part_Number",
+          "name": "DigiKey_Part_Number",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "MF",
+          "name": "MF",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "MP",
+          "name": "MP",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Package",
+          "name": "Package",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "SnapEDA_Link",
+          "name": "SnapEDA_Link",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Check_prices",
+          "name": "Check_prices",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Description",
+          "name": "Description",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "#",
+          "name": "${ITEM_NUMBER}",
+          "show": false
+        },
+        {
+          "group_by": true,
+          "label": "LCSC",
+          "name": "LCSC",
+          "show": true
+        },
+        {
+          "group_by": false,
+          "label": "Supplier",
+          "name": "Supplier",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Supplier Part",
+          "name": "Supplier Part",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Manufacturer",
+          "name": "Manufacturer",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Manufacturer Part",
+          "name": "Manufacturer Part",
+          "show": false
         }
       ],
       "filter_string": "",
       "group_symbols": true,
       "include_excluded_from_bom": true,
-      "name": "Default Editing",
+      "name": "",
       "sort_asc": true,
       "sort_field": "Reference"
     },
@@ -660,28 +744,48 @@
       "led"
     ],
     [
-      "57687f76-c606-4b93-8b3a-c2df1794cc42",
+      "611ab34e-dc39-47a6-a008-28f4f9825563",
       "led1"
     ],
     [
-      "560cd6ce-e08c-4984-ad6c-35893396417e",
+      "2577de81-7bff-4af3-a196-645474f5bc39",
       "led_cap1"
     ],
     [
-      "909bdbb4-b84d-4035-be27-26a2c2c664d8",
+      "fcf601a2-49b1-4c8c-9ec7-cdc985204443",
       "led2"
     ],
     [
-      "59431009-1e31-4aed-9634-5b986cfe3fa7",
-      "led3"
-    ],
-    [
-      "8611289c-07e1-4e14-a4ca-43f16a4333a9",
+      "5dfd95b7-fa55-40ea-ba4a-f8cc81696003",
       "led_cap2"
     ],
     [
-      "7ee20812-a607-4ad1-aaf8-e280757b7924",
+      "34d9b2fa-eed6-45bc-971e-9a5c863f1de0",
+      "led3"
+    ],
+    [
+      "78dabe0b-e431-4181-9be1-9ea04483a27d",
       "led_cap3"
+    ],
+    [
+      "b3335a6a-71bd-476c-b233-926fd1552a47",
+      "ESD"
+    ],
+    [
+      "cf7b2b9f-f289-4645-aad4-155755d454b2",
+      "ESD I2C1"
+    ],
+    [
+      "063a186d-2134-46a0-b292-0e842d5007c8",
+      "ESD Power1"
+    ],
+    [
+      "8dfc6bd2-e1b6-4783-9726-7c4cdc16f4ae",
+      "ESD I2C"
+    ],
+    [
+      "fceb7ffc-ec02-4a02-b15d-63e976454ef7",
+      "ESD Power"
     ]
   ],
   "text_variables": {}

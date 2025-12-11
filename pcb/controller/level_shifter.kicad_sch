@@ -667,14 +667,23 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC" "C40912"
+			(at 96.52 78.74 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
-			(uuid "94a1c282-f82e-4d22-aba5-0e29dc0a06ed")
+			(uuid "deece3ac-fffa-4250-bc2d-f3a4a9914d02")
 		)
 		(pin "3"
-			(uuid "e331421b-3e10-4cc2-9462-9eebcef80a53")
+			(uuid "ad0d8f8d-f22f-4da2-ad9a-d53ff8fd6566")
 		)
 		(pin "2"
-			(uuid "06c2d9eb-983d-4f6f-99d0-ef733334d916")
+			(uuid "2232de07-1d63-4bb0-b16e-0f649c52bf04")
 		)
 		(instances
 			(project "controller"
@@ -682,7 +691,7 @@
 					(reference "Q1")
 					(unit 1)
 				)
-				(path "/c599d8cf-7937-49be-b4ed-eac09167ead4/688f6757-198f-4f2c-ba04-8707221b0c5d/7f988a32-c57f-4597-b4af-167af38a415b"
+				(path "/c599d8cf-7937-49be-b4ed-eac09167ead4/688f6757-198f-4f2c-ba04-8707221b0c5d/b848546a-4430-427d-8a16-bcd4f77a363d"
 					(reference "Q2")
 					(unit 1)
 				)
@@ -698,7 +707,7 @@
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "965a35dc-315f-4139-b0d9-af5b59f9cc67")
+		(uuid "49c2ca99-776e-404d-9f64-4f760a1cdc0e")
 		(property "Reference" "R2"
 			(at 88.9 71.1199 0)
 			(effects
@@ -708,7 +717,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "10k"
+		(property "Value" "4.7K"
 			(at 88.9 73.6599 0)
 			(effects
 				(font
@@ -744,11 +753,20 @@
 				(hide yes)
 			)
 		)
-		(pin "2"
-			(uuid "f18a959e-4db7-452a-82b3-8e0ff3b0ef19")
+		(property "LCSC" "C2907499"
+			(at 86.36 72.39 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
 		)
 		(pin "1"
-			(uuid "72d33fb4-ec8f-472e-8005-8e818e970a01")
+			(uuid "61ac28f0-e918-4e0e-9cfa-68c3005c18aa")
+		)
+		(pin "2"
+			(uuid "0a7ecc9a-f9dc-4580-b086-fef7c513a51d")
 		)
 		(instances
 			(project "controller"
@@ -756,8 +774,8 @@
 					(reference "R2")
 					(unit 1)
 				)
-				(path "/c599d8cf-7937-49be-b4ed-eac09167ead4/688f6757-198f-4f2c-ba04-8707221b0c5d/7f988a32-c57f-4597-b4af-167af38a415b"
-					(reference "R3")
+				(path "/c599d8cf-7937-49be-b4ed-eac09167ead4/688f6757-198f-4f2c-ba04-8707221b0c5d/b848546a-4430-427d-8a16-bcd4f77a363d"
+					(reference "R4")
 					(unit 1)
 				)
 			)
@@ -772,8 +790,8 @@
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "aafbfd5f-ba89-43a4-a644-c63656ad7ee4")
-		(property "Reference" "R22"
+		(uuid "cd3d8e88-d7cf-4648-9d5e-cc6855e15c85")
+		(property "Reference" "R3"
 			(at 106.68 71.1199 0)
 			(effects
 				(font
@@ -782,7 +800,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "10k"
+		(property "Value" "4.7K"
 			(at 106.68 73.6599 0)
 			(effects
 				(font
@@ -818,20 +836,29 @@
 				(hide yes)
 			)
 		)
-		(pin "2"
-			(uuid "8a61faf2-6641-4d40-b1a4-9ed64a00fe31")
+		(property "LCSC" "C2907499"
+			(at 104.14 72.39 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
 		)
 		(pin "1"
-			(uuid "2281fa77-9fbd-4a58-ac59-f9c69da582d7")
+			(uuid "cd833a7a-65c5-402f-a140-5e5cc3dad03f")
+		)
+		(pin "2"
+			(uuid "eb160e2d-308e-40d6-9f12-d771ef9ce629")
 		)
 		(instances
 			(project "controller"
 				(path "/c599d8cf-7937-49be-b4ed-eac09167ead4/688f6757-198f-4f2c-ba04-8707221b0c5d/4aebe67b-79fa-4b22-b72a-a1db0ca6fc19"
-					(reference "R22")
+					(reference "R3")
 					(unit 1)
 				)
-				(path "/c599d8cf-7937-49be-b4ed-eac09167ead4/688f6757-198f-4f2c-ba04-8707221b0c5d/7f988a32-c57f-4597-b4af-167af38a415b"
-					(reference "R4")
+				(path "/c599d8cf-7937-49be-b4ed-eac09167ead4/688f6757-198f-4f2c-ba04-8707221b0c5d/b848546a-4430-427d-8a16-bcd4f77a363d"
+					(reference "R22")
 					(unit 1)
 				)
 			)

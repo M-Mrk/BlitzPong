@@ -260,7 +260,7 @@
 	)
 	(symbol
 		(lib_id "Diode:SMAJ6.0CA")
-		(at 76.2 85.09 270)
+		(at 76.2 85.09 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -274,7 +274,7 @@
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
+				(justify right)
 			)
 		)
 		(property "Value" "SMAJ6.0CA"
@@ -283,11 +283,11 @@
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
+				(justify right)
 			)
 		)
 		(property "Footprint" "Diode_SMD:D_SMA"
-			(at 71.12 85.09 0)
+			(at 81.28 85.09 0)
 			(effects
 				(font
 					(size 1.27 1.27)

@@ -1,4 +1,4 @@
-26788814591919073
+26783511682502034
 Audio_Module
 Reverb_BTDR-1H
 Digital Reverberation Unit, http://www.belton.co.kr/inc/downfile.php?seq=17&file=pdf (footprint from http://www.uk-electronic.de/PDF/BTDR-1.pdf)
@@ -106364,66 +106364,45 @@ Varistor VF
 0
 2
 2
-external_footprints.petty
+custom_footprints
+01x03 SMD 2x3mm pad
+
+
+0
+3
+3
+custom_footprints
 01x06 SMD 4x4mm pad
 
 
 0
 6
 6
-external_footprints.petty
-CONV_TPS54531DDAR
-
-
+custom_footprints
+BAT54_SOT23
+SOT, 3 Pin (JEDEC TO-236 Var AB https://www.jedec.org/document_search?search_api_views_fulltext=TO-236), generated with kicad-footprint-generator ipc_gullwing_generator.py
+SOT TO_SOT_SMD
 0
-15
-15
-external_footprints.petty
-IC_TPS25942ARVCR
-
-
-0
-27
-27
-external_footprints.petty
-IND-SMD_L7.0-W6.6
-
-
-0
+3
 2
-2
-external_footprints.petty
-LCD-TH_4P-L72.0-W43.0-P2.54_HS242L03W2C01
+custom_footprints
+SOT23
+<b>SMALL OUTLINE TRANSISTOR</b><p>reflow soldering
+
+0
+3
+3
+custom_footprints
+WQFN-24_L4.0-W4.0-P0.50-TL-EP2.6
 
 
 0
-4
-4
-external_footprints.petty
-SMB_L4.4-W3.6-LS5.4-BI
+25
+25
+custom_footprints
+XL-5050RGBC-SK6812B
 
 
 0
-2
-2
-external_footprints.petty
-SW_B3F-4055
-
-
-0
-4
-4
-external_footprints.petty
-USON-10_L2.5-W1.0-P0.50-BL
-
-
-0
-10
-10
-external_footprints.petty
-XDCR_PEC12R-4120F-S0012
-
-
-0
-7
-7
+6
+6

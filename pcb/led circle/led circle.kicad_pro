@@ -188,9 +188,7 @@
       ],
       "track_widths": [
         0.0,
-        0.2,
-        0.3,
-        1.0
+        0.4
       ],
       "tuning_pattern_settings": {
         "diff_pair_defaults": {
@@ -242,36 +240,7 @@
     "equivalence_files": []
   },
   "erc": {
-    "erc_exclusions": [
-      [
-        "lib_symbol_mismatch|469900|1193800|897b8a6b-b4c9-4928-99e5-67e1c74f7148|00000000-0000-0000-0000-000000000000|||",
-        "Changed pin functions to avoid power warnings"
-      ],
-      [
-        "lib_symbol_mismatch|698500|990600|f324ebb2-e568-400e-9ee5-70aa43a57576|00000000-0000-0000-0000-000000000000|||",
-        ""
-      ],
-      [
-        "lib_symbol_mismatch|787400|698500|eae0e00f-2cde-4a38-b5ea-71fed1dbdf1f|00000000-0000-0000-0000-000000000000|||",
-        "changed pin functions"
-      ],
-      [
-        "lib_symbol_mismatch|876300|1422400|d091812a-0628-4aef-b390-43c4ca8b434c|00000000-0000-0000-0000-000000000000|||",
-        ""
-      ],
-      [
-        "power_pin_not_driven|1193800|723900|6ef1a71b-32f6-4371-bd3a-35751bdd42d8|00000000-0000-0000-0000-000000000000|/c599d8cf-7937-49be-b4ed-eac09167ead4|/c599d8cf-7937-49be-b4ed-eac09167ead4|",
-        "ESP has onboard 3.3V"
-      ],
-      [
-        "power_pin_not_driven|1320800|812800|60220a92-246f-49ff-8ce4-605aae68871c|00000000-0000-0000-0000-000000000000|/c599d8cf-7937-49be-b4ed-eac09167ead4|/c599d8cf-7937-49be-b4ed-eac09167ead4|",
-        "It is being driven, but through buck and then eFuse"
-      ],
-      [
-        "power_pin_not_driven|1320800|939800|5ac523dd-685b-4a89-b8eb-db557da600a1|00000000-0000-0000-0000-000000000000|/c599d8cf-7937-49be-b4ed-eac09167ead4|/c599d8cf-7937-49be-b4ed-eac09167ead4|",
-        "ESP has onboard 3.3V"
-      ]
-    ],
+    "erc_exclusions": [],
     "meta": {
       "version": 0
     },
@@ -496,7 +465,7 @@
     "pinned_symbol_libs": []
   },
   "meta": {
-    "filename": "controller.kicad_pro",
+    "filename": "led circle.kicad_pro",
     "version": 3
   },
   "net_settings": {
@@ -608,93 +577,9 @@
         },
         {
           "group_by": false,
-          "label": "CREATOR",
-          "name": "CREATOR",
-          "show": false
-        },
-        {
-          "group_by": false,
-          "label": "Check_prices",
-          "name": "Check_prices",
-          "show": false
-        },
-        {
-          "group_by": false,
-          "label": "Description_1",
-          "name": "Description_1",
-          "show": false
-        },
-        {
-          "group_by": false,
-          "label": "MANUFACTURER",
-          "name": "MANUFACTURER",
-          "show": false
-        },
-        {
-          "group_by": false,
-          "label": "MAXIMUM_PACKAGE_HEIGHT",
-          "name": "MAXIMUM_PACKAGE_HEIGHT",
-          "show": false
-        },
-        {
-          "group_by": false,
-          "label": "MF",
-          "name": "MF",
-          "show": false
-        },
-        {
-          "group_by": false,
-          "label": "MP",
-          "name": "MP",
-          "show": false
-        },
-        {
-          "group_by": false,
-          "label": "PARTREV",
-          "name": "PARTREV",
-          "show": false
-        },
-        {
-          "group_by": false,
-          "label": "Package",
-          "name": "Package",
-          "show": false
-        },
-        {
-          "group_by": false,
-          "label": "Price",
-          "name": "Price",
-          "show": false
-        },
-        {
-          "group_by": false,
-          "label": "STANDARD",
-          "name": "STANDARD",
-          "show": false
-        },
-        {
-          "group_by": false,
-          "label": "Sim.Pins",
-          "name": "Sim.Pins",
-          "show": false
-        },
-        {
-          "group_by": false,
-          "label": "SnapEDA_Link",
-          "name": "SnapEDA_Link",
-          "show": false
-        },
-        {
-          "group_by": false,
-          "label": "VERIFIER",
-          "name": "VERIFIER",
-          "show": false
-        },
-        {
-          "group_by": false,
-          "label": "Availability",
-          "name": "Availability",
-          "show": false
+          "label": "LCSC",
+          "name": "LCSC",
+          "show": true
         },
         {
           "group_by": false,
@@ -706,42 +591,6 @@
           "group_by": false,
           "label": "#",
           "name": "${ITEM_NUMBER}",
-          "show": false
-        },
-        {
-          "group_by": true,
-          "label": "LCSC",
-          "name": "LCSC",
-          "show": true
-        },
-        {
-          "group_by": false,
-          "label": "Supplier Part",
-          "name": "Supplier Part",
-          "show": false
-        },
-        {
-          "group_by": false,
-          "label": "Manufacturer",
-          "name": "Manufacturer",
-          "show": false
-        },
-        {
-          "group_by": false,
-          "label": "Manufacturer Part",
-          "name": "Manufacturer Part",
-          "show": false
-        },
-        {
-          "group_by": false,
-          "label": "Supplier",
-          "name": "Supplier",
-          "show": false
-        },
-        {
-          "group_by": false,
-          "label": "LCSC Part Name",
-          "name": "LCSC Part Name",
           "show": false
         }
       ],
@@ -794,44 +643,8 @@
   },
   "sheets": [
     [
-      "c599d8cf-7937-49be-b4ed-eac09167ead4",
+      "4b797ad4-8cd5-48bb-ba1f-c895a679cd69",
       "Root"
-    ],
-    [
-      "3be86d44-1d4e-4754-862e-026f65f72643",
-      "Power Input"
-    ],
-    [
-      "674d50d3-0923-4cb8-9c9e-cea2437acbc8",
-      "displays"
-    ],
-    [
-      "4b69996c-053f-4d78-af06-905aa0140461",
-      "Inputs"
-    ],
-    [
-      "688f6757-198f-4f2c-ba04-8707221b0c5d",
-      "Target Interface"
-    ],
-    [
-      "4aebe67b-79fa-4b22-b72a-a1db0ca6fc19",
-      "Level Shifter"
-    ],
-    [
-      "b848546a-4430-427d-8a16-bcd4f77a363d",
-      "Level Shifter1"
-    ],
-    [
-      "59477a32-6337-4bcc-9b7a-10a0c7f8e12c",
-      "Buck"
-    ],
-    [
-      "b1281477-35b4-403e-afd8-667b9ce52c5b",
-      "USB-C PD"
-    ],
-    [
-      "187e6130-fc9a-4c39-a7a1-6fc1bcf8f3fc",
-      "eFuse"
     ]
   ],
   "text_variables": {}

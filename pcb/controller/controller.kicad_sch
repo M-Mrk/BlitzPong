@@ -1516,7 +1516,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Seeed Studio XIAO Series Library:XIAO-ESP32C6-SMD"
+		(property "Footprint" "external_footprints.petty:XIAO-ESP32C6-SMD"
 			(at 96.52 92.71 0)
 			(effects
 				(font

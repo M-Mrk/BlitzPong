@@ -1,0 +1,4 @@
+"Reference","Qty","Value","DNP","Exclude from BOM","Exclude from Board","Footprint","Datasheet","LCSC"
+"C1","1","100nC","","","","Capacitor_SMD:C_1206_3216Metric","~","C93194"
+"D1,D2","2","XL-5050RGBC-SK6812B","","","","custom_footprints:XL-5050RGBC-SK6812B","https://cdn-shop.adafruit.com/product-files/1138/SK6812+LED+datasheet+.pdf","C5349959"
+"J1,J2","2","Conn_01x03_Pin","","Excluded from BOM","","custom_footprints:01x03 SMD 2x3mm pad","~",""

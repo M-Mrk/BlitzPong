@@ -894,6 +894,16 @@
 	)
 	(wire
 		(pts
+			(xy 82.55 93.98) (xy 83.82 93.98)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "005bc6be-a924-4d89-8675-c9f12fb89ae6")
+	)
+	(wire
+		(pts
 			(xy 130.81 132.08) (xy 130.81 105.41)
 		)
 		(stroke
@@ -1014,16 +1024,6 @@
 	)
 	(wire
 		(pts
-			(xy 82.55 86.36) (xy 83.82 86.36)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "44fd9e88-8998-43e0-bda9-2e3ffc8c659c")
-	)
-	(wire
-		(pts
 			(xy 208.28 85.09) (xy 208.28 88.9)
 		)
 		(stroke
@@ -1094,16 +1094,6 @@
 	)
 	(wire
 		(pts
-			(xy 69.85 93.98) (xy 69.85 99.06)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "785f4356-a4b9-4049-8922-eebbe93743fc")
-	)
-	(wire
-		(pts
 			(xy 127 101.6) (xy 133.35 101.6)
 		)
 		(stroke
@@ -1114,7 +1104,7 @@
 	)
 	(wire
 		(pts
-			(xy 67.31 95.25) (xy 67.31 90.17)
+			(xy 67.31 86.36) (xy 67.31 95.25)
 		)
 		(stroke
 			(width 0)
@@ -1214,6 +1204,16 @@
 	)
 	(wire
 		(pts
+			(xy 67.31 86.36) (xy 83.82 86.36)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "afca05d3-f01b-4a57-ae33-ec3904a6dab0")
+	)
+	(wire
+		(pts
 			(xy 82.55 101.6) (xy 83.82 101.6)
 		)
 		(stroke
@@ -1234,6 +1234,16 @@
 	)
 	(wire
 		(pts
+			(xy 83.82 90.17) (xy 69.85 90.17)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c8ac952c-caae-436f-b134-d508029ec18d")
+	)
+	(wire
+		(pts
 			(xy 68.58 119.38) (xy 49.53 119.38)
 		)
 		(stroke
@@ -1241,16 +1251,6 @@
 			(type default)
 		)
 		(uuid "c8c1275d-3a8b-4e23-8ab7-5008d4590bf0")
-	)
-	(wire
-		(pts
-			(xy 83.82 93.98) (xy 69.85 93.98)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "cb0d085b-eb74-416d-916c-4bbcb1e282de")
 	)
 	(wire
 		(pts
@@ -1264,13 +1264,13 @@
 	)
 	(wire
 		(pts
-			(xy 67.31 90.17) (xy 83.82 90.17)
+			(xy 69.85 90.17) (xy 69.85 99.06)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "e9a61c69-309b-42f5-bf09-efb9364203e3")
+		(uuid "d2bad660-c69e-40b1-bb2d-909865122df2")
 	)
 	(wire
 		(pts
@@ -1336,7 +1336,7 @@
 	)
 	(global_label "Imon"
 		(shape output)
-		(at 82.55 86.36 180)
+		(at 82.55 93.98 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -1344,9 +1344,9 @@
 			)
 			(justify right)
 		)
-		(uuid "31d515d5-1b3a-4670-8937-8f46bf6d689d")
+		(uuid "47668f03-d053-488a-bcd7-41a34f843b7e")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 74.9687 86.36 0)
+			(at 74.9687 93.98 0)
 			(effects
 				(font
 					(size 1.27 1.27)

@@ -1,4 +1,4 @@
-# PongTarget
+# BlitzPong
 
 A precision trainer for table tennis.
 

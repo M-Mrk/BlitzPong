@@ -57,7 +57,7 @@
 	(attr smd)
 	(fp_rect
 		(start -3.75 -2.25)
-		(end 3.75 6.5)
+		(end 3.75 2.125)
 		(stroke
 			(width 0.1)
 			(type solid)

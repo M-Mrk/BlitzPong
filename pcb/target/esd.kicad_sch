@@ -4,36 +4,427 @@
 	(generator_version "9.0")
 	(uuid "1b590214-c402-4828-a090-e2c54d48530d")
 	(paper "A4")
-	(lib_symbols)
-	(wire
-		(pts
-			(xy 88.9 124.46) (xy 100.33 124.46)
+	(lib_symbols
+		(symbol "Power_Protection:PRTR5V0U2X"
+			(pin_names
+				(offset 0)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "D"
+				(at 2.794 8.636 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "PRTR5V0U2X"
+				(at 8.128 -9.398 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" "Package_TO_SOT_SMD:SOT-143"
+				(at 1.524 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "https://assets.nexperia.com/documents/data-sheet/PRTR5V0U2X.pdf"
+				(at 1.524 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Ultra low capacitance double rail-to-rail ESD protection diode, SOT-143"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "ESD protection diode"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "SOT?143*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "PRTR5V0U2X_0_1"
+				(rectangle
+					(start -7.62 -7.62)
+					(end 7.62 7.62)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+				(polyline
+					(pts
+						(xy -3.556 2.794) (xy -1.524 2.794) (xy -2.54 4.826) (xy -3.556 2.794)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -3.556 -4.826) (xy -1.524 -4.826) (xy -2.54 -2.794) (xy -3.556 -4.826)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(rectangle
+					(start -2.54 6.35)
+					(end 2.54 -6.35)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center -2.54 0)
+					(radius 0.254)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(polyline
+					(pts
+						(xy -2.54 0) (xy -7.62 0)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.524 4.826) (xy -3.556 4.826)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.524 -2.794) (xy -3.556 -2.794)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.016 -1.016) (xy 1.016 -1.016) (xy 0 1.016) (xy -1.016 -1.016)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center 0 6.35)
+					(radius 0.254)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(circle
+					(center 0 -6.35)
+					(radius 0.254)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 -7.62) (xy 0 7.62)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.016 1.016) (xy -1.016 1.016) (xy -1.016 0.508)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.524 4.826) (xy 3.556 4.826)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.524 -2.794) (xy 3.556 -2.794)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 2.54 0) (xy 7.62 0)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center 2.54 0)
+					(radius 0.254)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(polyline
+					(pts
+						(xy 3.556 2.794) (xy 1.524 2.794) (xy 2.54 4.826) (xy 3.556 2.794)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 3.556 -4.826) (xy 1.524 -4.826) (xy 2.54 -2.794) (xy 3.556 -4.826)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "PRTR5V0U2X_1_1"
+				(pin passive line
+					(at -12.7 0 0)
+					(length 5.08)
+					(name "I/O1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 12.7 270)
+					(length 5.08)
+					(name "VCC"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -12.7 90)
+					(length 5.08)
+					(name "GND"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 12.7 0 180)
+					(length 5.08)
+					(name "I/O2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
 		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "037c700b-318a-4882-8633-00ad50b82b71")
+	)
+	(junction
+		(at 124.46 139.7)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "3f2f626b-44a2-42ac-9ac9-8930eceded7b")
+	)
+	(junction
+		(at 92.71 139.7)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "414558d5-15a8-4dcd-89d9-9e6108b09180")
 	)
 	(wire
 		(pts
-			(xy 113.03 124.46) (xy 127 124.46)
+			(xy 120.65 139.7) (xy 124.46 139.7)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "4cc9a63c-0185-4728-b15b-951d54ef5b05")
+		(uuid "0b67bd10-a3ea-42e9-b284-6feb64f216a1")
 	)
 	(wire
 		(pts
-			(xy 88.9 114.3) (xy 100.33 114.3)
+			(xy 107.95 124.46) (xy 107.95 127)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "5f607d56-ec97-4d80-90dc-ccf636b85906")
+		(uuid "10e1a7a2-a231-45d8-acfd-185f4fac52b8")
+	)
+	(wire
+		(pts
+			(xy 124.46 139.7) (xy 127 139.7)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "42642364-7ba6-4e51-9d6f-b559424cb0ce")
+	)
+	(wire
+		(pts
+			(xy 124.46 142.24) (xy 124.46 139.7)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "56fdf494-793e-41d6-9950-0adb550c5599")
 	)
 	(wire
 		(pts
@@ -44,6 +435,26 @@
 			(type default)
 		)
 		(uuid "6d72865c-d30f-4bda-84bc-308cc2901df3")
+	)
+	(wire
+		(pts
+			(xy 92.71 139.7) (xy 95.25 139.7)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8e841518-7edf-4b71-9c7e-4e3224793375")
+	)
+	(wire
+		(pts
+			(xy 88.9 139.7) (xy 92.71 139.7)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "925d184b-dd2b-4fe3-8fea-7b1f42f137b9")
 	)
 	(wire
 		(pts
@@ -67,13 +478,23 @@
 	)
 	(wire
 		(pts
-			(xy 113.03 114.3) (xy 127 114.3)
+			(xy 88.9 142.24) (xy 92.71 142.24)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "ac2105fa-46d8-414d-b548-cc78063e6add")
+		(uuid "a19551a4-24ac-43aa-8776-0b28b26a2e87")
+	)
+	(wire
+		(pts
+			(xy 92.71 142.24) (xy 92.71 139.7)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c73abd8a-890a-4fdd-95e7-1eddb5fa1b64")
 	)
 	(wire
 		(pts
@@ -84,6 +505,70 @@
 			(type default)
 		)
 		(uuid "f88148df-f108-4d3f-831c-1ba195cc901c")
+	)
+	(wire
+		(pts
+			(xy 107.95 152.4) (xy 107.95 154.94)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fb7e4cb2-0d59-4994-a544-82472830b67d")
+	)
+	(wire
+		(pts
+			(xy 127 142.24) (xy 124.46 142.24)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ffebe373-e94f-44b0-adca-d4fde0b116a8")
+	)
+	(global_label "+5V Main"
+		(shape output)
+		(at 107.95 124.46 90)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "c2f40c19-7e6c-4c62-8faa-d61ed1730818")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 107.95 112.2825 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "GND Main"
+		(shape output)
+		(at 107.95 154.94 270)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "e178ea86-b50a-42c6-b4a3-ba97df201e03")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 107.95 167.1175 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
 	)
 	(hierarchical_label "5V OUT"
 		(shape output)
@@ -98,7 +583,7 @@
 	)
 	(hierarchical_label "SDA OUT"
 		(shape bidirectional)
-		(at 127 114.3 0)
+		(at 127 142.24 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -109,23 +594,23 @@
 	)
 	(hierarchical_label "SCL OUT"
 		(shape bidirectional)
-		(at 127 124.46 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "0d713246-6e55-4fb3-a398-e0e6a4fd2615")
-	)
-	(hierarchical_label "SDA IN"
-		(shape bidirectional)
-		(at 88.9 114.3 180)
+		(at 88.9 142.24 180)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
 			(justify right)
+		)
+		(uuid "0d713246-6e55-4fb3-a398-e0e6a4fd2615")
+	)
+	(hierarchical_label "SDA IN"
+		(shape bidirectional)
+		(at 127 139.7 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
 		)
 		(uuid "18c8d180-269c-406c-8c69-bea8d55b3cc0")
 	)
@@ -142,7 +627,7 @@
 	)
 	(hierarchical_label "SCL IN"
 		(shape bidirectional)
-		(at 88.9 124.46 180)
+		(at 88.9 139.7 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -172,6 +657,89 @@
 			(justify right)
 		)
 		(uuid "9c6b9d85-3c69-4f63-b409-20dc6d0266bf")
+	)
+	(symbol
+		(lib_id "Power_Protection:PRTR5V0U2X")
+		(at 107.95 139.7 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "fca87f4a-48e3-4d00-a459-6855406f5b07")
+		(property "Reference" "D23"
+			(at 123.19 133.2798 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "PRTR5V0U2X"
+			(at 123.19 135.8198 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-143"
+			(at 109.474 139.7 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://assets.nexperia.com/documents/data-sheet/PRTR5V0U2X.pdf"
+			(at 109.474 139.7 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Ultra low capacitance double rail-to-rail ESD protection diode, SOT-143"
+			(at 107.95 139.7 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C5180302"
+			(at 107.95 139.7 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "4"
+			(uuid "f7155a77-c20c-45d6-8bab-0969f31d2456")
+		)
+		(pin "2"
+			(uuid "0ae0ead9-51fa-4445-816a-66c206a495ab")
+		)
+		(pin "1"
+			(uuid "385eec4a-edb2-43d3-997a-ab4adc6763dc")
+		)
+		(pin "3"
+			(uuid "a8ec7886-a2d5-4ed6-ab17-1d7eb9459d7f")
+		)
+		(instances
+			(project "target"
+				(path "/1c02f793-f381-44cb-838a-dbb787484d0c/b3335a6a-71bd-476c-b233-926fd1552a47"
+					(reference "D23")
+					(unit 1)
+				)
+			)
+		)
 	)
 	(sheet
 		(at 100.33 99.06)
@@ -231,130 +799,6 @@
 			(project "target"
 				(path "/1c02f793-f381-44cb-838a-dbb787484d0c/b3335a6a-71bd-476c-b233-926fd1552a47"
 					(page "14")
-				)
-			)
-		)
-	)
-	(sheet
-		(at 100.33 111.76)
-		(size 12.7 5.08)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(stroke
-			(width 0.1524)
-			(type solid)
-		)
-		(fill
-			(color 0 0 0 0.0000)
-		)
-		(uuid "8dfc6bd2-e1b6-4783-9726-7c4cdc16f4ae")
-		(property "Sheetname" "ESD I2C"
-			(at 100.33 111.0484 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left bottom)
-			)
-		)
-		(property "Sheetfile" "esd_i2c.kicad_sch"
-			(at 100.33 117.4246 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-			)
-		)
-		(pin "I{slash}O1" bidirectional
-			(at 100.33 114.3 180)
-			(uuid "d99732e1-04d7-4464-8480-d17d0b754c7b")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(pin "I{slash}O2" bidirectional
-			(at 113.03 114.3 0)
-			(uuid "4101120c-2f77-4a89-a981-e2c10f5ca68b")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(instances
-			(project "target"
-				(path "/1c02f793-f381-44cb-838a-dbb787484d0c/b3335a6a-71bd-476c-b233-926fd1552a47"
-					(page "15")
-				)
-			)
-		)
-	)
-	(sheet
-		(at 100.33 121.92)
-		(size 12.7 5.08)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(stroke
-			(width 0.1524)
-			(type solid)
-		)
-		(fill
-			(color 0 0 0 0.0000)
-		)
-		(uuid "cf7b2b9f-f289-4645-aad4-155755d454b2")
-		(property "Sheetname" "ESD I2C1"
-			(at 100.33 121.2084 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left bottom)
-			)
-		)
-		(property "Sheetfile" "esd_i2c.kicad_sch"
-			(at 100.33 127.5846 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-			)
-		)
-		(pin "I{slash}O1" bidirectional
-			(at 100.33 124.46 180)
-			(uuid "c6c20f7a-6bfa-432e-addb-1a35174452b5")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(pin "I{slash}O2" bidirectional
-			(at 113.03 124.46 0)
-			(uuid "6376f8db-d0ec-490c-a5d0-287bb78aeb12")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(instances
-			(project "target"
-				(path "/1c02f793-f381-44cb-838a-dbb787484d0c/b3335a6a-71bd-476c-b233-926fd1552a47"
-					(page "13")
 				)
 			)
 		)

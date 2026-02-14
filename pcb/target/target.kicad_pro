@@ -37,9 +37,9 @@
         "other_text_thickness": 0.15,
         "other_text_upright": false,
         "pads": {
-          "drill": 3.0,
-          "height": 3.0,
-          "width": 3.0
+          "drill": 0.0,
+          "height": 4.0,
+          "width": 2.0
         },
         "silk_line_width": 0.1,
         "silk_text_italic": false,
@@ -767,16 +767,8 @@
       "ESD"
     ],
     [
-      "cf7b2b9f-f289-4645-aad4-155755d454b2",
-      "ESD I2C1"
-    ],
-    [
       "063a186d-2134-46a0-b292-0e842d5007c8",
       "ESD Power1"
-    ],
-    [
-      "8dfc6bd2-e1b6-4783-9726-7c4cdc16f4ae",
-      "ESD I2C"
     ],
     [
       "fceb7ffc-ec02-4a02-b15d-63e976454ef7",

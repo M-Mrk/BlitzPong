@@ -573,7 +573,7 @@
       "plot": "export/",
       "pos_files": "",
       "specctra_dsn": "",
-      "step": "",
+      "step": "../../../../Downloads/controller.step",
       "svg": "",
       "vrml": ""
     },

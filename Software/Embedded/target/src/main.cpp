@@ -39,6 +39,10 @@ void requestEvent()
 {
   switch (g_lastCMD)
   {
+  case CMD_GET_VERSION:
+    Wire.write(VERSION_CMD);
+    break;
+
   case CMD_GET_DEBUG:
     Wire.write(g_debug);
     break;

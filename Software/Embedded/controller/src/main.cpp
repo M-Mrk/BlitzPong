@@ -1,86 +1,81 @@
 #include "freertos/FreeRTOS.h"
 #include "freertos/task.h"
-#include "driver/gpio.h"
-#include "driver/i2c.h"
 #include "esp_log.h"
+#include "esp_timer.h"
+
+#include <cstdio>
+
 #include "commands.h"
-
-#define target_address 0x04
-#define I2C_MASTER_PORT I2C_NUM_0
-#define I2C_MASTER_SDA_PIN GPIO_NUM_6
-#define I2C_MASTER_SCL_PIN GPIO_NUM_7
-#define I2C_MASTER_FREQ_HZ 100000
-
-#define SCREEN_ADDRESS 0x3C
-#define GPIO_ALT_CYCLE GPIO_NUM_0
-#define GPIO_SEND_ZERO GPIO_NUM_1
+#include "display.h"
+#include "targets.h"
+#include "inputs.h"
 
 static const char *TAG = "CONTROLLER";
-static uint8_t g_target_address = target_address;
-static uint8_t g_found_addresses[128];
-static size_t g_found_count = 0;
-static volatile bool g_cycle_requested = false;
-static volatile bool g_send_zero_requested = false;
-static uint8_t g_next_cycle_color = 1;
-static int g_prev_gpio0_level = 1;
-static int g_prev_gpio1_level = 1;
+static uint8_t g_target_address = 0x04;
 
-static esp_err_t init_i2c_master()
+static Targets g_targets;
+static Inputs g_inputs;
+
+static void cycle_target()
 {
-    i2c_config_t conf = {};
-    conf.mode = I2C_MODE_MASTER;
-    conf.sda_io_num = 22;
-    conf.sda_pullup_en = GPIO_PULLUP_ENABLE;
-    conf.scl_io_num = 23;
-    conf.scl_pullup_en = GPIO_PULLUP_ENABLE;
-    conf.master.clk_speed = I2C_MASTER_FREQ_HZ;
-
-    esp_err_t err = i2c_param_config(I2C_MASTER_PORT, &conf);
+    esp_err_t err = g_targets.enable_target(0);
     if (err != ESP_OK)
     {
-        return err;
+        ESP_LOGE(TAG, "Failed to send CMD_SET_COLOR=1: %s", esp_err_to_name(err));
+        return;
     }
 
-    return i2c_driver_install(I2C_MASTER_PORT, conf.mode, 0, 0, 0);
+    ESP_LOGI(TAG, "Sent CMD_SET_COLOR=1");
 }
 
-static esp_err_t probe_address(uint8_t address)
+static void send_zero()
 {
-    i2c_cmd_handle_t cmd = i2c_cmd_link_create();
-    i2c_master_start(cmd);
-    i2c_master_write_byte(cmd, (address << 1) | I2C_MASTER_WRITE, true);
-    i2c_master_stop(cmd);
-    esp_err_t err = i2c_master_cmd_begin(I2C_MASTER_PORT, cmd, pdMS_TO_TICKS(50));
-    i2c_cmd_link_delete(cmd);
-    return err;
+    esp_err_t err = g_targets.disable_target(0);
+    if (err != ESP_OK)
+    {
+        ESP_LOGE(TAG, "Failed to send CMD_SET_COLOR=0: %s", esp_err_to_name(err));
+        return;
+    }
+
+    ESP_LOGI(TAG, "Sent CMD_SET_COLOR=0");
 }
 
-static void scan_i2c_devices()
+static void update_targets()
 {
-    g_found_count = 0;
-    ESP_LOGI(TAG, "Scanning I2C bus for devices...");
+    g_targets.update_targets();
+    g_targets.set_threshold_all(80);
+}
 
-    for (int addr = 1; addr < 127; ++addr)
+static void get_target_data()
+{
+    if (g_targets.connected_targets.empty())
     {
-        if (addr == SCREEN_ADDRESS) {
-            // continue;
-        }
-        esp_err_t err = probe_address(addr);
-        if (err == ESP_OK)
-        {
-            g_found_addresses[g_found_count++] = addr;
-            ESP_LOGI(TAG, "Found I2C device at 0x%02X", addr);
-        }
+        ESP_LOGW(TAG, "No targets connected, cannot get data");
+        return;
     }
 
-    if (g_found_count == 0)
-    {
-        ESP_LOGW(TAG, "No I2C devices found on the bus");
-    }
-    else
-    {
-        ESP_LOGI(TAG, "Scan complete: %d device(s) found", g_found_count);
-    }
+    Target target_0 = g_targets.connected_targets[0];
+    uint8_t vibration = target_0.get_vibration();
+    ESP_LOGI(TAG, "Target 0 vibration: %d", vibration);
+}
+
+static void encoder_cw()
+{
+    ESP_LOGI(TAG, "Encoder CW");
+}
+
+static void encoder_ccw()
+{
+    ESP_LOGI(TAG, "Encoder CCW");
+}
+
+static void render_testing_text()
+{
+    u8g2_t *u8g2 = display_get_u8g2();
+    u8g2_ClearBuffer(u8g2);
+    u8g2_SetFont(u8g2, u8g2_font_ncenB08_tr);
+    u8g2_DrawStr(u8g2, 18, 36, "Testing");
+    u8g2_SendBuffer(u8g2);
 }
 
 void blink()
@@ -97,115 +92,74 @@ void blink()
     vTaskDelay(pdMS_TO_TICKS(1000));
 }
 
-static esp_err_t send_set_color(uint8_t color)
+void draw(void *pvParameters)
 {
-    blink();
-    uint8_t payload[2] = {CMD_SET_COLOR, color};
-    return i2c_master_write_to_device(
-        I2C_MASTER_PORT,
-        g_target_address,
-        payload,
-        sizeof(payload),
-        pdMS_TO_TICKS(CMD_PROCESSING_TIME_MS));
-}
+    (void)pvParameters;
 
-static void IRAM_ATTR gpio0_isr_handler(void *arg)
-{
-    (void)arg;
-    g_cycle_requested = true;
-}
+    static int frame = 0;
 
-static void IRAM_ATTR gpio1_isr_handler(void *arg)
-{
-    (void)arg;
-    g_send_zero_requested = true;
-}
-
-static esp_err_t init_button_interrupts()
-{
-    gpio_config_t io_conf = {};
-    io_conf.intr_type = GPIO_INTR_NEGEDGE;
-    io_conf.mode = GPIO_MODE_INPUT;
-    io_conf.pin_bit_mask = (1ULL << GPIO_ALT_CYCLE) | (1ULL << GPIO_SEND_ZERO);
-    io_conf.pull_up_en = GPIO_PULLUP_ENABLE;
-    io_conf.pull_down_en = GPIO_PULLDOWN_DISABLE;
-
-    esp_err_t err = gpio_config(&io_conf);
-    if (err != ESP_OK)
+    while (true)
     {
-        return err;
-    }
+        frame++;
+        u8g2_t *u8g2 = display_get_u8g2();
+        u8g2_ClearBuffer(u8g2);
+        u8g2_ClearDisplay(u8g2);
+        u8g2_SetFont(u8g2, u8g2_font_ncenB08_tr);
+        u8g2_DrawStr(u8g2, 18, 36, "Hello World!");
+        u8g2_DrawStr(u8g2, 18, 50, "Frame: ");
 
-    err = gpio_install_isr_service(0);
-    if (err != ESP_OK && err != ESP_ERR_INVALID_STATE)
-    {
-        return err;
-    }
+        char frame_text[16];
+        snprintf(frame_text, sizeof(frame_text), "%d", frame);
+        u8g2_DrawStr(u8g2, 60, 50, frame_text);
 
-    err = gpio_isr_handler_add(GPIO_ALT_CYCLE, gpio0_isr_handler, nullptr);
-    if (err != ESP_OK)
-    {
-        return err;
+        u8g2_SendBuffer(u8g2);
+        vTaskDelay(pdMS_TO_TICKS(1000));
     }
-
-    return gpio_isr_handler_add(GPIO_SEND_ZERO, gpio1_isr_handler, nullptr);
 }
-
 
 void setup()
 {
     gpio_set_direction(GPIO_NUM_15, GPIO_MODE_OUTPUT);
 
-    esp_err_t err = init_i2c_master();
+    esp_err_t err = g_targets.init();
     if (err != ESP_OK)
     {
-        ESP_LOGE(TAG, "I2C init failed: %s", esp_err_to_name(err));
+        ESP_LOGE(TAG, "Targets init failed: %s", esp_err_to_name(err));
         return;
     }
+    g_targets.update_targets();
 
-    vTaskDelay(pdMS_TO_TICKS(500));
-    scan_i2c_devices();
-
-    err = init_button_interrupts();
+    err = display_init();
     if (err != ESP_OK)
     {
-        ESP_LOGE(TAG, "GPIO interrupt init failed: %s", esp_err_to_name(err));
-        return;
+        ESP_LOGE(TAG, "Display init failed: %s", esp_err_to_name(err));
     }
+    else
+    {
+        render_testing_text();
+        ESP_LOGI(TAG, "Display text rendered: Testing");
+    }
+
+    g_inputs.set_sw1_callback(cycle_target);
+    g_inputs.set_sw2_callback(send_zero);
+    g_inputs.set_sw3_callback(update_targets);
+    g_inputs.set_sw4_callback(get_target_data);
+    g_inputs.set_ec_cw_callback(encoder_cw);
+    g_inputs.set_ec_ccw_callback(encoder_ccw);
+    g_inputs.init();
+
+    xTaskCreatePinnedToCore(
+        draw,
+        "DrawTask",
+        4096,
+        nullptr,
+        1,
+        nullptr,
+        tskNO_AFFINITY);
 }
 
 void loop()
 {
-    if (g_send_zero_requested)
-    {
-        g_send_zero_requested = false;
-        g_cycle_requested = false;
-
-        esp_err_t err = send_set_color(0);
-        if (err != ESP_OK)
-        {
-            ESP_LOGE(TAG, "Failed to send CMD_SET_COLOR=0: %s", esp_err_to_name(err));
-        }
-        else
-        {
-            ESP_LOGI(TAG, "Sent CMD_SET_COLOR=0");
-        }
-    }
-
-    if (g_cycle_requested)
-    {
-        g_cycle_requested = false;
-        esp_err_t err = send_set_color(1);
-        if (err != ESP_OK)
-        {
-            ESP_LOGE(TAG, "Failed to send CMD_SET_COLOR=%u: %s", g_next_cycle_color, esp_err_to_name(err));
-        }
-        else
-        {
-            ESP_LOGI(TAG, "Sent CMD_SET_COLOR=%u", g_next_cycle_color);
-        }
-    }
-
     vTaskDelay(pdMS_TO_TICKS(200));
 }
 

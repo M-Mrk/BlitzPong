@@ -9,7 +9,7 @@ constexpr int CMD_PROCESSING_TIME_MS = 100;
 
 // Define all shared commands here
 // All CMDs expect or return uint8_t unless otherwise specified
-#define VERSION_CMD = 1
+constexpr uint8_t VERSION_CMD = 1;
 
 #define CMD_GET_VERSION 0x01
 

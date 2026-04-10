@@ -10,6 +10,8 @@
 #include "targets.h"
 #include "inputs.h"
 
+#include "screens/connection.h"
+
 static const char *TAG = "CONTROLLER";
 static uint8_t g_target_address = 0x04;
 
@@ -69,54 +71,6 @@ static void encoder_ccw()
     ESP_LOGI(TAG, "Encoder CCW");
 }
 
-static void render_testing_text()
-{
-    u8g2_t *u8g2 = display_get_u8g2();
-    u8g2_ClearBuffer(u8g2);
-    u8g2_SetFont(u8g2, u8g2_font_ncenB08_tr);
-    u8g2_DrawStr(u8g2, 18, 36, "Testing");
-    u8g2_SendBuffer(u8g2);
-}
-
-void blink()
-{
-    gpio_set_level(GPIO_NUM_15, 1);
-    vTaskDelay(pdMS_TO_TICKS(100));
-    gpio_set_level(GPIO_NUM_15, 0);
-    vTaskDelay(pdMS_TO_TICKS(100));
-    gpio_set_level(GPIO_NUM_15, 1);
-    vTaskDelay(pdMS_TO_TICKS(100));
-    gpio_set_level(GPIO_NUM_15, 0);
-    vTaskDelay(pdMS_TO_TICKS(100));
-    gpio_set_level(GPIO_NUM_15, 1);
-    vTaskDelay(pdMS_TO_TICKS(1000));
-}
-
-void draw(void *pvParameters)
-{
-    (void)pvParameters;
-
-    static int frame = 0;
-
-    while (true)
-    {
-        frame++;
-        u8g2_t *u8g2 = display_get_u8g2();
-        u8g2_ClearBuffer(u8g2);
-        u8g2_ClearDisplay(u8g2);
-        u8g2_SetFont(u8g2, u8g2_font_ncenB08_tr);
-        u8g2_DrawStr(u8g2, 18, 36, "Hello World!");
-        u8g2_DrawStr(u8g2, 18, 50, "Frame: ");
-
-        char frame_text[16];
-        snprintf(frame_text, sizeof(frame_text), "%d", frame);
-        u8g2_DrawStr(u8g2, 60, 50, frame_text);
-
-        u8g2_SendBuffer(u8g2);
-        vTaskDelay(pdMS_TO_TICKS(1000));
-    }
-}
-
 void setup()
 {
     gpio_set_direction(GPIO_NUM_15, GPIO_MODE_OUTPUT);
@@ -134,11 +88,6 @@ void setup()
     {
         ESP_LOGE(TAG, "Display init failed: %s", esp_err_to_name(err));
     }
-    else
-    {
-        render_testing_text();
-        ESP_LOGI(TAG, "Display text rendered: Testing");
-    }
 
     g_inputs.set_sw1_callback(cycle_target);
     g_inputs.set_sw2_callback(send_zero);
@@ -147,20 +96,13 @@ void setup()
     g_inputs.set_ec_cw_callback(encoder_cw);
     g_inputs.set_ec_ccw_callback(encoder_ccw);
     g_inputs.init();
-
-    xTaskCreatePinnedToCore(
-        draw,
-        "DrawTask",
-        4096,
-        nullptr,
-        1,
-        nullptr,
-        tskNO_AFFINITY);
 }
 
 void loop()
 {
-    vTaskDelay(pdMS_TO_TICKS(200));
+    ConnectionScreen::show(g_targets, g_inputs, display_get_u8g2());
+    ESP_LOGI(TAG, "Main loop running...");
+    vTaskDelay(pdMS_TO_TICKS(1000));
 }
 
 extern "C" void app_main()

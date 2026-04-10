@@ -1,3 +1,5 @@
+#pragma once
+
 #include "driver/gpio.h"
 #include "freertos/FreeRTOS.h"
 #include "freertos/task.h"
@@ -21,6 +23,13 @@ public:
     void set_sw4_callback(Callback callback) { sw4_callback_ = callback; }
     void set_ec_cw_callback(Callback callback) { ec_cw_callback_ = callback; }
     void set_ec_ccw_callback(Callback callback) { ec_ccw_callback_ = callback; }
+
+    Callback get_sw1_callback() const { return sw1_callback_; }
+    Callback get_sw2_callback() const { return sw2_callback_; }
+    Callback get_sw3_callback() const { return sw3_callback_; }
+    Callback get_sw4_callback() const { return sw4_callback_; }
+    Callback get_ec_cw_callback() const { return ec_cw_callback_; }
+    Callback get_ec_ccw_callback() const { return ec_ccw_callback_; }
 
 private:
     Callback sw1_callback_ = nullptr;

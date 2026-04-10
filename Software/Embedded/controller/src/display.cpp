@@ -94,7 +94,7 @@ static uint8_t u8x8_esp32_i2c_byte_cb(u8x8_t *u8x8, uint8_t msg, uint8_t arg_int
 
 esp_err_t display_init()
 {
-    u8g2_Setup_ssd1309_i2c_128x64_noname2_f(&g_u8g2, U8G2_R2, u8x8_esp32_i2c_byte_cb, u8x8_esp32_gpio_and_delay_cb);
+    u8g2_Setup_ssd1309_i2c_128x64_noname0_f(&g_u8g2, U8G2_R2, u8x8_esp32_i2c_byte_cb, u8x8_esp32_gpio_and_delay_cb);
     u8g2_SetI2CAddress(&g_u8g2, SCREEN_ADDRESS << 1);
 
     u8g2_InitDisplay(&g_u8g2);

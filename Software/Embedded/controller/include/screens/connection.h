@@ -1,0 +1,12 @@
+#pragma once
+
+#include "U8g2lib.h"
+#include <string>
+
+#include "display.h"
+#include "targets.h"
+#include "inputs.h"
+
+namespace ConnectionScreen {
+    void show(Targets &targets, Inputs &inputs, u8g2_t *u8g2);
+}

@@ -7,11 +7,44 @@ volatile unsigned long timer_millis = 0;
 
 #include "../shared/commands.h"
 
-#define SLAVE_ADDRESS 0x04
 #define NUM_LEDS 4
-constexpr uint8_t FAKE_NUM_LEDS = (NUM_LEDS*2)+1; // Leave space so we can change an immaginary LED to trick FastLED into updating even though no real change was made
+constexpr uint8_t FAKE_NUM_LEDS = (NUM_LEDS * 2) + 1; // Leave space so we can change an immaginary LED to trick FastLED into updating even though no real change was made
 #define LED_PIN PIN_PA1
 #define SENSOR_PIN PIN_PA5
+constexpr uint8_t I2C_ADDRESS_MIN = 0x08;
+constexpr uint8_t I2C_ADDRESS_MAX = 0x77;
+constexpr uint8_t I2C_ADDRESS_EXCLUDED = 0x3C;
+
+uint8_t derive_i2c_address_from_serial()
+{
+  const uint8_t serial_number[] = {
+      SIGROW.SERNUM0,
+      SIGROW.SERNUM1,
+      SIGROW.SERNUM2,
+      SIGROW.SERNUM3,
+      SIGROW.SERNUM4,
+      SIGROW.SERNUM5,
+      SIGROW.SERNUM6,
+      SIGROW.SERNUM7,
+      SIGROW.SERNUM8,
+      SIGROW.SERNUM9,
+  };
+
+  uint32_t hash = 2166136261u;
+  for (uint8_t byte : serial_number)
+  {
+    hash ^= byte;
+    hash *= 16777619u;
+  }
+
+  uint8_t address = I2C_ADDRESS_MIN + (hash % (I2C_ADDRESS_MAX - I2C_ADDRESS_MIN + 1));
+  if (address == I2C_ADDRESS_EXCLUDED)
+  {
+    address = I2C_ADDRESS_EXCLUDED + 1;
+  }
+
+  return address;
+}
 
 template <uint8_t DATA_PIN, EOrder RGB_ORDER = RGB>
 class SK6812B_Controller : public ClocklessController<
@@ -90,15 +123,19 @@ void receiveEvent(int numBytes)
     case CMD_SET_DEBUG:
       g_debug = (uint8_t)data;
       break;
-    
+
     case CMD_SET_AUTO_TURN_OFF:
       uint8_t received_value = (uint8_t)data;
-      if (received_value > 1) {
+      if (received_value > 1)
+      {
         received_value = 1;
       }
-      if (received_value == 1){
+      if (received_value == 1)
+      {
         g_auto_turn_off = true;
-      } else {
+      }
+      else
+      {
         g_auto_turn_off = false;
       }
       break;
@@ -115,7 +152,7 @@ void receiveEvent(int numBytes)
 
 void setup()
 {
-  Wire.begin(SLAVE_ADDRESS);
+  Wire.begin(derive_i2c_address_from_serial());
 
   Wire.onRequest(requestEvent);
   Wire.onReceive(receiveEvent);
@@ -164,7 +201,8 @@ void check_hit()
   if (sensor_value > g_threshold)
   {
     g_hit = 1;
-    if (g_auto_turn_off) {
+    if (g_auto_turn_off)
+    {
       set_color(0, 0); // Turn off LEDs immediately when hit is detected
     }
   }

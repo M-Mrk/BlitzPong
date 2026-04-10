@@ -1,5 +1,4 @@
-#ifndef COMMANDS_H
-#define COMMANDS_H
+#pragma once
 
 constexpr int CMD_PROCESSING_TIME_MS = 100;
 
@@ -27,5 +26,3 @@ constexpr uint8_t VERSION_CMD = 1;
 #define CMD_SET_BRIGHTNESS 0x0B
 
 #define CMD_SET_AUTO_TURN_OFF 0x0C // 0: Off, 1: On (Automatically turn lights off when threshold is met/target is hit)
-
-#endif // COMMANDS_H

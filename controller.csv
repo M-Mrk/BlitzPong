@@ -49,3 +49,4 @@ U2,1,CH224K,,,,Package_SO:SSOP-10-1EP_3.9x4.9mm_P1mm_EP2.1x3.3mm_ThermalVias,htt
 U3,1,TPS54531DDAR,,,,external_footprints.petty:CONV_TPS54531DDAR,https://www.lcsc.com/datasheet/C50605.pdf,C50605,
 U4,1,AMS1117-3.3,,Excluded from BOM,,Package_TO_SOT_SMD:SOT-223-3_TabPin2,http://www.advanced-monolithic.com/pdf/ds1117.pdf,C347222,
 U5,1,TPS25942ARVCR,,,,external_footprints.petty:IC_TPS25942ARVCR,,C181295,
+"", "4", "Screw 2,5x10mm","","","","","","","https://www.ebay.de/itm/127200989742"

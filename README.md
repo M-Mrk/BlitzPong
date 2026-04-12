@@ -5,7 +5,7 @@ A precision trainer for table tennis that helps develop accuracy and ball placem
 The device features 2 rows of 5 targets each. Targets illuminate to indicate where to hit, and your score increases with each successful hit.
 
 **Note:** Current version supports individual row training without cross-row communication.
-**Note:** Current hardware is wrong due to lcsc/Xinglight component change. Do not try to build before this is addressed
+**Note:** Current hardware is wrong due to lcsc/Xinglight component change (see end). Do not try to build before this is addressed
 
 ![Completed Assembly](pictures/completed-controller-targets.jpeg)
 
@@ -108,6 +108,7 @@ I noticed exactly what is mentioned above and was participating in [Hackclub's B
 |U3          |1  |TPS54531DDAR           |https://www.lcsc.com/datasheet/C50605.pdf                                                                                   |C50605   ||
 |U4          |1  |AMS1117-3.3            |http://www.advanced-monolithic.com/pdf/ds1117.pdf                                                                           |C347222  ||
 |U5          |1  |TPS25942ARVCR          |                                                                                                                            |C181295  ||
+|            |4  |Screw 2,5x10mm         |~                                                                                                                           |         |https://www.ebay.de/itm/127200989742|
 
 ## Target (with LEDs)
 |Reference   |Qty|Value                  |Datasheet                                                                                                                   |LCSC     |Link       |
@@ -129,3 +130,7 @@ I noticed exactly what is mentioned above and was participating in [Hackclub's B
 |R2,R3       |2  |10kR                   |~                                                                                                                           |C84376   |           |
 |R4          |1  |1M                     |~                                                                                                                           |C17514   |           |
 |U1          |1  |Attiny1614-SSF         |https://www.lcsc.com/datasheet/C614831.pdf                                                                                  |C614831  |           |
+|            |4  |Screw 2,5x10mm         |~                                                                                                                           |         |https://www.ebay.de/itm/127200989742|
+
+# Problems
+I designed with 'XINGLIGHT XL-5050RGBC-SK6812B' LEDs in mind and they had the LCSC Number C5349959. I downloaded the datasheet, which you can view [here](misc/old-datasheet.pdf). As seen in the datasheet they work from 3.5 to 5.5 Volts and two of their pins are NC/Not connected. After ordering and soldering I couldn't get them to work reliably and so I redownloaded the datasheet. This [new datasheet](misc/new-datasheet.pdf) exclaims that they work with 9 to 14 Volt and all pins are populated and the order changed. What happend? When viewing the [JLCPCB component Library](https://jlcpcb.com/partdetail/XINGLIGHT-XL_5050RGBCSK6812B/C5349959) which only gets updated when the JLCPCB warehouse runs out of that part it still links the old datasheet and the same LCSC number C5349959. This means that between downloading the datasheet and ordering Xinglight replaced their XL-5050RGBC-SK6812B with a new model running at a completely different volatage and a different pin out, whilst keeping the same name and lcsc number. For now it is a miracle that they even work with just 5 Volt and light up with the wrong pinout, but they often don't turn off or correctly change color and are limited to single channel colors (so only red, green and blue).

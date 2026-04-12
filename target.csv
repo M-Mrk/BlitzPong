@@ -19,3 +19,4 @@
 "R4","1","1M","","","","Resistor_SMD:R_0805_2012Metric","~","C17514",
 "U1","1","Attiny1614-SSF","","","","custom_footprints:WQFN-24_L4.0-W4.0-P0.50-TL-EP2.6","https://www.lcsc.com/datasheet/C614831.pdf","C614831",
 "U2","1","~","","Excluded from BOM","","updi_pogo:P2,54_MH3_pogo_updi","","",
+"", "4", "Screw 2,5x10mm","","","","","","","https://www.ebay.de/itm/127200989742"

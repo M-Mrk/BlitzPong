@@ -1,5 +1,7 @@
 #include "inputs.h"
 
+static const char *TAG = "INPUTS";
+
 constexpr int button_debounce_time_ms = 200;
 constexpr int ec_transition_guard_time_ms = 2;
 
@@ -139,6 +141,7 @@ void Inputs::input_task(void *pvParameters)
     {
         if (inputs->sw1_pressed_)
         {
+            ESP_LOGI(TAG, "SW1 pressed");
             inputs->sw1_pressed_ = false;
             if (inputs->sw1_callback_)
             {
@@ -148,6 +151,7 @@ void Inputs::input_task(void *pvParameters)
 
         if (inputs->sw2_pressed_)
         {
+            ESP_LOGI(TAG, "SW2 pressed");
             inputs->sw2_pressed_ = false;
             if (inputs->sw2_callback_)
             {
@@ -157,6 +161,7 @@ void Inputs::input_task(void *pvParameters)
 
         if (inputs->sw3_pressed_)
         {
+            ESP_LOGI(TAG, "SW3 pressed");
             inputs->sw3_pressed_ = false;
             if (inputs->sw3_callback_)
             {
@@ -166,6 +171,7 @@ void Inputs::input_task(void *pvParameters)
 
         if (inputs->sw4_pressed_)
         {
+            ESP_LOGI(TAG, "SW4 pressed");
             inputs->sw4_pressed_ = false;
             if (inputs->sw4_callback_)
             {
@@ -175,6 +181,7 @@ void Inputs::input_task(void *pvParameters)
 
         if (inputs->cw_pressed_)
         {
+            ESP_LOGI(TAG, "Encoder CW");
             inputs->cw_pressed_ = false;
             if (inputs->ec_cw_callback_)
             {
@@ -184,6 +191,7 @@ void Inputs::input_task(void *pvParameters)
 
         if (inputs->ccw_pressed_)
         {
+            ESP_LOGI(TAG, "Encoder CCW");
             inputs->ccw_pressed_ = false;
             if (inputs->ec_ccw_callback_)
             {

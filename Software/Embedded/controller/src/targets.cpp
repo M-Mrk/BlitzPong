@@ -96,45 +96,50 @@ std::vector<uint8_t> Targets::scan_targets()
 void Targets::update_targets()
 {
     std::vector<uint8_t> current_connected_targets = scan_targets();
-    for (uint8_t address : current_connected_targets) // Add new targets
+
+    // Add newly discovered targets.
+    for (uint8_t address : current_connected_targets)
     {
         add_target(address);
     }
 
-    for (Target &assumed_target : connected_targets)
-    { // Check for now disconnected targets and remove them
-        bool currently_connected = false;
-        uint8_t target_address = assumed_target.address;
-
-        for (uint8_t address : current_connected_targets)
-        {
-            if (target_address == address)
+    // Remove targets that are no longer present in the latest scan.
+    connected_targets.erase(
+        std::remove_if(
+            connected_targets.begin(),
+            connected_targets.end(),
+            [&](const Target &target)
             {
-                currently_connected = true;
-                break;
-            }
-        }
+                bool currently_connected = std::find(
+                                               current_connected_targets.begin(),
+                                               current_connected_targets.end(),
+                                               target.address) != current_connected_targets.end();
+                if (!currently_connected)
+                {
+                    ESP_LOGW(TAG, "Target (0x%02X) not connected anymore, removing...", target.address);
+                }
+                return !currently_connected;
+            }),
+        connected_targets.end());
 
-        if (!currently_connected)
-        {
-            ESP_LOGW(TAG, "Target (0x%02X) not connected anymore, removing...", target_address);
-            remove_target(target_address);
-        }
-    }
+    // Remove targets with incompatible firmware version.
+    connected_targets.erase(
+        std::remove_if(
+            connected_targets.begin(),
+            connected_targets.end(),
+            [&](Target &target)
+            {
+                uint8_t version = target.get_version();
+                if (version != VERSION_CMD)
+                {
+                    ESP_LOGE(TAG, "Target at 0x%02X has unexpected version 0x%02X, expected 0x%02X", target.address, version, VERSION_CMD);
+                    return true;
+                }
 
-    for (Target &target : connected_targets)
-    {
-        uint8_t version = target.get_version();
-        if (version != VERSION_CMD)
-        {
-            ESP_LOGE(TAG, "Target at 0x%02X has unexpected version 0x%02X, expected 0x%02X", target.address, version, VERSION_CMD);
-            remove_target(target.address);
-        }
-        else
-        {
-            ESP_LOGI(TAG, "Target at 0x%02X is running expected version 0x%02X", target.address, version);
-        }
-    }
+                ESP_LOGI(TAG, "Target at 0x%02X is running expected version 0x%02X", target.address, version, VERSION_CMD);
+                return false;
+            }),
+        connected_targets.end());
 }
 
 void Targets::set_threshold_all(uint8_t threshold)

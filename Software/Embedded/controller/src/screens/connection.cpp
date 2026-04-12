@@ -1,6 +1,4 @@
 #include "screens/connection.h"
-#include "freertos/FreeRTOS.h"
-#include "freertos/task.h"
 
 static const char *TAG = "SCREEN/CONN";
 
@@ -26,7 +24,6 @@ namespace ConnectionScreen
     static Inputs *active_inputs = nullptr;
     static Inputs::Callback previous_sw2_callback = nullptr;
     static Inputs::Callback previous_sw3_callback = nullptr;
-    static TaskHandle_t screen_task_handle;
 
     static void set_screen_message(const std::string &message)
     {
@@ -42,9 +39,8 @@ namespace ConnectionScreen
         // Buttons
         if (first_draw)
         {
-            constexpr int button_y = 63;
-            u8g2_DrawStr(u8g2, 80, button_y, "Rescan");
-            u8g2_DrawStr(u8g2, 113, button_y, "Next");
+            u8g2_DrawStr(u8g2, 80, BUTTON_Y, "Rescan");
+            u8g2_DrawStr(u8g2, 113, BUTTON_Y, "Next");
         }
 
         // Target
@@ -124,7 +120,6 @@ namespace ConnectionScreen
         }
 
         delete params;
-        screen_task_handle = nullptr;
         running = false;
         vTaskDelete(nullptr);
     }
@@ -163,6 +158,7 @@ namespace ConnectionScreen
 
     void show(Targets &targets, Inputs &inputs, u8g2_t *u8g2)
     {
+        ESP_LOGI(TAG, "Showing Connection Screen");
         if (running || active_inputs != nullptr)
         {
             ESP_LOGW(TAG, "Connection screen is already running");
@@ -182,12 +178,11 @@ namespace ConnectionScreen
         previous_sw3_callback = inputs.get_sw3_callback();
 
         auto *params = new TaskParams{&targets, &inputs, u8g2};
-        BaseType_t result = xTaskCreate(screen_task, "ConnectionScreen", 4096, params, 10, &screen_task_handle);
+        BaseType_t result = xTaskCreate(screen_task, "ConnectionScreen", 4096, params, 10, nullptr);
         if (result != pdPASS)
         {
             ESP_LOGE(TAG, "Failed to start ConnectionScreen task");
             delete params;
-            screen_task_handle = nullptr;
             running = false;
             stop_requested = false;
             active_targets = nullptr;
@@ -216,5 +211,7 @@ namespace ConnectionScreen
         previous_sw2_callback = nullptr;
         previous_sw3_callback = nullptr;
         stop_requested = false;
+        inputs.clear_all();
+        ESP_LOGI(TAG, "Exiting Connection Screen");
     }
 } // namespace ConnectionScreen

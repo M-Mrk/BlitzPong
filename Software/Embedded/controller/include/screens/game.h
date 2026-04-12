@@ -9,6 +9,6 @@
 #include "targets.h"
 #include "inputs.h"
 
-namespace ConnectionScreen {
-    void show(Targets &targets, Inputs &inputs, u8g2_t *u8g2);
+namespace GameScreen {
+    bool show(Targets &targets, Inputs &inputs, u8g2_t *u8g2);
 }

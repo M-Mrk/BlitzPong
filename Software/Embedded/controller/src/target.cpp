@@ -1,5 +1,5 @@
 #include "target.h"
-#include <driver/i2c.h>
+
 static const char *TAG = "TARGETS";
 
 Target::Target(uint8_t addr)

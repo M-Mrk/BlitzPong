@@ -3,6 +3,7 @@
 #include "driver/i2c.h"
 #include "esp_log.h"
 #include <vector>
+#include <algorithm>
 #include "pins.h"
 #include "target.h"
 

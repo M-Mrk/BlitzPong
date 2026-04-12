@@ -11,6 +11,8 @@
 #include "inputs.h"
 
 #include "screens/connection.h"
+#include "screens/threshold.h"
+#include "screens/game.h"
 
 static const char *TAG = "CONTROLLER";
 static uint8_t g_target_address = 0x04;
@@ -101,8 +103,21 @@ void setup()
 void loop()
 {
     ConnectionScreen::show(g_targets, g_inputs, display_get_u8g2());
-    ESP_LOGI(TAG, "Main loop running...");
-    vTaskDelay(pdMS_TO_TICKS(1000));
+    
+    threshold:
+    if (!ThresholdScreen::show(g_targets, g_inputs, display_get_u8g2()))
+    {
+        ESP_LOGI(TAG, "User chose to return to connection screen");
+        return;
+    }
+
+    if (!GameScreen::show(g_targets, g_inputs, display_get_u8g2()))
+    {
+        ESP_LOGI(TAG, "User chose to return to threshold screen");
+        goto threshold;
+    }
+    
+    vTaskDelay(pdMS_TO_TICKS(5000));
 }
 
 extern "C" void app_main()

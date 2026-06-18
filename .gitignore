@@ -1,2 +1,6 @@
 pcb/target/target-backups/
 pcb/controller/controller-backups/
+**/.history/
+
+*.bak
+*.lck

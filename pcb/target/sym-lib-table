@@ -1,5 +1,0 @@
-(sym_lib_table
-  (version 7)
-  (lib (name "custom_symbols")(type "KiCad")(uri "${KIPRJMOD}/custom_symbols.kicad_sym")(options "")(descr ""))
-  (lib (name "SI2333CD")(type "KiCad")(uri "${KIPRJMOD}/external_symbols/SI2333CDS-T1-GE3.kicad_sym")(options "")(descr ""))
-)

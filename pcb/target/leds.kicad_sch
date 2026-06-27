@@ -1601,22 +1601,10 @@
 		(uuid "4ecefd6d-f886-4cdd-adac-781d1e44966f")
 	)
 	(junction
-		(at 74.93 127)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "50349d98-a28a-47ab-a87d-7c58f8495141")
-	)
-	(junction
 		(at 252.73 106.68)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "602b9182-c72b-4673-80a5-f9e78209b647")
-	)
-	(junction
-		(at 252.73 111.76)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "6412bbfa-d3d0-45b1-977b-845683999190")
 	)
 	(junction
 		(at 120.65 106.68)
@@ -1635,12 +1623,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "7042fc20-c045-498b-a511-d69d32003557")
-	)
-	(junction
-		(at 74.93 139.7)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "794524c7-31ec-484e-9f5f-a8ba609247aa")
 	)
 	(junction
 		(at 74.93 114.3)
@@ -1685,18 +1667,6 @@
 		(uuid "a8cc02fc-632b-4d60-988b-06e6d89e9e48")
 	)
 	(junction
-		(at 209.55 127)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "aeb96de0-50c6-4740-957e-2d29bab0d872")
-	)
-	(junction
-		(at 252.73 147.32)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "b4ca0719-3788-48e0-97cd-05aefd39285f")
-	)
-	(junction
 		(at 120.65 58.42)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -1713,12 +1683,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "d15075ed-7127-473e-94b8-2cb9d36fe040")
-	)
-	(junction
-		(at 252.73 144.78)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "d4420d0b-e915-42c6-a95e-6f1f474c2cdd")
 	)
 	(junction
 		(at 39.37 52.07)
@@ -1763,22 +1727,10 @@
 		(uuid "f89a4430-3028-4177-82e5-e692ed5feeb2")
 	)
 	(junction
-		(at 252.73 149.86)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "f9180b60-cc99-4c15-90c5-71bf172ee2ee")
-	)
-	(junction
 		(at 252.73 104.14)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "fda6a26f-e684-40ba-b504-5632d7f194bc")
-	)
-	(junction
-		(at 209.55 139.7)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "ffe91dcf-0ef2-4672-b742-06ff2fec505f")
 	)
 	(wire
 		(pts
@@ -1789,16 +1741,6 @@
 			(type default)
 		)
 		(uuid "012740aa-3308-47cb-a897-4d034e1dce8a")
-	)
-	(wire
-		(pts
-			(xy 100.33 147.32) (xy 194.31 147.32)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "02d70c02-41cb-4859-8249-84f19252f877")
 	)
 	(wire
 		(pts
@@ -2072,16 +2014,6 @@
 	)
 	(wire
 		(pts
-			(xy 74.93 127) (xy 74.93 139.7)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "439069c1-6a9a-4798-8b58-93c9c0efbbba")
-	)
-	(wire
-		(pts
 			(xy 232.41 114.3) (xy 232.41 109.22)
 		)
 		(stroke
@@ -2139,16 +2071,6 @@
 			(type default)
 		)
 		(uuid "48db2aad-bdf1-455b-97a2-4f668b546b36")
-	)
-	(wire
-		(pts
-			(xy 100.33 139.7) (xy 100.33 144.78)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "498aa43f-d866-48d9-a23e-6d546f2ea64f")
 	)
 	(wire
 		(pts
@@ -2232,16 +2154,6 @@
 	)
 	(wire
 		(pts
-			(xy 100.33 144.78) (xy 198.12 144.78)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "56bfdda6-08ae-4b54-a835-315e84ce6302")
-	)
-	(wire
-		(pts
 			(xy 184.15 46.99) (xy 184.15 38.1)
 		)
 		(stroke
@@ -2259,16 +2171,6 @@
 			(type default)
 		)
 		(uuid "5a62957f-6804-4772-a17f-ff9685392cdd")
-	)
-	(wire
-		(pts
-			(xy 238.76 152.4) (xy 237.49 152.4)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "5a7b9d30-582d-4010-8ff1-240f808a2c25")
 	)
 	(wire
 		(pts
@@ -2329,46 +2231,6 @@
 			(type default)
 		)
 		(uuid "655e7a2c-7968-4e59-b793-98b49a38fe2c")
-	)
-	(wire
-		(pts
-			(xy 198.12 144.78) (xy 198.12 156.21)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "66468e25-4056-4b1c-af70-d73b9fed549e")
-	)
-	(wire
-		(pts
-			(xy 237.49 152.4) (xy 237.49 158.75)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "6734e54c-e4cf-4458-8006-7bb2383d12be")
-	)
-	(wire
-		(pts
-			(xy 232.41 139.7) (xy 232.41 144.78)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "6823d539-b801-41be-9fd5-1f52142b2965")
-	)
-	(wire
-		(pts
-			(xy 252.73 144.78) (xy 252.73 111.76)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "69dcface-d70d-4ce1-b1e5-0c2d0a5f4e5f")
 	)
 	(wire
 		(pts
@@ -2502,26 +2364,6 @@
 	)
 	(wire
 		(pts
-			(xy 232.41 147.32) (xy 238.76 147.32)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "7cdc526a-0e75-4a3b-a4ca-53038b4570ee")
-	)
-	(wire
-		(pts
-			(xy 252.73 147.32) (xy 252.73 149.86)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "7d997710-efa0-412f-8349-fd23eb393f40")
-	)
-	(wire
-		(pts
 			(xy 74.93 88.9) (xy 83.82 88.9)
 		)
 		(stroke
@@ -2589,26 +2431,6 @@
 			(type default)
 		)
 		(uuid "837b4036-853f-42c0-b63b-1234866fced4")
-	)
-	(wire
-		(pts
-			(xy 100.33 147.32) (xy 100.33 152.4)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "84c1c493-e879-4a9d-80e6-0f9ee3a86de1")
-	)
-	(wire
-		(pts
-			(xy 226.06 139.7) (xy 232.41 139.7)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "855569ea-1ba1-42e9-bcc2-aad0b5b6252a")
 	)
 	(wire
 		(pts
@@ -2722,26 +2544,6 @@
 	)
 	(wire
 		(pts
-			(xy 209.55 139.7) (xy 218.44 139.7)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "9415d523-f0cb-4a51-8d87-1dce0cb6144e")
-	)
-	(wire
-		(pts
-			(xy 74.93 139.7) (xy 74.93 152.4)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "95b32c91-5f86-4bf9-8c6f-8f9eb26b5aa0")
-	)
-	(wire
-		(pts
 			(xy 226.06 38.1) (xy 236.22 38.1)
 		)
 		(stroke
@@ -2759,16 +2561,6 @@
 			(type default)
 		)
 		(uuid "9ad44535-3dcc-45ae-b2c4-c0c151215558")
-	)
-	(wire
-		(pts
-			(xy 194.31 158.75) (xy 194.31 147.32)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "9c16d848-146f-4c19-8cca-eec0c0f80ddf")
 	)
 	(wire
 		(pts
@@ -2822,16 +2614,6 @@
 	)
 	(wire
 		(pts
-			(xy 252.73 149.86) (xy 252.73 152.4)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "a8d73016-f938-43e3-9639-35b6dcdb1e90")
-	)
-	(wire
-		(pts
 			(xy 39.37 52.07) (xy 45.72 52.07)
 		)
 		(stroke
@@ -2849,16 +2631,6 @@
 			(type default)
 		)
 		(uuid "ab8dd87e-423a-4919-a8ab-c0b2ceaf6c2f")
-	)
-	(wire
-		(pts
-			(xy 248.92 149.86) (xy 252.73 149.86)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "abfeed0f-e014-4a29-8e1c-8fcd1c882a5c")
 	)
 	(wire
 		(pts
@@ -2909,16 +2681,6 @@
 			(type default)
 		)
 		(uuid "b2424c87-a02b-491b-bf0b-844c47803729")
-	)
-	(wire
-		(pts
-			(xy 93.98 152.4) (xy 100.33 152.4)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "b2548373-8623-4236-b4fa-dbef567255c4")
 	)
 	(wire
 		(pts
@@ -2992,16 +2754,6 @@
 	)
 	(wire
 		(pts
-			(xy 209.55 139.7) (xy 209.55 152.4)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "c2190283-d141-431e-9ff7-9c5d3d4e235f")
-	)
-	(wire
-		(pts
 			(xy 252.73 104.14) (xy 252.73 106.68)
 		)
 		(stroke
@@ -3009,16 +2761,6 @@
 			(type default)
 		)
 		(uuid "c6826a1c-255e-45da-8f2a-d77102b5bdc0")
-	)
-	(wire
-		(pts
-			(xy 93.98 139.7) (xy 100.33 139.7)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "c83063f7-b6ec-4bdc-b838-e07568a02a68")
 	)
 	(wire
 		(pts
@@ -3042,16 +2784,6 @@
 	)
 	(wire
 		(pts
-			(xy 209.55 127) (xy 209.55 139.7)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "ca922f6d-fb08-4fca-b145-ed0f2716f810")
-	)
-	(wire
-		(pts
 			(xy 104.14 88.9) (xy 104.14 104.14)
 		)
 		(stroke
@@ -3059,36 +2791,6 @@
 			(type default)
 		)
 		(uuid "cbe49203-b9a9-438d-9a52-b0b99f163c72")
-	)
-	(wire
-		(pts
-			(xy 252.73 144.78) (xy 252.73 147.32)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "cd914965-3866-4247-8f8f-f9e6758b1f74")
-	)
-	(wire
-		(pts
-			(xy 226.06 152.4) (xy 232.41 152.4)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "cdd6d93f-7f66-4bc4-b289-570f95a70624")
-	)
-	(wire
-		(pts
-			(xy 74.93 139.7) (xy 83.82 139.7)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "ce9dad9c-3011-4149-a009-594ac6643757")
 	)
 	(wire
 		(pts
@@ -3129,26 +2831,6 @@
 			(type default)
 		)
 		(uuid "d4de551f-e796-4cb6-a9f2-fa47237a01d3")
-	)
-	(wire
-		(pts
-			(xy 237.49 158.75) (xy 194.31 158.75)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "da5599ae-0716-47ab-9bcd-9e25d4b72f5a")
-	)
-	(wire
-		(pts
-			(xy 248.92 152.4) (xy 252.73 152.4)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "da8c5ff1-2842-46ba-893d-72eca18f027d")
 	)
 	(wire
 		(pts
@@ -3212,26 +2894,6 @@
 	)
 	(wire
 		(pts
-			(xy 209.55 152.4) (xy 218.44 152.4)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "e0fc1a56-b3a5-4c37-980b-ed45014da832")
-	)
-	(wire
-		(pts
-			(xy 74.93 152.4) (xy 83.82 152.4)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "e217b1f0-5903-452f-b28f-67aaa0572c7b")
-	)
-	(wire
-		(pts
 			(xy 104.14 60.96) (xy 104.14 76.2)
 		)
 		(stroke
@@ -3252,26 +2914,6 @@
 	)
 	(wire
 		(pts
-			(xy 232.41 144.78) (xy 238.76 144.78)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "e649904d-e800-4e09-b594-6c3d0a9ff6a9")
-	)
-	(wire
-		(pts
-			(xy 232.41 147.32) (xy 232.41 152.4)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "e7fa0007-1126-401e-9f1d-c6539289cb24")
-	)
-	(wire
-		(pts
 			(xy 209.55 114.3) (xy 218.44 114.3)
 		)
 		(stroke
@@ -3289,16 +2931,6 @@
 			(type default)
 		)
 		(uuid "ee46c77a-866f-4d29-9019-8196ab209caa")
-	)
-	(wire
-		(pts
-			(xy 198.12 156.21) (xy 234.95 156.21)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "f1ec4bbe-4a97-4250-90e3-b2f24a8325bc")
 	)
 	(wire
 		(pts
@@ -3352,26 +2984,6 @@
 	)
 	(wire
 		(pts
-			(xy 234.95 156.21) (xy 234.95 149.86)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "fb3fc2ae-3924-45c9-9a5f-422625a95ef8")
-	)
-	(wire
-		(pts
-			(xy 248.92 144.78) (xy 252.73 144.78)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "fc2dd57c-9038-4218-93ac-217dd7fdf5d7")
-	)
-	(wire
-		(pts
 			(xy 74.93 50.8) (xy 83.82 50.8)
 		)
 		(stroke
@@ -3379,26 +2991,6 @@
 			(type default)
 		)
 		(uuid "fce4265a-5114-4194-a2a4-e435aa21079f")
-	)
-	(wire
-		(pts
-			(xy 248.92 147.32) (xy 252.73 147.32)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "fd091438-b9c3-46f0-8108-391ca434a465")
-	)
-	(wire
-		(pts
-			(xy 234.95 149.86) (xy 238.76 149.86)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "ff182a8e-b1a1-4c74-a473-f81dd74d9e35")
 	)
 	(hierarchical_label "Group 1"
 		(shape input)
@@ -3519,108 +3111,6 @@
 			(project "target"
 				(path "/433c0138-2514-4198-b032-05a902b263b6/ee40588f-c07c-4595-9194-0975cf5d1e03"
 					(reference "D14")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:LED")
-		(at 222.25 139.7 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "03560d73-c7a8-4fed-9337-6d8c5a973bcd")
-		(property "Reference" "D20"
-			(at 220.6625 133.35 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "LED"
-			(at 220.6625 135.89 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "LED_SMD:LED_0603_1608Metric"
-			(at 222.25 139.7 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 222.25 139.7 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Light emitting diode"
-			(at 222.25 139.7 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Sim.Pins" "1=K 2=A"
-			(at 222.25 139.7 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "LCSC Part" "C7496815"
-			(at 222.25 139.7 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "0a9c18ce-5043-4d1f-b78a-5324196abd4c")
-		)
-		(pin "2"
-			(uuid "1d062c53-92a8-4d87-a305-0744507cd48b")
-		)
-		(instances
-			(project "target"
-				(path "/433c0138-2514-4198-b032-05a902b263b6/ee40588f-c07c-4595-9194-0975cf5d1e03"
-					(reference "D20")
 					(unit 1)
 				)
 			)
@@ -5279,137 +4769,6 @@
 		)
 	)
 	(symbol
-		(lib_id "lcsc:RTA03-4D270JTP")
-		(at 243.84 148.59 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "7bc8f41a-4c62-46f3-ac1d-c967e59ab348")
-		(property "Reference" "RN5"
-			(at 243.84 137.16 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "RTA03-4D270JTP"
-			(at 243.84 139.7 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "lcsc:RES-ARRAY-SMD_0603-8P-L3.2-W1.6-BL"
-			(at 243.84 160.02 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" "https://lcsc.com/product-detail/Resistor-Networks-Arrays_RALEC-RTA03-4D270JTP_C304959.html"
-			(at 243.84 162.56 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" ""
-			(at 243.84 148.59 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Manufacturer" "RALEC(旺诠)"
-			(at 243.84 165.1 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "MPN" "RTA03-4D270JTP"
-			(at 243.84 167.64 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "LCSC Part" "C304959"
-			(at 243.84 170.18 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "2"
-			(uuid "23b1ca97-a549-465b-9e3c-a388c505c232")
-		)
-		(pin "8"
-			(uuid "cc117cb2-9f58-46c2-bc69-82752532b9c3")
-		)
-		(pin "3"
-			(uuid "6e24054e-750b-4c6e-8155-c21fcfd065aa")
-		)
-		(pin "6"
-			(uuid "2ff165ce-c958-48c4-bd28-8c0d5954f0fa")
-		)
-		(pin "1"
-			(uuid "72396260-8c6b-4856-919f-cc9b477a6540")
-		)
-		(pin "4"
-			(uuid "3434b8f1-afbb-4040-9cb8-6408459f39cd")
-		)
-		(pin "5"
-			(uuid "0c7a8b48-836d-4acd-8d28-3ecffdbcaf9a")
-		)
-		(pin "7"
-			(uuid "598d7e39-4303-4fdd-ab52-0c4d7226a882")
-		)
-		(instances
-			(project "target"
-				(path "/433c0138-2514-4198-b032-05a902b263b6/ee40588f-c07c-4595-9194-0975cf5d1e03"
-					(reference "RN5")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Device:LED")
 		(at 222.25 38.1 0)
 		(unit 1)
@@ -5847,119 +5206,6 @@
 		)
 	)
 	(symbol
-		(lib_id "lcsc:CT-1608UWC-P4")
-		(at 88.9 151.13 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "8cbb3c57-1a7d-486d-bada-89479b5cb7d1")
-		(property "Reference" "D11"
-			(at 88.14 143.51 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "CT-1608UWC-P4"
-			(at 88.14 146.05 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "lcsc:LED-SMD_L1.6-W0.8-RD_CT-1608UWC-P4"
-			(at 88.9 160.02 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" "https://www.lcsc.com/datasheet/C52676007.pdf"
-			(at 88.9 162.56 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" ""
-			(at 88.9 151.13 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Manufacturer" "冲天"
-			(at 88.9 165.1 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "MPN" "CT-1608UWC-P4"
-			(at 88.9 167.64 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "LCSC Part" "C52676007"
-			(at 88.9 170.18 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "0ada51c3-2f1a-4571-965f-bc2f96f3205b")
-		)
-		(pin "2"
-			(uuid "7ed9ec94-ed7f-46de-b7dc-36c4582596a9")
-		)
-		(instances
-			(project "target"
-				(path "/433c0138-2514-4198-b032-05a902b263b6/ee40588f-c07c-4595-9194-0975cf5d1e03"
-					(reference "D11")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Device:R")
 		(at 172.72 58.42 0)
 		(unit 1)
@@ -6355,119 +5601,6 @@
 		)
 	)
 	(symbol
-		(lib_id "lcsc:CT-1608UWC-P4")
-		(at 88.9 138.43 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "b52c633a-95c9-4bed-a512-5c9ca498cf83")
-		(property "Reference" "D10"
-			(at 88.14 130.81 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "CT-1608UWC-P4"
-			(at 88.14 133.35 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "lcsc:LED-SMD_L1.6-W0.8-RD_CT-1608UWC-P4"
-			(at 88.9 147.32 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" "https://www.lcsc.com/datasheet/C52676007.pdf"
-			(at 88.9 149.86 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" ""
-			(at 88.9 138.43 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Manufacturer" "冲天"
-			(at 88.9 152.4 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "MPN" "CT-1608UWC-P4"
-			(at 88.9 154.94 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "LCSC Part" "C52676007"
-			(at 88.9 157.48 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "5d9fdf82-12bc-4d7a-9396-35a8d3fe9b33")
-		)
-		(pin "2"
-			(uuid "42fb23f1-94da-48dc-a9ed-163c57b4dfcd")
-		)
-		(instances
-			(project "target"
-				(path "/433c0138-2514-4198-b032-05a902b263b6/ee40588f-c07c-4595-9194-0975cf5d1e03"
-					(reference "D10")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:+3V3")
 		(at 252.73 33.02 0)
 		(unit 1)
@@ -6642,108 +5775,6 @@
 			(project "target"
 				(path "/433c0138-2514-4198-b032-05a902b263b6/ee40588f-c07c-4595-9194-0975cf5d1e03"
 					(reference "D19")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:LED")
-		(at 222.25 152.4 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "cdec45b5-e118-4cfa-b48a-2498f6c347d8")
-		(property "Reference" "D21"
-			(at 220.6625 146.05 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "LED"
-			(at 220.6625 148.59 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "LED_SMD:LED_0603_1608Metric"
-			(at 222.25 152.4 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 222.25 152.4 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Light emitting diode"
-			(at 222.25 152.4 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Sim.Pins" "1=K 2=A"
-			(at 222.25 152.4 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "LCSC Part" "C7496815"
-			(at 222.25 152.4 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "9532ba92-c740-41cd-a01c-07c237b47492")
-		)
-		(pin "2"
-			(uuid "bc1c1592-9ea6-4733-ab9b-7a40d83266f2")
-		)
-		(instances
-			(project "target"
-				(path "/433c0138-2514-4198-b032-05a902b263b6/ee40588f-c07c-4595-9194-0975cf5d1e03"
-					(reference "D21")
 					(unit 1)
 				)
 			)

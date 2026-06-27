@@ -2152,6 +2152,279 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "lcsc:SP3485EN-L_TR"
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "U"
+				(at 0 8.89 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "SP3485EN-L/TR"
+				(at 0 -8.89 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" "lcsc:SOIC-8_L5.0-W4.0-P1.27-LS6.0-BL"
+				(at 0 -11.43 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" "https://lcsc.com/product-detail/RS-485-RS-422_SIPEX_SP3485EN-L-TR_SP3485EN-L-TR_C8963.html"
+				(at 0 -13.97 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Manufacturer" "MaxLinear(迈凌)"
+				(at 0 -16.51 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "MPN" "SP3485EN-L/TR"
+				(at 0 -19.05 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "LCSC Part" "C8963"
+				(at 0 -21.59 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "RS-485/RS-422 ICs"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "SP3485EN-L_TR_0_1"
+				(rectangle
+					(start -6.35 6.35)
+					(end 6.35 -6.35)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+				(circle
+					(center -5.08 5.08)
+					(radius 0.38)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(pin unspecified line
+					(at -8.89 3.81 0)
+					(length 2.54)
+					(name "RO"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at -8.89 1.27 0)
+					(length 2.54)
+					(name "~{RE}"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at -8.89 -1.27 0)
+					(length 2.54)
+					(name "DE"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at -8.89 -3.81 0)
+					(length 2.54)
+					(name "DI"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at 8.89 -3.81 180)
+					(length 2.54)
+					(name "GND"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "5"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at 8.89 -1.27 180)
+					(length 2.54)
+					(name "A"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "6"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at 8.89 1.27 180)
+					(length 2.54)
+					(name "B"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "7"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at 8.89 3.81 180)
+					(length 2.54)
+					(name "VCC"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "8"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "lcsc:STM32C011F4P6TR"
 			(exclude_from_sim no)
 			(in_bom yes)
@@ -3048,6 +3321,18 @@
 		(uuid "86741fea-cd01-4b7f-9f5c-9dd7b2f1ab12")
 	)
 	(rectangle
+		(start 13.97 74.93)
+		(end 73.66 114.3)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(fill
+			(type none)
+		)
+		(uuid "901f07c7-030f-469f-a0e3-232a0070a7f9")
+	)
+	(rectangle
 		(start 13.97 161.29)
 		(end 115.57 195.58)
 		(stroke
@@ -3098,6 +3383,16 @@
 			)
 		)
 		(uuid "bab70c69-744a-44dc-a9c3-72b94ab0805f")
+	)
+	(text "RS-485"
+		(exclude_from_sim no)
+		(at 18.796 76.962 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "c1b6ead5-e30c-455a-8295-e1d9ed356e67")
 	)
 	(junction
 		(at 97.79 88.9)
@@ -3206,10 +3501,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "fa8938e4-0af4-4379-a324-c55f8324baba")
-	)
-	(no_connect
-		(at 176.53 85.09)
-		(uuid "61442288-fa35-4440-a9ad-c086caa3cfd3")
 	)
 	(no_connect
 		(at 274.32 81.28)
@@ -3363,6 +3654,16 @@
 	)
 	(wire
 		(pts
+			(xy 30.48 91.44) (xy 34.29 91.44)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "204252ff-a6aa-40bb-86dc-61b8036efbd6")
+	)
+	(wire
+		(pts
 			(xy 49.53 64.77) (xy 52.07 64.77)
 		)
 		(stroke
@@ -3410,6 +3711,16 @@
 			(type default)
 		)
 		(uuid "27853b70-cebd-430f-ab10-9f0639fb4c42")
+	)
+	(wire
+		(pts
+			(xy 52.07 99.06) (xy 54.61 99.06)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2a784208-507f-497f-a250-7db6e57986b9")
 	)
 	(wire
 		(pts
@@ -3563,6 +3874,16 @@
 	)
 	(wire
 		(pts
+			(xy 54.61 99.06) (xy 54.61 100.33)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "526cfebf-ac82-4e19-acaa-dc30dcaec5e5")
+	)
+	(wire
+		(pts
 			(xy 252.73 91.44) (xy 252.73 93.98)
 		)
 		(stroke
@@ -3580,6 +3901,16 @@
 			(type default)
 		)
 		(uuid "57058d2e-7add-44bd-bb3a-53291925d23e")
+	)
+	(wire
+		(pts
+			(xy 30.48 93.98) (xy 34.29 93.98)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "583e2995-1189-4f57-a76b-582bbaf52bf5")
 	)
 	(wire
 		(pts
@@ -3703,6 +4034,16 @@
 	)
 	(wire
 		(pts
+			(xy 30.48 96.52) (xy 34.29 96.52)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "70d890a1-318c-4f10-9129-0e47ca3df9b4")
+	)
+	(wire
+		(pts
 			(xy 176.53 97.79) (xy 187.96 97.79)
 		)
 		(stroke
@@ -3740,6 +4081,26 @@
 			(type default)
 		)
 		(uuid "78cfca30-c4e7-4cd5-8f30-23a26798ab21")
+	)
+	(wire
+		(pts
+			(xy 52.07 91.44) (xy 54.61 91.44)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7a7d3e53-2a50-4909-b6e5-804188d9c80a")
+	)
+	(wire
+		(pts
+			(xy 30.48 99.06) (xy 34.29 99.06)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7f3f7f53-658a-4d2e-8bb7-f8099a55f9bd")
 	)
 	(wire
 		(pts
@@ -3790,6 +4151,16 @@
 			(type default)
 		)
 		(uuid "896f8be9-0b08-49c1-94ee-3ec33525a390")
+	)
+	(wire
+		(pts
+			(xy 176.53 85.09) (xy 181.61 85.09)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8ae53632-6114-4d33-b2dc-c724bc30fb08")
 	)
 	(wire
 		(pts
@@ -3880,6 +4251,16 @@
 			(type default)
 		)
 		(uuid "992c8d39-98f7-468a-bfd1-dbccde3a1838")
+	)
+	(wire
+		(pts
+			(xy 54.61 91.44) (xy 54.61 90.17)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9977aa85-5849-4483-b30f-ff391c5aee34")
 	)
 	(wire
 		(pts
@@ -4033,6 +4414,16 @@
 	)
 	(wire
 		(pts
+			(xy 52.07 93.98) (xy 54.61 93.98)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "bc376fde-cf17-403b-bffb-d96ae03bcc5e")
+	)
+	(wire
+		(pts
 			(xy 110.49 87.63) (xy 110.49 88.9)
 		)
 		(stroke
@@ -4060,6 +4451,16 @@
 			(type default)
 		)
 		(uuid "c9002272-71a8-4f0b-9f87-b56d56c22bad")
+	)
+	(wire
+		(pts
+			(xy 52.07 96.52) (xy 54.61 96.52)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ce71644d-0f03-475a-b69b-4290406da07c")
 	)
 	(wire
 		(pts
@@ -4481,6 +4882,16 @@
 		)
 		(uuid "4cf3bac5-0768-4589-a322-53e3d6e1238d")
 	)
+	(label "TX"
+		(at 30.48 99.06 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "4e21d4d3-4358-4d33-a6ab-8ec0b740eec5")
+	)
 	(label "INT_IN"
 		(at 29.21 45.72 0)
 		(effects
@@ -4501,6 +4912,16 @@
 		)
 		(uuid "4e874b80-8b78-40a8-98fd-35adda5adbd2")
 	)
+	(label "RE"
+		(at 181.61 85.09 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "56ab7b86-c864-45f4-828a-9fc3548f0687")
+	)
 	(label "DE"
 		(at 181.61 82.55 180)
 		(effects
@@ -4510,6 +4931,16 @@
 			(justify right bottom)
 		)
 		(uuid "637f57b1-96d8-40e2-b9f3-c5af010e7c95")
+	)
+	(label "A"
+		(at 54.61 96.52 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "6bbc717f-f5b8-4995-938e-f81efbc9c6b2")
 	)
 	(label "LED_G2"
 		(at 240.03 45.72 0)
@@ -4540,6 +4971,26 @@
 			(justify left bottom)
 		)
 		(uuid "7983ef00-75aa-4f56-b055-60d5db649e61")
+	)
+	(label "B"
+		(at 54.61 93.98 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "82a7dba5-a49d-45d8-84d1-c1925b62c129")
+	)
+	(label "RX"
+		(at 30.48 91.44 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "89e8fa94-e62b-4444-be6e-752e77f2a8b7")
 	)
 	(label "ACC_INT1"
 		(at 187.96 92.71 180)
@@ -4581,6 +5032,16 @@
 		)
 		(uuid "a8fda1c4-d9a1-4b2c-9a3b-59e69b9736d3")
 	)
+	(label "DE"
+		(at 30.48 96.52 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "a9b85c87-3cfc-4119-8a46-9481d0595ed4")
+	)
 	(label "INT_OUT"
 		(at 29.21 62.23 0)
 		(effects
@@ -4620,6 +5081,16 @@
 			(justify left bottom)
 		)
 		(uuid "b8a9328e-2405-4934-978f-16b988f2edbf")
+	)
+	(label "RE"
+		(at 30.48 93.98 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "bba10f7b-3ee6-4db2-b4a3-666255f7dad0")
 	)
 	(label "TX"
 		(at 123.19 90.17 0)
@@ -6652,6 +7123,84 @@
 		)
 	)
 	(symbol
+		(lib_id "power:GND")
+		(at 54.61 100.33 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "6465b1f7-b1d4-4938-a626-eb2bf62a07c6")
+		(property "Reference" "#PWR032"
+			(at 54.61 106.68 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 54.61 105.41 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 54.61 100.33 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 54.61 100.33 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 54.61 100.33 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "a03a5f59-425d-4971-af71-43e5b9d95784")
+		)
+		(instances
+			(project "target"
+				(path "/433c0138-2514-4198-b032-05a902b263b6"
+					(reference "#PWR032")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:R")
 		(at 41.91 173.99 90)
 		(unit 1)
@@ -8102,6 +8651,84 @@
 	)
 	(symbol
 		(lib_id "power:+3V3")
+		(at 54.61 90.17 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "e1e3126b-099f-47d9-9263-2b028c0abf19")
+		(property "Reference" "#PWR033"
+			(at 54.61 93.98 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "+3V3"
+			(at 54.61 85.09 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 54.61 90.17 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 54.61 90.17 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+3V3\""
+			(at 54.61 90.17 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "a854d334-0c78-46e4-a81a-8f72b8f144aa")
+		)
+		(instances
+			(project "target"
+				(path "/433c0138-2514-4198-b032-05a902b263b6"
+					(reference "#PWR033")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+3V3")
 		(at 29.21 40.64 90)
 		(unit 1)
 		(body_style 1)
@@ -8258,6 +8885,137 @@
 			(project "target"
 				(path "/433c0138-2514-4198-b032-05a902b263b6"
 					(reference "D1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "lcsc:SP3485EN-L_TR")
+		(at 43.18 95.25 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "f7eb5879-22ba-4285-b61d-b7b75e84a794")
+		(property "Reference" "U3"
+			(at 43.18 83.82 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "SP3485EN-L/TR"
+			(at 43.18 86.36 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "lcsc:SOIC-8_L5.0-W4.0-P1.27-LS6.0-BL"
+			(at 43.18 106.68 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://lcsc.com/product-detail/RS-485-RS-422_SIPEX_SP3485EN-L-TR_SP3485EN-L-TR_C8963.html"
+			(at 43.18 109.22 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 43.18 95.25 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "MaxLinear(迈凌)"
+			(at 43.18 111.76 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "SP3485EN-L/TR"
+			(at 43.18 114.3 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC Part" "C8963"
+			(at 43.18 116.84 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "93e6a7a4-c326-467f-b6f0-536d0a831ede")
+		)
+		(pin "1"
+			(uuid "885666db-73ff-4278-89e5-8d369b6199e8")
+		)
+		(pin "3"
+			(uuid "4977f8ae-db3b-492c-afa0-aa78e9dbb2cc")
+		)
+		(pin "6"
+			(uuid "8d0b4c48-439b-438e-aecc-bb74c0375afe")
+		)
+		(pin "5"
+			(uuid "2d87ff74-12b7-4c2e-badd-82c50cfccfef")
+		)
+		(pin "7"
+			(uuid "c5c3d03c-d989-4dad-b032-3e16142e7bd6")
+		)
+		(pin "8"
+			(uuid "f3eb75ab-6dc1-4b29-bcb8-a9cc3fdd32d2")
+		)
+		(pin "4"
+			(uuid "aad6e77a-17c3-45ac-82f0-09964444b874")
+		)
+		(instances
+			(project "target"
+				(path "/433c0138-2514-4198-b032-05a902b263b6"
+					(reference "U3")
 					(unit 1)
 				)
 			)

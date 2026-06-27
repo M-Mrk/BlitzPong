@@ -50,7 +50,23 @@
         "silk_text_thickness": 0.1,
         "silk_text_upright": false,
         "zones": {
-          "min_clearance": 0.5
+          "border_display_style": 2,
+          "border_hatch_pitch": 0.5,
+          "corner_radius": 0.0,
+          "corner_smoothing": 0,
+          "fill_mode": 0,
+          "hatch_gap": 1.5,
+          "hatch_orientation": 0.0,
+          "hatch_smoothing_level": 0,
+          "hatch_smoothing_value": 0.1,
+          "hatch_thickness": 1.0,
+          "min_clearance": 0.5,
+          "min_island_area": 10.0,
+          "min_thickness": 0.25,
+          "pad_connection": 1,
+          "remove_islands": 0,
+          "thermal_relief_gap": 0.5,
+          "thermal_relief_spoke_width": 0.5
         }
       },
       "diff_pair_dimensions": [],
@@ -632,7 +648,7 @@
         "uuid": "4da343f4-5859-4571-9ff5-7eddf269b181"
       }
     ],
-    "used_designators": "C12,USB2,R15,U7,#PWR34-35,#PWR44-52,SW2-4",
+    "used_designators": "BT1,R16,#PWR36-38,#PWR50,BUZZER1,U8,Q1",
     "variants": []
   },
   "sheets": [
